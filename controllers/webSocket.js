@@ -1,7 +1,6 @@
 const WebSocket = require("ws");
 
 var wss = undefined;
-var turn = 0;
 module.exports.setupWS = (server) => {
     wss = new WebSocket.Server({ server });
     wss.on("connection", (ws) => {
@@ -13,8 +12,7 @@ module.exports.setupWS = (server) => {
                 }
             });
         });
-        console.log(turn);
-        ws.send(turn.toString());
-        turn = (turn + 1) % 2;
+        if(wss.clients.size <= 2)
+            ws.send((wss.clients.size - 1).toString());
     });
 };
