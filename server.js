@@ -4,11 +4,13 @@ const { setHeaders } = require("./middlewares/headers");
 const { errorHandler } = require("./middlewares/errors");
 const { connectToDB } = require("./models/setup");
 const userRoutes = require("./routes/user");
-const logRequests = require('./middlewares/logRequests');
+const { setupWS } = require("./controllers/webSocket");
+const { createServer } = require("http");
+const logRequests = require("./middlewares/logRequests");
 
 const app = express();
 //──── Server Port
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 //──── Static Folder
 app.use("/images", express.static(path.join(__dirname, "public", "images")));
@@ -20,19 +22,26 @@ app.use(express.urlencoded({ extended: true }));
 app.use(setHeaders);
 
 //──── Routes
-app.use('/users', userRoutes);
-
-//──── Connecting To Database
-connectToDB()
-    .then(result => {
-        console.log(`Connected To Database`);
-        app.listen(port, () => {
-            console.log(`Server running on port ${port}`);
-        });
-    })
-    .catch(err => {
-        console.log(err);
-    });
+app.use("/users", userRoutes);
 
 //──── Error Handler Middleware
 app.use(errorHandler);
+
+//---- WebSocket
+const server = createServer(app);
+setupWS(server);
+
+//──── Connecting To Database
+connectToDB()
+    .then((result) => {
+        console.log(`Connected To Database`);
+        server.listen(PORT, () => {
+            console.log(`Server running on PORT ${PORT}`);
+        });
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
+
+
