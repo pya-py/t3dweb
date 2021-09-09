@@ -1,15 +1,15 @@
 const express = require('express');
 const { body } = require('express-validator');
-
 const router = express.Router();
-
 const userModel = require('../models/user');
 const userController = require('../controllers/user');
+const { authenticateToken } = require('../middlewares/tokenManager');
 
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
 router.get('/:userID', userController.getPlayer);
 
 router.get('/', userController.getAllPlayers);
+
 //──── POST Http Methods ─────────────────────────────────────────────────────────────────
 //POST /users/signup
 router.post(
@@ -73,6 +73,8 @@ router.post(
     ],
     userController.signIn
 );
-//──── POST Http Methods ─────────────────────────────────────────────────────────────────
+//──── PUT Http Methods ─────────────────────────────────────────────────────────────────
+// PUT /users/:userID ==> for players record update
+router.put('/:userID', authenticateToken ,userController.updateRecords);
 
 module.exports = router;

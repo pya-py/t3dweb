@@ -26,8 +26,22 @@ const userSchema = new Schema({
         default: false
     },
     records: {
-        type: Object,
-        default: { points: 0, wins: 0, loses: 0, draws: 0 }
+        points: {
+            type: Number,
+            default: 0
+        },
+        wins: {
+            type: Number,
+            default: 0
+        },
+        draws: {
+            type: Number,
+            default: 0
+        },
+        loses: {
+            type: Number,
+            default: 0
+        }
     }
 });
 

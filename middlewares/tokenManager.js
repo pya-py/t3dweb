@@ -15,7 +15,7 @@ const generateToken = async thisUser => {
     );
 }
 
-const authorizeToken = (req, res, next) => {
+const authenticateToken = (req, res, next) => {
     const authHeader = req.get('Authorization');
     if (!authHeader) {
         const error = new Error('Not authenticated.');
@@ -41,5 +41,5 @@ const authorizeToken = (req, res, next) => {
 
 module.exports = {
     generateToken,
-    authorizeToken
+    authenticateToken
 };
