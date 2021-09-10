@@ -1,6 +1,6 @@
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
-const UserModel = require("../../models/user");
+const UserModel = require("../../models/users");
 const { generateToken } = require("../../middlewares/tokenManager");
 // const { sendEmail } = require('../utils/mailer');
 const SALT_LENGTH = 11;
@@ -49,7 +49,7 @@ module.exports = async (req, res, next) => {
         //     'We glad to have you on board.'
         // )
     } catch (err) {
-        console.log(err);
+        // console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }

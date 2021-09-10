@@ -1,4 +1,4 @@
-const UserModel = require('../../models/user');
+const UserModel = require('../../models/users');
 
 module.exports = async(req, res, next) => {
     try {
@@ -12,7 +12,7 @@ module.exports = async(req, res, next) => {
         res.status(200).json({ players });
 
     } catch (err) {
-        console.log(err);
+        // console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }

@@ -50,7 +50,7 @@ module.exports.setupWS = (server) => {
                     Object.entries(rooms[roomName]).forEach(
                         ([, playerInTheRoom]) =>
                             playerInTheRoom.socket.send(
-                                createSocketCommand("START", null)
+                                createSocketCommand("START", Object.keys(rooms[roomName]))
                             )
                     );
                 }

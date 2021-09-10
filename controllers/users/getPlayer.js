@@ -1,4 +1,4 @@
-const UserModel = require('../../models/user');
+const UserModel = require('../../models/users');
 // get user public info == player records
 module.exports = async(req, res, next) => {
     const userID = req.params.userID;

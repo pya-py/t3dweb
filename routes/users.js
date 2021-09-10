@@ -1,8 +1,8 @@
 const express = require('express');
 const { body } = require('express-validator');
 const router = express.Router();
-const userModel = require('../models/user');
-const userController = require('../controllers/user');
+const userModel = require('../models/users');
+const userController = require('../controllers/users');
 const { authenticateToken } = require('../middlewares/tokenManager');
 
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
@@ -15,9 +15,9 @@ router.get('/', userController.getAllPlayers);
 router.post(
     '/signup', [
         body('studentID')
-        .isNumeric() //check for other conditions for a tudent id
+        .isNumeric() //check for other conditions for a student id
         .withMessage('StudentID is not valid.')
-        .custom((value, { req }) => {
+        .custom((value, { req }) => { //**********this checks for user existence but doesnt send proper error ? wha=y?
             return userModel.findOne({ studentID: value }).then(user => {
                 if (user) {
                     return Promise.reject('StudentID already exist');
@@ -28,7 +28,7 @@ router.post(
         .isEmail()
         .normalizeEmail()
         .withMessage('Email is not valid.')
-        .custom((value, { req }) => {
+        .custom((value, { req }) => {//**********this checks for user existence but doesnt send proper error ? wha=y?
             return userModel.findOne({ email: value }).then(user => {
                 if (user) {
                     return Promise.reject('Email address already exist');

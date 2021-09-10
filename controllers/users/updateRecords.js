@@ -1,5 +1,5 @@
 const GAME_STATUS = { WIN: 3, DRAW: 1, LOSE: 0};
-const UserModel = require("../../models/user");
+const UserModel = require("../../models/users");
 
 module.exports = async (req, res, next) => {
     try {
@@ -29,7 +29,7 @@ module.exports = async (req, res, next) => {
         // console.log(userFound);
         res.status(200).json({message: "records updated."});
     } catch (err) {
-        console.log(err);
+        // console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }
