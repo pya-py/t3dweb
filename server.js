@@ -3,7 +3,9 @@ const express = require("express");
 const { setHeaders } = require("./middlewares/headers");
 const { errorHandler } = require("./middlewares/errors");
 const { connectToDB } = require("./models/setup");
-const userRoutes = require("./routes/user");
+const usersRoutes = require("./routes/users");
+const gamesRoutes = require("./routes/games");
+
 const { setupWS } = require("./controllers/webSocket");
 const { createServer } = require("http");
 const logRequests = require("./middlewares/logRequests");
@@ -22,7 +24,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(setHeaders);
 
 //──── Routes
-app.use("/users", userRoutes);
+app.use("/users", usersRoutes);
+app.use("/games", gamesRoutes);
 
 //──── Error Handler Middleware
 app.use(errorHandler);
