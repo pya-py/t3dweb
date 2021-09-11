@@ -23,7 +23,7 @@ module.exports.setupWS = (server) => {
     wss.on("connection", (socket) => {
         socket.on("message", (data) => {
             const { request, roomName, playerID, msg } = JSON.parse(data);
-
+            console.log('req:',request,'room:', roomName);
             if (request === "join") {
                 // console.log(roomName);
                 // if there is no room with this name, then create one
@@ -44,18 +44,24 @@ module.exports.setupWS = (server) => {
                     )
                 );
 
-                if (turn === 1) {
+                if (Object.keys(rooms[roomName]).length === 2) {
                     //means two players are connected
                     //send message to each player to tell them the game is started
                     Object.entries(rooms[roomName]).forEach(
                         ([, playerInTheRoom]) =>
                             playerInTheRoom.socket.send(
-                                createSocketCommand("START", Object.keys(rooms[roomName]))
+                                createSocketCommand(
+                                    "START",
+                                    Object.keys(rooms[roomName])
+                                )
                             )
                     );
                 }
+                // if turn  >1 ==> set the client as watcher
                 // console.log(rooms[roomName][playerID]);
             } else if (request === "move") {
+                console.table(Object.keys(rooms[roomName]));
+                console.log(roomName);
                 Object.entries(rooms[roomName]).forEach(
                     ([, playerInTheRoom]) => {
                         if (socket !== playerInTheRoom.socket) {
@@ -63,15 +69,35 @@ module.exports.setupWS = (server) => {
                             playerInTheRoom.socket.send(
                                 createSocketCommand("MOVE", msg )
                             );
+                            // playerInTheRoom.socket.emit(
+                            //     "move",
+                            //     msg,
+                            //     (data) => {
+                            //         console.log(data); // Hi!
+                            //     },
+                            //     (err) => {
+                            //         if (err) {
+                            //             return console.log(
+                            //                 "Packet sending error: ",
+                            //                 err
+                            //             );
+                            //         }
+                            //         console.log("Packet sent!");
+                            //     }
+                            // );
                         }
                     }
                 );
             } else if (request === "leave") {
-                leaveRoom(roomName);
+                //leaveRoom(roomName);
                 console.log(`${playerID} left`); //comment this
             }
             // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
         });
+        // socket.on("move", (name, ack) => {
+        //     ack("Hi!");
+        // });
+
         socket.on("close", (data) => {
             // what the fuck is wronge
             // const { request, roomName, playerID, msg } = JSON.parse(data);
