@@ -1,7 +1,10 @@
 const WebSocket = require("ws");
 
+const LAST_MOVE_KEY = "LAST_MOVE";
+
 var wss = undefined,
-    rooms = [];
+    rooms = [],
+    lastMove = null;
 const createSocketCommand = (command, msg) =>
     JSON.stringify({
         command,
@@ -18,12 +21,26 @@ const leaveRoom = (roomName, playerID) => {
     else delete rooms[roomName][playerID]; // just remove this player
 };
 
+const forceSendLastMove = (roomName, client) => {
+    try {
+        if (rooms[roomName][LAST_MOVE_KEY]) {
+            client.send(
+                createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
+            );
+            setTimeout(() => {
+                forceSendLastMove(roomName, client);
+            }, 1000);
+        }
+    } catch (err) {
+        console.log(err);
+    }
+};
 module.exports.setupWS = (server) => {
     wss = new WebSocket.Server({ server });
     wss.on("connection", (socket) => {
         socket.on("message", (data) => {
             const { request, roomName, playerID, msg } = JSON.parse(data);
-            console.log('req:',request,'room:', roomName);
+            console.log("req:", request, "room:", roomName);
             if (request === "join") {
                 // console.log(roomName);
                 // if there is no room with this name, then create one
@@ -62,13 +79,20 @@ module.exports.setupWS = (server) => {
             } else if (request === "move") {
                 console.table(Object.keys(rooms[roomName]));
                 console.log(roomName);
+                //********** */ u can use !turn to just send for opponent
                 Object.entries(rooms[roomName]).forEach(
                     ([, playerInTheRoom]) => {
                         if (socket !== playerInTheRoom.socket) {
                             // send move to other client(player)
-                            playerInTheRoom.socket.send(
-                                createSocketCommand("MOVE", msg )
-                            );
+                            // here is the summuary:
+                            // untill lastMove is not null => forceSend move
+                            // when move reciever, responds to MOVE ==> ,means move is recieved ==> stop forceSend
+                            // the last mad move, will be send to client to apply
+                            // if client recieves the move
+                            rooms[roomName][LAST_MOVE_KEY] = msg;
+
+                            forceSendLastMove(roomName, playerInTheRoom.socket);
+
                             // playerInTheRoom.socket.emit(
                             //     "move",
                             //     msg,
@@ -94,10 +118,11 @@ module.exports.setupWS = (server) => {
             }
             // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
         });
-        // socket.on("move", (name, ack) => {
-        //     ack("Hi!");
-        // });
 
+        socket.on("moveRecieved", (data) => {
+            const {recieved, roomName} = JSON.parse(data);
+            if (recieved) rooms[roomName][LAST_MOVE_KEY] = null;
+        });
         socket.on("close", (data) => {
             // what the fuck is wronge
             // const { request, roomName, playerID, msg } = JSON.parse(data);
