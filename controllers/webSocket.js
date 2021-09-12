@@ -92,26 +92,14 @@ module.exports.setupWS = (server) => {
                             rooms[roomName][LAST_MOVE_KEY] = msg;
 
                             forceSendLastMove(roomName, playerInTheRoom.socket);
-
-                            // playerInTheRoom.socket.emit(
-                            //     "move",
-                            //     msg,
-                            //     (data) => {
-                            //         console.log(data); // Hi!
-                            //     },
-                            //     (err) => {
-                            //         if (err) {
-                            //             return console.log(
-                            //                 "Packet sending error: ",
-                            //                 err
-                            //             );
-                            //         }
-                            //         console.log("Packet sent!");
-                            //     }
-                            // );
                         }
                     }
                 );
+            } else if (request === "moveRecieved") {
+                // here: msg === recieved status
+                if (msg) {
+                    rooms[roomName][LAST_MOVE_KEY] = null;
+                }
             } else if (request === "leave") {
                 //leaveRoom(roomName);
                 console.log(`${playerID} left`); //comment this
@@ -119,10 +107,10 @@ module.exports.setupWS = (server) => {
             // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
         });
 
-        socket.on("moveRecieved", (data) => {
-            const {recieved, roomName} = JSON.parse(data);
-            if (recieved) rooms[roomName][LAST_MOVE_KEY] = null;
-        });
+        // socket.on("moveRecieved", (data) => {
+        //     const {recieved, roomName} = JSON.parse(data);
+        //     if (recieved)rooms[roomName][LAST_MOVE_KEY] = null;
+        // });
         socket.on("close", (data) => {
             // what the fuck is wronge
             // const { request, roomName, playerID, msg } = JSON.parse(data);
