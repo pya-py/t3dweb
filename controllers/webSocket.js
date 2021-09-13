@@ -23,6 +23,10 @@ const leaveRoom = (roomName, playerID) => {
 };
 
 const forceSendLastMove = (roomName, targetID) => {
+    // mobile browser bug fixed
+    // set a timeout numbers limit
+    // or=> just resend move on re join ( it seems sufficent and send less commands )
+    // think it
     try {
         if (rooms[roomName][LAST_MOVE_KEY]) {
             console.log("last-move: ", rooms[roomName][LAST_MOVE_KEY]);
@@ -59,7 +63,7 @@ module.exports.setupWS = (server) => {
                 // old players in the room, have thir previous turn
                 if (!rooms[roomName][PLAYERS_KEY][playerID])
                     rooms[roomName][PLAYERS_KEY][playerID] = { socket, turn };
-                else{
+                else {
                     rooms[roomName][PLAYERS_KEY][playerID].socket = socket;
                 }
                 // ***** catch errors
@@ -84,6 +88,22 @@ module.exports.setupWS = (server) => {
                                 )
                             )
                     );
+
+                    //alternative for forceSendLastMove
+                    //resend the move to make sure moves are recieved on disconnect/connecting
+                    if (rooms[roomName][LAST_MOVE_KEY]) {
+                        console.log(
+                            "last-move: ",
+                            rooms[roomName][LAST_MOVE_KEY]
+                        );
+                        console.table(rooms[roomName]);
+                        rooms[roomName][PLAYERS_KEY][playerID].socket.send(
+                            createSocketCommand(
+                                "MOVE",
+                                rooms[roomName][LAST_MOVE_KEY]
+                            )
+                        );
+                    }
                 }
                 // if turn  >1 ==> set the client as watcher
                 // console.log(rooms[roomName][PLAYERS_KEY][playerID]);
@@ -105,10 +125,12 @@ module.exports.setupWS = (server) => {
                                     // the last mad move, will be send to client to apply
                                     // if client recieves the move
                                     rooms[roomName][LAST_MOVE_KEY] = msg;
-                                    rooms[roomName][PLAYERS_KEY][targetID].socket.send(
-                                        createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
-                                    );
+
                                     //forceSendLastMove(roomName, targetID);
+
+                                    clientInTheRoom.socket.send(
+                                        createSocketCommand("MOVE", msg)
+                                    );
                                 }
                             } catch (err) {
                                 console.log(err);
