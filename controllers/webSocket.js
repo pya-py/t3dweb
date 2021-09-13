@@ -24,15 +24,19 @@ const leaveRoom = (roomName, playerID) => {
 
 const forceSendLastMove = (roomName, targetID) => {
     try {
-
         if (rooms[roomName][LAST_MOVE_KEY]) {
-            console.log('last-move: ', rooms[roomName][LAST_MOVE_KEY]);
+            console.log("last-move: ", rooms[roomName][LAST_MOVE_KEY]);
             console.table(rooms[roomName]);
-            rooms[roomName][PLAYERS_KEY][targetID].socket.send(
-                createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
-            );
+            if (rooms[roomName][PLAYERS_KEY][targetID].socket) {
+                rooms[roomName][PLAYERS_KEY][targetID].socket.send(
+                    createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
+                );
+            }
             setTimeout(() => {
-                forceSendLastMove(roomName, rooms[roomName][PLAYERS_KEY][targetID].socket);
+                forceSendLastMove(
+                    roomName,
+                    rooms[roomName][PLAYERS_KEY][targetID].socket
+                );
             }, 1000);
         }
     } catch (err) {
@@ -48,7 +52,8 @@ module.exports.setupWS = (server) => {
             if (request === "join") {
                 // console.log(roomName);
                 // if there is no room with this name, then create one
-                if (!rooms[roomName]) {rooms[roomName] = [];
+                if (!rooms[roomName]) {
+                    rooms[roomName] = [];
                     rooms[roomName][PLAYERS_KEY] = [];
                 }
                 //if the room exists(or already created),and the player is not, just add playerID in the room
@@ -58,7 +63,7 @@ module.exports.setupWS = (server) => {
                 if (!rooms[roomName][PLAYERS_KEY][playerID])
                     rooms[roomName][PLAYERS_KEY][playerID] = { socket, turn };
                 // ***** catch errors
-                
+
                 socket.send(
                     createSocketCommand(
                         "SET_TURN",
@@ -69,7 +74,7 @@ module.exports.setupWS = (server) => {
                 if (Object.keys(rooms[roomName][PLAYERS_KEY]).length === 2) {
                     //means two players are connected
                     //send message to each player to tell them the game is started
-                    console.log('game started');
+                    console.log("game started");
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
                         ([, playerInTheRoom]) =>
                             playerInTheRoom.socket.send(
@@ -89,7 +94,10 @@ module.exports.setupWS = (server) => {
                         ([targetID, clientInTheRoom]) => {
                             try {
                                 if (playerID !== targetID) {
-                                    console.log('send move to player: ', clientInTheRoom.turn);
+                                    console.log(
+                                        "send move to player: ",
+                                        clientInTheRoom.turn
+                                    );
                                     // send move to other client(player)
                                     // here is the summuary:
                                     // untill lastMove is not null => forceSend move
@@ -98,10 +106,7 @@ module.exports.setupWS = (server) => {
                                     // if client recieves the move
                                     rooms[roomName][LAST_MOVE_KEY] = msg;
 
-                                    forceSendLastMove(
-                                        roomName,
-                                        targetID
-                                    );
+                                    forceSendLastMove(roomName, targetID);
                                 }
                             } catch (err) {
                                 console.log(err);
