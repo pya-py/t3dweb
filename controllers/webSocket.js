@@ -90,6 +90,7 @@ module.exports.setupWS = (server) => {
                         ([, playerInTheRoom]) => {
                             try {
                                 if (socket !== playerInTheRoom.socket) {
+                                    console.log('send move to player: ', playerInTheRoom.turn);
                                     // send move to other client(player)
                                     // here is the summuary:
                                     // untill lastMove is not null => forceSend move
