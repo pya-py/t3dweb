@@ -58,11 +58,18 @@ module.exports.setupWS = (server) => {
                 if (!rooms[roomName][PLAYERS_KEY][playerID])
                     rooms[roomName][PLAYERS_KEY][playerID] = { socket, turn };
                 // ***** catch errors
+                
+                socket.send(
+                    createSocketCommand(
+                        "SET_TURN",
+                        rooms[roomName][PLAYERS_KEY][playerID].turn
+                    )
+                );
                 //error 1: if the player is the third one in the room ===> sorry bro
-
                 if (Object.keys(rooms[roomName][PLAYERS_KEY]).length === 2) {
                     //means two players are connected
                     //send message to each player to tell them the game is started
+                    console.log('game started');
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
                         ([, playerInTheRoom]) =>
                             playerInTheRoom.socket.send(
@@ -80,10 +87,10 @@ module.exports.setupWS = (server) => {
                     //console.table(Object.keys(rooms[roomName][PLAYERS_KEY]));
                     Object.keys(rooms[roomName][PLAYERS_KEY]).forEach()               
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
-                        ([, playerInTheRoom]) => {
+                        ([clientID, clientInTheRoom]) => {
                             try {
-                                if (socket !== playerInTheRoom.socket) {
-                                    console.log('send move to player: ', playerInTheRoom.turn);
+                                if (playerID !== clientID) {
+                                    console.log('send move to player: ', clientInTheRoom.turn);
                                     // send move to other client(player)
                                     // here is the summuary:
                                     // untill lastMove is not null => forceSend move
@@ -94,7 +101,7 @@ module.exports.setupWS = (server) => {
 
                                     forceSendLastMove(
                                         roomName,
-                                        playerInTheRoom.socket
+                                        clientInTheRoom.socket
                                     );
                                 }
                             } catch (err) {
