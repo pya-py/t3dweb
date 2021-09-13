@@ -24,7 +24,10 @@ const leaveRoom = (roomName, playerID) => {
 
 const forceSendLastMove = (roomName, client) => {
     try {
+
         if (rooms[roomName][LAST_MOVE_KEY]) {
+            console.log('last-move: ', rooms[roomName][LAST_MOVE_KEY]);
+            console.table(rooms[roomName]);
             client.send(
                 createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
             );
