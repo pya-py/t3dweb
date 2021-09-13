@@ -89,7 +89,7 @@ module.exports.setupWS = (server) => {
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
                         ([, playerInTheRoom]) => {
                             try {
-                                if (socket !== playerInTheRoom.socket) {
+                                if (!socket.equals( playerInTheRoom.socket)) {
                                     console.log('send move to player: ', playerInTheRoom.turn);
                                     // send move to other client(player)
                                     // here is the summuary:
