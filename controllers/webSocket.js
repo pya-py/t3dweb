@@ -85,7 +85,6 @@ module.exports.setupWS = (server) => {
             } else if (request === "move") {
                 try {
                     //console.table(Object.keys(rooms[roomName][PLAYERS_KEY]));
-                    Object.keys(rooms[roomName][PLAYERS_KEY]).forEach()               
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
                         ([clientID, clientInTheRoom]) => {
                             try {
