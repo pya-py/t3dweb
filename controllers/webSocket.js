@@ -97,12 +97,14 @@ module.exports.setupWS = (server) => {
                                     // when move reciever, responds to MOVE ==> ,means move is recieved ==> stop forceSend
                                     // the last mad move, will be send to client to apply
                                     // if client recieves the move
-                                    rooms[roomName][LAST_MOVE_KEY] = msg;
-
-                                    forceSendLastMove(
-                                        roomName,
-                                        playerInTheRoom.socket
+                                    //rooms[roomName][LAST_MOVE_KEY] = msg;
+                                    playerInTheRoom.socket.send(
+                                        createSocketCommand("MOVE", msg)
                                     );
+                                    // forceSendLastMove(
+                                    //     roomName,
+                                    //     playerInTheRoom.socket
+                                    // );
                                 }
                             } catch (err) {
                                 console.log(err);
