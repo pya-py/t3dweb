@@ -35,7 +35,7 @@ const forceSendLastMove = (roomName, targetID) => {
             setTimeout(() => {
                 forceSendLastMove(
                     roomName,
-                    rooms[roomName][PLAYERS_KEY][targetID].socket
+                    targetID
                 );
             }, 1000);
         }
