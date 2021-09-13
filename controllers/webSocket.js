@@ -59,6 +59,9 @@ module.exports.setupWS = (server) => {
                 // old players in the room, have thir previous turn
                 if (!rooms[roomName][PLAYERS_KEY][playerID])
                     rooms[roomName][PLAYERS_KEY][playerID] = { socket, turn };
+                else{
+                    rooms[roomName][PLAYERS_KEY][playerID].socket = socket;
+                }
                 // ***** catch errors
 
                 socket.send(
