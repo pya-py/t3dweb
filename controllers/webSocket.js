@@ -105,7 +105,7 @@ module.exports.setupWS = (server) => {
                                     // the last mad move, will be send to client to apply
                                     // if client recieves the move
                                     rooms[roomName][LAST_MOVE_KEY] = msg;
-                                    clientInTheRoom.socket.send(
+                                    rooms[roomName][PLAYERS_KEY][targetID].socket.send(
                                         createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
                                     );
                                     //forceSendLastMove(roomName, targetID);
