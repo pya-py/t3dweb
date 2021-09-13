@@ -27,11 +27,11 @@ const forceSendLastMove = (roomName, targetID) => {
         if (rooms[roomName][LAST_MOVE_KEY]) {
             console.log("last-move: ", rooms[roomName][LAST_MOVE_KEY]);
             console.table(rooms[roomName]);
-            if (rooms[roomName][PLAYERS_KEY][targetID].socket) {
+            //if (rooms[roomName][PLAYERS_KEY][targetID].socket) {
                 rooms[roomName][PLAYERS_KEY][targetID].socket.send(
                     createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
                 );
-            }
+            //}
             setTimeout(() => {
                 forceSendLastMove(
                     roomName,
