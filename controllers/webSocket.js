@@ -80,10 +80,10 @@ module.exports.setupWS = (server) => {
                     //console.table(Object.keys(rooms[roomName][PLAYERS_KEY]));
                     Object.keys(rooms[roomName][PLAYERS_KEY]).forEach()               
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
-                        ([clientID, clientInTheRoom]) => {
+                        ([, playerInTheRoom]) => {
                             try {
-                                if (socket !== clientInTheRoom.socket) {
-                                    console.log('send move to player: ', clientInTheRoom.turn);
+                                if (socket !== playerInTheRoom.socket) {
+                                    console.log('send move to player: ', playerInTheRoom.turn);
                                     // send move to other client(player)
                                     // here is the summuary:
                                     // untill lastMove is not null => forceSend move
@@ -94,7 +94,7 @@ module.exports.setupWS = (server) => {
 
                                     forceSendLastMove(
                                         roomName,
-                                        clientInTheRoom.socket
+                                        playerInTheRoom.socket
                                     );
                                 }
                             } catch (err) {
