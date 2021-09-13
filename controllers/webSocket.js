@@ -63,7 +63,6 @@ module.exports.setupWS = (server) => {
                 if (Object.keys(rooms[roomName][PLAYERS_KEY]).length === 2) {
                     //means two players are connected
                     //send message to each player to tell them the game is started
-                    console.log('game started');
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
                         ([, playerInTheRoom]) =>
                             playerInTheRoom.socket.send(
@@ -83,7 +82,7 @@ module.exports.setupWS = (server) => {
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
                         ([clientID, clientInTheRoom]) => {
                             try {
-                                if (playerID !== clientID) {
+                                if (socket !== clientInTheRoom.socket) {
                                     console.log('send move to player: ', clientInTheRoom.turn);
                                     // send move to other client(player)
                                     // here is the summuary:
