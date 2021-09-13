@@ -60,13 +60,6 @@ module.exports.setupWS = (server) => {
                 // ***** catch errors
                 //error 1: if the player is the third one in the room ===> sorry bro
 
-                socket.send(
-                    createSocketCommand(
-                        "SET_TURN",
-                        rooms[roomName][PLAYERS_KEY][playerID].turn
-                    )
-                );
-
                 if (Object.keys(rooms[roomName][PLAYERS_KEY]).length === 2) {
                     //means two players are connected
                     //send message to each player to tell them the game is started
@@ -84,27 +77,25 @@ module.exports.setupWS = (server) => {
                 // console.log(rooms[roomName][PLAYERS_KEY][playerID]);
             } else if (request === "move") {
                 try {
-                    console.table(Object.keys(rooms[roomName][PLAYERS_KEY]));
-                    //********** */ u can use !turn to just send for opponent
+                    //console.table(Object.keys(rooms[roomName][PLAYERS_KEY]));
+                    Object.keys(rooms[roomName][PLAYERS_KEY]).forEach()               
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
-                        ([, playerInTheRoom]) => {
+                        ([clientID, clientInTheRoom]) => {
                             try {
-                                if (!socket.equals( playerInTheRoom.socket)) {
-                                    console.log('send move to player: ', playerInTheRoom.turn);
+                                if (playerID !== clientID) {
+                                    console.log('send move to player: ', clientInTheRoom.turn);
                                     // send move to other client(player)
                                     // here is the summuary:
                                     // untill lastMove is not null => forceSend move
                                     // when move reciever, responds to MOVE ==> ,means move is recieved ==> stop forceSend
                                     // the last mad move, will be send to client to apply
                                     // if client recieves the move
-                                    //rooms[roomName][LAST_MOVE_KEY] = msg;
-                                    playerInTheRoom.socket.send(
-                                        createSocketCommand("MOVE", msg)
+                                    rooms[roomName][LAST_MOVE_KEY] = msg;
+
+                                    forceSendLastMove(
+                                        roomName,
+                                        clientInTheRoom.socket
                                     );
-                                    // forceSendLastMove(
-                                    //     roomName,
-                                    //     playerInTheRoom.socket
-                                    // );
                                 }
                             } catch (err) {
                                 console.log(err);
