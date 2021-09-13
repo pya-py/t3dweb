@@ -22,17 +22,17 @@ const leaveRoom = (roomName, playerID) => {
     else delete rooms[roomName][PLAYERS_KEY][playerID]; // just remove this player
 };
 
-const forceSendLastMove = (roomName, client) => {
+const forceSendLastMove = (roomName, targetID) => {
     try {
 
         if (rooms[roomName][LAST_MOVE_KEY]) {
             console.log('last-move: ', rooms[roomName][LAST_MOVE_KEY]);
             console.table(rooms[roomName]);
-            client.send(
+            rooms[roomName][PLAYERS_KEY][targetID].send(
                 createSocketCommand("MOVE", rooms[roomName][LAST_MOVE_KEY])
             );
             setTimeout(() => {
-                forceSendLastMove(roomName, client);
+                forceSendLastMove(roomName, rooms[roomName][PLAYERS_KEY][targetID]);
             }, 1000);
         }
     } catch (err) {
@@ -86,9 +86,9 @@ module.exports.setupWS = (server) => {
                 try {
                     //console.table(Object.keys(rooms[roomName][PLAYERS_KEY]));
                     Object.entries(rooms[roomName][PLAYERS_KEY]).forEach(
-                        ([clientID, clientInTheRoom]) => {
+                        ([targetID, clientInTheRoom]) => {
                             try {
-                                if (playerID !== clientID) {
+                                if (playerID !== targetID) {
                                     console.log('send move to player: ', clientInTheRoom.turn);
                                     // send move to other client(player)
                                     // here is the summuary:
@@ -100,7 +100,7 @@ module.exports.setupWS = (server) => {
 
                                     forceSendLastMove(
                                         roomName,
-                                        clientInTheRoom.socket
+                                        targetID
                                     );
                                 }
                             } catch (err) {
