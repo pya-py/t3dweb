@@ -73,44 +73,46 @@ module.exports.setupWS = (server) => {
                             };
                         }
 
+                        //initiatilize room and players
                         if (!rooms[roomName].playerX) {
                             rooms[roomName].playerX = { id: playerID, socket };
                         } else if (!rooms[roomName].playerO) {
                             rooms[roomName].playerO = { id: playerID, socket };
-                        } else {
-                            if (rooms[roomName].playerX.id === playerID) {
-                                updateClientConnection(
-                                    roomName,
-                                    rooms[roomName].playerX,
-                                    socket,
-                                    0
-                                );
-                            }
-                            //always get the latest socket connection ==> fixes connection lost problem
-                            else if (rooms[roomName].playerO.id === playerID) {
-                                updateClientConnection(
-                                    roomName,
-                                    rooms[roomName].playerO,
-                                    socket,
-                                    1
-                                );
-                            } else {
-                                // this a third client in the room!
-                                // u can set this client in a watcher array if you want to implement live watch
-                            }
-                            console.log("game started");
+                        }
 
-                            //alternative for forceSendLastMove
-                            //resend the move to make sure moves are recieved on disconnect/connecting
-                            if (rooms[roomName].lastMove) {
-                                console.log(rooms[roomName]);
-                                socket.send(
-                                    createSocketCommand(
-                                        "MOVE",
-                                        rooms[roomName].lastMove
-                                    )
-                                );
-                            }
+                        // update connections
+                        if (rooms[roomName].playerX.id === playerID) {
+                            updateClientConnection(
+                                roomName,
+                                rooms[roomName].playerX,
+                                socket,
+                                0
+                            );
+                        }
+                        //always get the latest socket connection ==> fixes connection lost problem
+                        else if (rooms[roomName].playerO.id === playerID) {
+                            updateClientConnection(
+                                roomName,
+                                rooms[roomName].playerO,
+                                socket,
+                                1
+                            );
+                        } else {
+                            // this a third client in the room!
+                            // u can set this client in a watcher array if you want to implement live watch
+                        }
+                        console.log("game started");
+
+                        //alternative for forceSendLastMove
+                        //resend the move to make sure moves are recieved on disconnect/connecting
+                        if (rooms[roomName].lastMove) {
+                            console.log(rooms[roomName]);
+                            socket.send(
+                                createSocketCommand(
+                                    "MOVE",
+                                    rooms[roomName].lastMove
+                                )
+                            );
                         }
                     } catch (err) {
                         console.log(err);
