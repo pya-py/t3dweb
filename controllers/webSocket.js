@@ -21,6 +21,7 @@ const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
         rooms[roomName].playerX.socket.send(startCommand);
     rooms[roomName].playerO &&
         rooms[roomName].playerO.socket.send(startCommand);
+    console.log(rooms[roomName]);
 };
 
 const sendNewMoveTo = (roomName, client, newMove) => {
