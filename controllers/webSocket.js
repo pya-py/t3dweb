@@ -32,14 +32,14 @@ module.exports.setupWS = (server) => {
             console.log(
                 "req:",
                 request,
-                "room:",
+                ",  room:",
                 roomName,
-                "pid: ",
+                ",  pid:",
                 playerID,
-                "msg: ",
+                ",  msg:",
                 msg
             );
-            if (!rooms[roomName].emptyCells) {
+            if (rooms[roomName] && !rooms[roomName].emptyCells) {
                 // determine the winner
                 // ...
                 //end game
