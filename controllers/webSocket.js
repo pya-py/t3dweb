@@ -65,8 +65,8 @@ module.exports.setupWS = (server) => {
                         if (!rooms[roomName]) {
                             gameType = 4; //*****change this make client send the type of game */
                             rooms[roomName] = {
-                                playerX: null,
-                                playerO: null,
+                                playerX: { id: null, socket: null },
+                                playerO: { id: null, socket: null },
                                 lastMove: null,
                                 emptyCells: gameType * gameType * gameType,
                                 table: [],
@@ -74,9 +74,9 @@ module.exports.setupWS = (server) => {
                         }
 
                         //initiatilize room and players
-                        if (!rooms[roomName].playerX) {
+                        if (!rooms[roomName].playerX && playerID !== rooms[roomName].playerO.id) {
                             rooms[roomName].playerX = { id: playerID, socket };
-                        } else if (!rooms[roomName].playerO) {
+                        } else if (!rooms[roomName].playerO && playerID !== rooms[roomName].playerX.id) {
                             rooms[roomName].playerO = { id: playerID, socket };
                         }
 
