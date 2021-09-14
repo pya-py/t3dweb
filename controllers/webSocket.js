@@ -8,8 +8,10 @@ const createSocketCommand = (command, msg) =>
         msg,
     });
 
-const updateClientConnection = (roomName, client, newSocket) => {
+const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
     client.socket = newSocket;
+    //always make sure yourTurn is set correctly
+    client.socket.send("SET_TURN", clientsTurn);
     client.socket.send(
         createSocketCommand("START", [
             rooms[roomName].playerX.id,
@@ -75,7 +77,8 @@ module.exports.setupWS = (server) => {
                             updateClientConnection(
                                 roomName,
                                 rooms[roomName].playerX,
-                                socket
+                                socket,
+                                0
                             );
                         }
                         //always get the latest socket connection ==> fixes connection lost problem
@@ -83,7 +86,8 @@ module.exports.setupWS = (server) => {
                             updateClientConnection(
                                 roomName,
                                 rooms[roomName].playerO,
-                                socket
+                                socket,
+                                1
                             );
                         } else {
                             // this a third client in the room!
@@ -103,15 +107,6 @@ module.exports.setupWS = (server) => {
                             );
                         }
                     }
-
-                    //always make sure yourTurn s are set in the both clients
-                    rooms[roomName].playerX.socket.send(
-                        createSocketCommand("SET_TURN", 0)
-                    );
-
-                    rooms[roomName].playerO.socket.send(
-                        createSocketCommand("SET_TURN", 1)
-                    );
                 } catch (err) {
                     console.log(err);
                 }
