@@ -74,9 +74,9 @@ module.exports.setupWS = (server) => {
                         }
 
                         //initiatilize room and players
-                        if (!rooms[roomName].playerX){//} && playerID !== rooms[roomName].playerO.id) {
+                        if (!rooms[roomName].playerX.id && playerID !== rooms[roomName].playerO.id) {
                             rooms[roomName].playerX = { id: playerID, socket };
-                        } else if (!rooms[roomName].playerO){//} && playerID !== rooms[roomName].playerX.id) {
+                        } else if (!rooms[roomName].playerO.id && playerID !== rooms[roomName].playerX.id) {
                             rooms[roomName].playerO = { id: playerID, socket };
                         }
 
