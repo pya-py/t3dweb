@@ -17,9 +17,9 @@ const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
         rooms[roomName].playerO.id,
     ]);
 
-    rooms[roomName].playerX &&
+    rooms[roomName].playerX.id &&
         rooms[roomName].playerX.socket.send(startCommand);
-    rooms[roomName].playerO &&
+    rooms[roomName].playerO.id &&
         rooms[roomName].playerO.socket.send(startCommand);
     console.log(rooms[roomName]);
 };
