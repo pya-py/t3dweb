@@ -17,8 +17,10 @@ const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
         rooms[roomName].playerO.id,
     ]);
 
-    rooms[roomName].playerX && rooms[roomName].playerX.socket.send(startCommand);
-    rooms[roomName].playerO && rooms[roomName].playerO.socket.send(startCommand);
+    rooms[roomName].playerX &&
+        rooms[roomName].playerX.socket.send(startCommand);
+    rooms[roomName].playerO &&
+        rooms[roomName].playerO.socket.send(startCommand);
 };
 
 const sendNewMoveTo = (roomName, client, newMove) => {
@@ -31,117 +33,124 @@ module.exports.setupWS = (server) => {
     wss = new WebSocket.Server({ server });
     wss.on("connection", (socket) => {
         socket.on("message", (data) => {
-            try{
-            const { request, roomName, playerID, msg } = JSON.parse(data);
-            console.log(
-                "req:",
-                request,
-                ",  room:",
-                roomName,
-                ",  pid:",
-                playerID,
-                ",  msg:",
-                msg
-            );
-            if (rooms[roomName] && !rooms[roomName].emptyCells) {
-                // determine the winner
-                // ...
-                //end game
-                const endCommand = createSocketCommand(
-                    "END",
-                    "winner yourTurn"
-                ); //replace msg param with winner's turn
-                rooms[roomName].playerX.socket.send(endCommand);
-                return;
-            }
-            // if game's not ended yet:
-            if (request === "join") {
-                try {
-                    // console.log(roomName);
-                    // if there is no room with this name, then create one
-                    if (!rooms[roomName]) {
-                        gameType = 4; //*****change this make client send the type of game */
-                        rooms[roomName] = {
-                            playerX: null,
-                            playerO: null,
-                            lastMove: null,
-                            emptyCells: gameType * gameType * gameType,
-                            table: [],
-                        };
-                    }
-
-                    if (!rooms[roomName].playerX) {
-                        rooms[roomName].playerX = { id: playerID, socket };
-                    } else if (!rooms[roomName].playerO) {
-                        rooms[roomName].playerO = { id: playerID, socket };
-                    } else {
-                        if (rooms[roomName].playerX.id === playerID) {
-                            updateClientConnection(
-                                roomName,
-                                rooms[roomName].playerX,
-                                socket,
-                                0
-                            );
+            try {
+                const { request, roomName, playerID, msg } = JSON.parse(data);
+                console.log(
+                    "req:",
+                    request,
+                    ",  room:",
+                    roomName,
+                    ",  pid:",
+                    playerID,
+                    ",  msg:",
+                    msg
+                );
+                if (rooms[roomName] && !rooms[roomName].emptyCells) {
+                    // determine the winner
+                    // ...
+                    //end game
+                    const endCommand = createSocketCommand(
+                        "END",
+                        "winner yourTurn"
+                    ); //replace msg param with winner's turn
+                    rooms[roomName].playerX.socket.send(endCommand);
+                    return;
+                }
+                // if game's not ended yet:
+                if (request === "join") {
+                    try {
+                        // console.log(roomName);
+                        // if there is no room with this name, then create one
+                        if (!rooms[roomName]) {
+                            gameType = 4; //*****change this make client send the type of game */
+                            rooms[roomName] = {
+                                playerX: null,
+                                playerO: null,
+                                lastMove: null,
+                                emptyCells: gameType * gameType * gameType,
+                                table: [],
+                            };
                         }
-                        //always get the latest socket connection ==> fixes connection lost problem
-                        else if (rooms[roomName].playerO.id === playerID) {
-                            updateClientConnection(
+
+                        if (!rooms[roomName].playerX) {
+                            rooms[roomName].playerX = { id: playerID, socket };
+                        } else if (!rooms[roomName].playerO) {
+                            rooms[roomName].playerO = { id: playerID, socket };
+                        } else {
+                            if (rooms[roomName].playerX.id === playerID) {
+                                updateClientConnection(
+                                    roomName,
+                                    rooms[roomName].playerX,
+                                    socket,
+                                    0
+                                );
+                            }
+                            //always get the latest socket connection ==> fixes connection lost problem
+                            else if (rooms[roomName].playerO.id === playerID) {
+                                updateClientConnection(
+                                    roomName,
+                                    rooms[roomName].playerO,
+                                    socket,
+                                    1
+                                );
+                            } else {
+                                // this a third client in the room!
+                                // u can set this client in a watcher array if you want to implement live watch
+                            }
+                            console.log("game started");
+
+                            //alternative for forceSendLastMove
+                            //resend the move to make sure moves are recieved on disconnect/connecting
+                            if (rooms[roomName].lastMove) {
+                                console.log(rooms[roomName]);
+                                socket.send(
+                                    createSocketCommand(
+                                        "MOVE",
+                                        rooms[roomName].lastMove
+                                    )
+                                );
+                            }
+                        }
+                    } catch (err) {
+                        console.log(err);
+                    }
+                } else if (request === "move") {
+                    try {
+                        if (playerID === rooms[roomName].playerX.id) {
+                            console.log("sending move to player O ...");
+                            sendNewMoveTo(
                                 roomName,
                                 rooms[roomName].playerO,
-                                socket,
-                                1
+                                msg
+                            );
+                        } else if (playerID === rooms[roomName].playerO.id) {
+                            console.log("sending move to player X ...");
+                            sendNewMoveTo(
+                                roomName,
+                                rooms[roomName].playerX,
+                                msg
                             );
                         } else {
-                            // this a third client in the room!
-                            // u can set this client in a watcher array if you want to implement live watch
+                            //fuckin watcher maybe
                         }
-                        console.log("game started");
-
-                        //alternative for forceSendLastMove
-                        //resend the move to make sure moves are recieved on disconnect/connecting
-                        if (rooms[roomName].lastMove) {
-                            console.log(rooms[roomName]);
-                            socket.send(
-                                createSocketCommand(
-                                    "MOVE",
-                                    rooms[roomName].lastMove
-                                )
-                            );
-                        }
+                    } catch (err) {
+                        console.log(err);
                     }
-                } catch (err) {
-                    console.log(err);
-                }
-            } else if (request === "move") {
-                try {
-                    if (playerID === rooms[roomName].playerX.id) {
-                        console.log("sending move to player O ...");
-                        sendNewMoveTo(roomName, rooms[roomName].playerO, msg);
-                    } else if (playerID === rooms[roomName].playerO.id) {
-                        console.log("sending move to player X ...");
-                        sendNewMoveTo(roomName, rooms[roomName].playerX, msg);
-                    } else {
-                        //fuckin watcher maybe
+                } else if (request === "moveRecieved") {
+                    // actually its not needed , but for caution only :)
+                    // here: msg === recieved status
+                    if (msg) {
+                        rooms[roomName].lastMove = null;
                     }
-                } catch (err) {
-                    console.log(err);
+                } else if (request === "leave") {
+                    //leaveRoom(roomName);
+                    console.log(`${playerID} left`); //comment this
                 }
-            } else if (request === "moveRecieved") {
-                // actually its not needed , but for caution only :)
-                // here: msg === recieved status
-                if (msg) {
-                    rooms[roomName].lastMove = null;
-                }
-            } else if (request === "leave") {
-                //leaveRoom(roomName);
-                console.log(`${playerID} left`); //comment this
+                // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
+            } catch (err) {
+                console.log(err);
             }
-            // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
-        
-    }catch(err){
-        console.log(err);
-    }
-});
+        });
         socket.on("close", (data) => {
             // const { request, roomName, playerID, msg } = JSON.parse(data);
             // leaveRoom(roomName);
