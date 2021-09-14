@@ -11,7 +11,7 @@ const createSocketCommand = (command, msg) =>
 const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
     client.socket = newSocket;
     //always make sure yourTurn is set correctly
-    client.socket.send("SET_TURN", clientsTurn);
+    client.socket.send(createSocketCommand("SET_TURN", clientsTurn));
     console.log('****yourTurn: ', clientsTurn);
     const startCommand = createSocketCommand("START", [
         rooms[roomName].playerX.id,
