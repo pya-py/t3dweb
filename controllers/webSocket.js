@@ -12,12 +12,13 @@ const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
     client.socket = newSocket;
     //always make sure yourTurn is set correctly
     client.socket.send("SET_TURN", clientsTurn);
-    client.socket.send(
-        createSocketCommand("START", [
-            rooms[roomName].playerX.id,
-            rooms[roomName].playerO.id,
-        ])
-    );
+    const startCommand = createSocketCommand("START", [
+        rooms[roomName].playerX.id,
+        rooms[roomName].playerO.id,
+    ]);
+
+    rooms[roomName].playerX && rooms[roomName].playerX.socket.send(startCommand);
+    rooms[roomName].playerO && rooms[roomName].playerO.socket.send(startCommand);
 };
 
 const sendNewMoveTo = (roomName, client, newMove) => {
@@ -30,6 +31,7 @@ module.exports.setupWS = (server) => {
     wss = new WebSocket.Server({ server });
     wss.on("connection", (socket) => {
         socket.on("message", (data) => {
+            try{
             const { request, roomName, playerID, msg } = JSON.parse(data);
             console.log(
                 "req:",
@@ -135,8 +137,11 @@ module.exports.setupWS = (server) => {
                 console.log(`${playerID} left`); //comment this
             }
             // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
-        });
-
+        
+    }catch(err){
+        console.log(err);
+    }
+});
         socket.on("close", (data) => {
             // const { request, roomName, playerID, msg } = JSON.parse(data);
             // leaveRoom(roomName);
