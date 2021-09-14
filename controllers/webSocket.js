@@ -52,65 +52,69 @@ module.exports.setupWS = (server) => {
             }
             // if game's not ended yet:
             if (request === "join") {
-                // console.log(roomName);
-                // if there is no room with this name, then create one
-                if (!rooms[roomName]) {
-                    gameType = 4; //*****change this make client send the type of game */
-                    rooms[roomName] = {
-                        playerX: null,
-                        playerO: null,
-                        lastMove: null,
-                        emptyCells: gameType * gameType * gameType,
-                        table: [],
-                    };
-                }
-
-                if (!rooms[roomName].playerX) {
-                    rooms[roomName].playerX = { id: playerID, socket };
-                } else if (!rooms[roomName].playerO) {
-                    rooms[roomName].playerO = { id: playerID, socket };
-                } else {
-                    if (rooms[roomName].playerX.id === playerID) {
-                        updateClientConnection(
-                            roomName,
-                            rooms[roomName].playerX,
-                            socket
-                        );
+                try {
+                    // console.log(roomName);
+                    // if there is no room with this name, then create one
+                    if (!rooms[roomName]) {
+                        gameType = 4; //*****change this make client send the type of game */
+                        rooms[roomName] = {
+                            playerX: null,
+                            playerO: null,
+                            lastMove: null,
+                            emptyCells: gameType * gameType * gameType,
+                            table: [],
+                        };
                     }
-                    //always get the latest socket connection ==> fixes connection lost problem
-                    else if (rooms[roomName].playerO.id === playerID) {
-                        updateClientConnection(
-                            roomName,
-                            rooms[roomName].playerO,
-                            socket
-                        );
+
+                    if (!rooms[roomName].playerX) {
+                        rooms[roomName].playerX = { id: playerID, socket };
+                    } else if (!rooms[roomName].playerO) {
+                        rooms[roomName].playerO = { id: playerID, socket };
                     } else {
-                        // this a third client in the room!
-                        // u can set this client in a watcher array if you want to implement live watch
-                    }
-                    console.log("game started");
+                        if (rooms[roomName].playerX.id === playerID) {
+                            updateClientConnection(
+                                roomName,
+                                rooms[roomName].playerX,
+                                socket
+                            );
+                        }
+                        //always get the latest socket connection ==> fixes connection lost problem
+                        else if (rooms[roomName].playerO.id === playerID) {
+                            updateClientConnection(
+                                roomName,
+                                rooms[roomName].playerO,
+                                socket
+                            );
+                        } else {
+                            // this a third client in the room!
+                            // u can set this client in a watcher array if you want to implement live watch
+                        }
+                        console.log("game started");
 
-                    //alternative for forceSendLastMove
-                    //resend the move to make sure moves are recieved on disconnect/connecting
-                    if (rooms[roomName].lastMove) {
-                        console.log(rooms[roomName]);
-                        socket.send(
-                            createSocketCommand(
-                                "MOVE",
-                                rooms[roomName].lastMove
-                            )
-                        );
+                        //alternative for forceSendLastMove
+                        //resend the move to make sure moves are recieved on disconnect/connecting
+                        if (rooms[roomName].lastMove) {
+                            console.log(rooms[roomName]);
+                            socket.send(
+                                createSocketCommand(
+                                    "MOVE",
+                                    rooms[roomName].lastMove
+                                )
+                            );
+                        }
                     }
+
+                    //always make sure yourTurn s are set in the both clients
+                    rooms[roomName].playerX.socket.send(
+                        createSocketCommand("SET_TURN", 0)
+                    );
+
+                    rooms[roomName].playerO.socket.send(
+                        createSocketCommand("SET_TURN", 1)
+                    );
+                } catch (err) {
+                    console.log(err);
                 }
-
-                //always make sure yourTurn s are set in the both clients
-                rooms[roomName].playerX.socket.send(
-                    createSocketCommand("SET_TURN", 0)
-                );
-
-                rooms[roomName].playerO.socket.send(
-                    createSocketCommand("SET_TURN", 1)
-                );
             } else if (request === "move") {
                 try {
                     if (playerID === rooms[roomName].playerX.id) {
