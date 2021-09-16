@@ -1,9 +1,9 @@
-const GAME_STATUS = { WIN: 3, DRAW: 1, LOSE: 0};
+const GAME_STATUS = { WIN: 3, DRAW: 1, LOSE: 0 };
 const UserModel = require("../../models/users");
 
-module.exports = async (req, res, next) => {
+module.exports = async(req, res, next) => {
     try {
-        const { gameStatus} = req.body;
+        const { gameStatus } = req.body;
         const userID = req.params.userID;
         const userFound = await UserModel.findById(userID);
         if (!userFound) {
@@ -13,13 +13,13 @@ module.exports = async (req, res, next) => {
         }
 
         // update record
-        if(gameStatus === GAME_STATUS.WIN)
+        if (gameStatus === GAME_STATUS.WIN)
             userFound.records.wins++;
-        else if(gameStatus === GAME_STATUS.DRAW)
+        else if (gameStatus === GAME_STATUS.DRAW)
             userFound.records.draws++;
-        else if(gameStatus === GAME_STATUS.LOSE)
+        else if (gameStatus === GAME_STATUS.LOSE)
             userFound.records.loses++;
-        else{
+        else {
             const error = new Error('Wrong Record update status');
             error.statusCode = 404; // ********** change status
             throw error;
@@ -27,9 +27,9 @@ module.exports = async (req, res, next) => {
         userFound.records.points += gameStatus;
         await userFound.save();
         // console.log(userFound);
-        res.status(200).json({message: "records updated."});
+        res.status(200).json({ message: "records updated." });
     } catch (err) {
-        // console.log(err);
+        console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }

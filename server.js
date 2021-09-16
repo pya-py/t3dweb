@@ -6,7 +6,7 @@ const { connectToDB } = require("./models/setup");
 const usersRoutes = require("./routes/users");
 const gamesRoutes = require("./routes/games");
 
-const { setupWS } = require("./controllers/webSocket");
+const { setupWS } = require("./controllers/gameplay/webSocket");
 const { createServer } = require("http");
 const logRequests = require("./middlewares/logRequests");
 

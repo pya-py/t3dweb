@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    // gameType: {
-    //     type: Number,
-    //     default: 0 //0 => X-O 3D
-    // },
+    gameType: {
+        type: Number,
+        default: 4 //4 => X-O 3D 4*4*4
+    },
     xID: {
         type: String,
         required: true,// needed?
@@ -23,13 +23,15 @@ const userSchema = new Schema({
         type: Number,
         default: 0
     },
+
     date: {
         type: Date,
         default: Date.now()
     },
+    
     isLive: {
         type: Boolean,
-        default: false
+        default: true
     }
 });
 
