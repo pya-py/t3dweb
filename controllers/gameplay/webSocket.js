@@ -1,5 +1,6 @@
 const WebSocket = require("ws");
-const GameLogic = require('./gameLogic');
+const GameLogic = require("./gameLogic");
+const { createGame, saveGame } = require("../games");
 
 var wss = undefined,
     rooms = [];
@@ -23,31 +24,43 @@ const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
         rooms[roomName].playerX.socket.send(startCommand);
     rooms[roomName].playerO.id &&
         rooms[roomName].playerO.socket.send(startCommand);
-
 };
 
-const sendNewMoveTo = (roomName, client, newMove, playerIndex) => {
-    // if (rooms[roomName].lastMove !== newMove) {
-    //     //now inspect
-    //     //this makes sure inspectaton just runs once
-    //     // actually i dont thinl its necessary
-    //     // cause inpecting runs only once, when the new move cell is empty
-    //     //after filling the  cell move is skipped
-    // }
+const sendNewMoveTo = async (roomName, client, newMove, playerIndex) => {
     const { table, dimension, playerX, playerO } = rooms[roomName];
-    const cell = { floor, row, column } = GameLogic.getCellCoordinates(newMove, dimension);
-    if (!table[floor][row][column]) { //if cell is empty
-        rooms[roomName].emptyCells--;
+    const cell = ({ floor, row, column } = GameLogic.getCellCoordinates(
+        newMove,
+        dimension
+    ));
+    if (!table[floor][row][column]) {
+        try {
+            //if cell is empty
+            rooms[roomName].emptyCells--;
 
-        //update table and scores
-        table[floor][row][column] = playerIndex;
-        GameLogic.inspectAreaAroundTheCell(rooms[roomName], cell);
+            //update table and scores
+            table[floor][row][column] = playerIndex;
+            GameLogic.inspectAreaAroundTheCell(rooms[roomName], cell);
 
-        //send scores and updated table back to clients
-        // ...
-        rooms[roomName].lastMove = { newMove, cell, table, xScore: playerX.score, oScore: playerO.score };
-        console.log(rooms[roomName]);
-        client.socket.send(createSocketCommand("UPDATE", rooms[roomName].lastMove));
+            //send scores and updated table back to clients
+            // ...
+            rooms[roomName].lastMove = {
+                newMove,
+                cell,
+                table,
+                xScore: playerX.score,
+                oScore: playerO.score,
+            };
+            console.log(rooms[roomName]);
+            client.socket.send(
+                createSocketCommand("UPDATE", rooms[roomName].lastMove)
+            );
+            if (!rooms[roomName].gameID) {
+                const { gameID } = await createGame(playerX.id, playerO.id);
+                rooms[roomName].gameID = gameID;
+            }
+        } catch (err) {
+            console.log(err);
+        }
     }
 };
 
@@ -67,6 +80,7 @@ module.exports.setupWS = (server) => {
                     ",  msg:",
                     msg
                 );
+
                 if (rooms[roomName] && !rooms[roomName].emptyCells) {
                     // determine the winner
                     // ...
@@ -76,6 +90,11 @@ module.exports.setupWS = (server) => {
                         "winner yourTurn"
                     ); //replace msg param with winner's turn
                     rooms[roomName].playerX.socket.send(endCommand);
+                    GameLogic.evaluateAndEndGame(rooms[roomName]);
+                    // ... now delete the room
+                    // temp:***********temp
+                    setTimeout(() => {delete rooms[roomName];}, 5000);
+                    /*******temp */
                     return;
                 }
                 // if game's not ended yet:
@@ -87,23 +106,26 @@ module.exports.setupWS = (server) => {
                             gameType = Number(msg); //*****change this make client send the type of game */
                             console.log(gameType);
                             rooms[roomName] = GameLogic.initiate(gameType);
-
                         }
 
                         //initiatilize room and players
-                        if (!rooms[roomName].playerX.id && playerID !== rooms[roomName].playerO.id) {
+                        if (
+                            !rooms[roomName].playerX.id &&
+                            playerID !== rooms[roomName].playerO.id
+                        ) {
                             rooms[roomName].playerX = {
                                 id: playerID,
                                 socket,
                                 score: 0,
-                                shape: 'X'
                             };
-                        } else if (!rooms[roomName].playerO.id && playerID !== rooms[roomName].playerX.id) {
+                        } else if (
+                            !rooms[roomName].playerO.id &&
+                            playerID !== rooms[roomName].playerX.id
+                        ) {
                             rooms[roomName].playerO = {
                                 id: playerID,
                                 socket,
                                 score: 0,
-                                shape: 'O'
                             };
                         }
 
@@ -132,7 +154,7 @@ module.exports.setupWS = (server) => {
                         //alternative for forceSendLastMove
                         //resend the move to make sure moves are recieved on disconnect/connecting
                         if (rooms[roomName].lastMove) {
-                            console.log(rooms[roomName]);
+                            // console.log(rooms[roomName]);
                             socket.send(
                                 createSocketCommand(
                                     "UPDATE",
@@ -148,9 +170,13 @@ module.exports.setupWS = (server) => {
                     const { table, playerX, playerO, turn } = rooms[roomName];
 
                     socket.send(
-                        createSocketCommand("LOAD", { table, xScore: playerX.score, oScore: playerO.score, turn })
+                        createSocketCommand("LOAD", {
+                            table,
+                            xScore: playerX.score,
+                            oScore: playerO.score,
+                            turn,
+                        })
                     );
-
                 } else if (request === "move") {
                     try {
                         if (playerID === rooms[roomName].playerX.id) {
@@ -173,7 +199,6 @@ module.exports.setupWS = (server) => {
                             //fuckin watcher maybe
                         }
                         rooms[roomName].turn = (rooms[roomName].turn + 1) % 2;
-
                     } catch (err) {
                         console.log(err);
                     }

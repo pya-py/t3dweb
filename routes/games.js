@@ -4,7 +4,7 @@ const { authenticateToken } = require('../middlewares/tokenManager');
 const gamesController = require('../controllers/games/index');
 
 //------------ /games/save POST method
-router.post('/save', authenticateToken, gamesController.saveGame);
+// router.post('/save', authenticateToken, gamesController.saveGame);
 
 //------------- /games/ GET method
 router.get('/', gamesController.getAllResults);

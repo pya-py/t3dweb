@@ -45,8 +45,8 @@ module.exports = async (req, res, next) => {
                 gameID: game._id.toString(),
                 xName: X.fullname,
                 oName: O.fullname,
-                xScores: game.xScores,
-                oScores: game.oScores,
+                xScore: game.xScore,
+                oScore: game.oScore,
                 isLive: game.isLive,
             });
         }

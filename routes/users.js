@@ -75,6 +75,6 @@ router.post(
 );
 //──── PUT Http Methods ─────────────────────────────────────────────────────────────────
 // PUT /users/:userID ==> for players record update
-router.put('/:userID', authenticateToken ,userController.updateRecords);
+// router.put('/:userID', authenticateToken ,userController.updateRecords);
 
 module.exports = router;

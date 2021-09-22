@@ -1,3 +1,7 @@
+const GAME_STATUS = { WIN: 3, DRAW: 1, LOSE: 0 };
+const { updateRecords } = require("../users");
+const { saveGame } = require("../games");
+
 const initiate = (gameType) => {
     const dimension = gameType; //temp
     // create an empy dimen*dimen*dimen table
@@ -5,22 +9,20 @@ const initiate = (gameType) => {
     //table = [ [null*4]*4 ] * 4
     let indexes = [];
     for (let i = 0; i < dimension; i++) indexes.push(i);
-    const table = indexes.map(() =>
-        indexes.map(() => indexes.map(() => null))
-    );
+    const table = indexes.map(() => indexes.map(() => indexes.map(() => null)));
 
     //return game data
     return {
         dimension,
-        playerX: { id: null, socket: null, score: 0, shape: 'X' },
-        playerO: { id: null, socket: null, score: 0, shape: 'O' },
+        playerX: { id: null, socket: null, score: 0 },
+        playerO: { id: null, socket: null, score: 0 },
         lastMove: null,
         emptyCells: dimension * dimension * dimension,
         table,
-        turn: 0
+        turn: 0,
+        gameID: null,
     };
-
-}
+};
 
 const collectScores = (counts, dimension) => {
     let totalScore = 0;
@@ -39,7 +41,7 @@ const getCellCoordinates = (cellID, dimen) => {
     return { floor: cellFloor, row: cellRow, column: cellColumn };
 };
 
-const inspectAreaAroundTheCell = (game, cell) => {
+const inspectAreaAroundTheCell = async (game, cell) => {
     const { floor, row, column } = cell;
     const { playerX, playerO, dimension, table } = game;
 
@@ -63,7 +65,10 @@ const inspectAreaAroundTheCell = (game, cell) => {
         if (row + column + 1 === dimension) {
             if (table[floor][i][dimension - i - 1] === playerInTheCell)
                 floorSideDiagCount++; // inpect in a 2D side Diagonal line through the cell's floor
-            if (row === floor && table[i][i][dimension - i - 1] === playerInTheCell)
+            if (
+                row === floor &&
+                table[i][i][dimension - i - 1] === playerInTheCell
+            )
                 tableSideDiagCount++; // inspect in a 3D side diagonal line through the whole table
         }
     }
@@ -83,10 +88,58 @@ const inspectAreaAroundTheCell = (game, cell) => {
 
     if (playerInTheCell === 0) playerX.score += totalScores;
     else playerO.score += totalScores;
+
+    try {
+        if (totalScores > 0)
+            await saveGame(
+                game.gameID,
+                game.playerX.id,
+                game.playerO.id,
+                game.playerX.score,
+                game.playerO.score,
+                true
+            );
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+const evaluateAndEndGame = async (game) => {
+    try {
+        const { playerX, playerO } = game;
+        // first update each player's records
+        let xAchievement = undefined,
+            oAchievement = undefined;
+        if (playerX.score > playerO.score) {
+            xAchievement = GAME_STATUS.WIN;
+            oAchievement = GAME_STATUS.LOSE;
+        } else if (playerX.score < playerO.score) {
+            xAchievement = GAME_STATUS.LOSE;
+            oAchievement = GAME_STATUS.WIN;
+        } else xAchievement = oAchievement = GAME_STATUS.DRAW;
+
+        updateRecords(playerX.id, xAchievement);
+        updateRecords(playerO.id, oAchievement);
+
+        // now save game result in games collection:
+
+        await saveGame(
+            game.gameID,
+            game.playerX.id,
+            game.playerO.id,
+            game.playerX.score,
+            game.playerO.score,
+            false
+        );
+    } catch (err) {
+        console.log(err);
+        //check ...
+    }
 };
 
 module.exports = {
     initiate,
     getCellCoordinates,
-    inspectAreaAroundTheCell
-}
+    inspectAreaAroundTheCell,
+    evaluateAndEndGame,
+};

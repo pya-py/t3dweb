@@ -15,11 +15,11 @@ const userSchema = new Schema({
         type: String,
         required: true,// needed?
     },
-    xScores: {
+    xScore: {
         type: Number,
         default: 0
     },
-    oScores: {
+    oScore: {
         type: Number,
         default: 0
     },

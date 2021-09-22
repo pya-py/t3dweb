@@ -1,7 +1,7 @@
 const GameModel = require("../../models/games");
 
 //module.exports = async (req, res, next) => {
-module.exports = async (xID, oID, next) => {
+module.exports = async (xID, oID) => {
     try {
         // check data another time to make sure
         // userIDs may be changed ==> must be
@@ -9,19 +9,19 @@ module.exports = async (xID, oID, next) => {
         const newGame = new GameModel({
             xID,
             oID,
-            xScores: 0,
-            oScores: 0,
+            xScore: 0,
+            oScore: 0,
             isLive: true,
         });
 
         await newGame.save();
-        res.status(201).json({gameID: newGame._id.toString() ,msg: 'Game Record Created.'})
-
+        return {gameID: newGame._id.toString()};
     } catch (err) {
-        // console.log(err);
+        console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }
-        next(err);
+        // next(err);
+        return null;
     }
 };
