@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const gameSchema = new Schema({
     gameType: {
         type: Number,
         default: 4 //4 => X-O 3D 4*4*4
@@ -35,4 +35,4 @@ const userSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Games', userSchema);
+module.exports = mongoose.model('Games', gameSchema);

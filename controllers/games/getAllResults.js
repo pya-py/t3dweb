@@ -10,31 +10,7 @@ const getPlayerNames = async (xID, oID) => {
 };
 module.exports = async (req, res, next) => {
     try {
-        // const gameResults = (await GameModel.find()).map( (game) => {
-        //     // return gameID and userID or not? is it safe?
-        //     //is it true do this amount of await methods?
-        //     // u can add fullname to game collection but then the name update doesnt apply
-        //     // ****** do sth
-
-        //     // if (!X || !O) {
-        //     //     const error = new Error('at least one of the players not found');
-        //     //     error.statusCode = 404; //****************edi this status code */
-        //     //     throw error;
-        //     // }
-
-        //     // seriously edit this shit!
-        //     //const {X, O} = getPlayerNames(game.xID, game.oID);
-        //     X = { fullname: "***ناشناس***" };
-        //     O = { fullname: "***ناشناس***" };
-        //     return {
-        //         gameID: game._id.toString(),
-        //         xName: X.fullname,
-        //         oName: O.fullname,
-        //         xScores: game.xScores,
-        //         oScores: game.oScores,
-        //         isLive: game.isLive,
-        //     };
-        // });
+        
 
         // to fucked up solution i think!!!!************
         const gameResults = [];
@@ -60,3 +36,28 @@ module.exports = async (req, res, next) => {
         next(err);
     }
 };
+// const gameResults = (await GameModel.find()).map( (game) => {
+        //     // return gameID and userID or not? is it safe?
+        //     //is it true do this amount of await methods?
+        //     // u can add fullname to game collection but then the name update doesnt apply
+        //     // ****** do sth
+
+        //     // if (!X || !O) {
+        //     //     const error = new Error('at least one of the players not found');
+        //     //     error.statusCode = 404; //****************edi this status code */
+        //     //     throw error;
+        //     // }
+
+        //     // seriously edit this shit!
+        //     //const {X, O} = getPlayerNames(game.xID, game.oID);
+        //     X = { fullname: "***ناشناس***" };
+        //     O = { fullname: "***ناشناس***" };
+        //     return {
+        //         gameID: game._id.toString(),
+        //         xName: X.fullname,
+        //         oName: O.fullname,
+        //         xScores: game.xScores,
+        //         oScores: game.oScores,
+        //         isLive: game.isLive,
+        //     };
+        // });
