@@ -1,7 +1,7 @@
 const GameModel = require("../../models/games");
 
 //module.exports = async (req, res, next) => {
-module.exports = async (xID, oID) => {
+module.exports = async (xID, oID, gameType) => {
     try {
         // check data another time to make sure
         // userIDs may be changed ==> must be
@@ -9,6 +9,7 @@ module.exports = async (xID, oID) => {
         const newGame = new GameModel({
             xID,
             oID,
+            gameType,
             xScore: 0,
             oScore: 0,
             isLive: true,

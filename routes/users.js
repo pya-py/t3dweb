@@ -1,7 +1,7 @@
 const express = require('express');
 const { body } = require('express-validator');
 const router = express.Router();
-const userModel = require('../models/users');
+const UserModel = require('../models/users');
 const userController = require('../controllers/users');
 const { authenticateToken } = require('../middlewares/tokenManager');
 
@@ -18,7 +18,7 @@ router.post(
         .isNumeric() //check for other conditions for a student id
         .withMessage('StudentID is not valid.')
         .custom((value, { req }) => { //**********this checks for user existence but doesnt send proper error ? wha=y?
-            return userModel.findOne({ studentID: value }).then(user => {
+            return UserModel.findOne({ studentID: value }).then(user => {
                 if (user) {
                     return Promise.reject('StudentID already exist');
                 }
@@ -29,7 +29,7 @@ router.post(
         .normalizeEmail()
         .withMessage('Email is not valid.')
         .custom((value, { req }) => {//**********this checks for user existence but doesnt send proper error ? wha=y?
-            return userModel.findOne({ email: value }).then(user => {
+            return UserModel.findOne({ email: value }).then(user => {
                 if (user) {
                     return Promise.reject('Email address already exist');
                 }
@@ -54,12 +54,6 @@ router.post(
 // POST /users/signin
 router.post(
     '/signin', [
-        /*body('email')
-        .isEmail()
-        .normalizeEmail()
-        .withMessage('Email is not valid.')
-        .not()
-        .isEmpty(),*/
         body('studentID')
         .isNumeric()
         .withMessage('StudentID is not valid.')
@@ -73,8 +67,5 @@ router.post(
     ],
     userController.signIn
 );
-//──── PUT Http Methods ─────────────────────────────────────────────────────────────────
-// PUT /users/:userID ==> for players record update
-// router.put('/:userID', authenticateToken ,userController.updateRecords);
 
 module.exports = router;

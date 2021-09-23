@@ -10,15 +10,29 @@ const createSocketCommand = (command, msg) =>
         msg,
     });
 
+const leaveRoom = (roomName, playerID) => {
+    //this methgod is for manual leave, for when players decide to leave the game
+    //first one to leave must be set loser
+    if (rooms[roomName].playerX.id === playerID)
+        rooms[roomName].playerX = { id: null, socket: null, score: 0 };
+    //log out playerX
+    else if (rooms[roomName].playerO.id === playerID)
+        rooms[roomName].playerO = { id: null, socket: null, score: 0 }; //log out playerO
+
+    if (!rooms[roomName].playerX.id && !rooms[roomName].playerO.id)
+        //if both players requested leaving: remove the room
+        delete rooms[roomName];
+};
+
 const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
     client.socket = newSocket;
     //always make sure yourTurn is set correctly
     client.socket.send(createSocketCommand("SET_TURN", clientsTurn));
     console.log("****yourTurn: ", clientsTurn);
-    const startCommand = createSocketCommand("START", [
-        rooms[roomName].playerX.id,
-        rooms[roomName].playerO.id,
-    ]);
+    const startCommand = createSocketCommand("START", {
+        gameType: rooms[roomName].dimension,
+        IDs: [rooms[roomName].playerX.id, rooms[roomName].playerO.id],
+    });
 
     rooms[roomName].playerX.id &&
         rooms[roomName].playerX.socket.send(startCommand);
@@ -50,12 +64,15 @@ const sendNewMoveTo = async (roomName, client, newMove, playerIndex) => {
                 xScore: playerX.score,
                 oScore: playerO.score,
             };
-            console.log(rooms[roomName]);
             client.socket.send(
                 createSocketCommand("UPDATE", rooms[roomName].lastMove)
             );
             if (!rooms[roomName].gameID) {
-                const { gameID } = await createGame(playerX.id, playerO.id);
+                const { gameID } = await createGame(
+                    playerX.id,
+                    playerO.id,
+                    dimension
+                );
                 rooms[roomName].gameID = gameID;
             }
         } catch (err) {
@@ -93,7 +110,9 @@ module.exports.setupWS = (server) => {
                     GameLogic.evaluateAndEndGame(rooms[roomName]);
                     // ... now delete the room
                     // temp:***********temp
-                    setTimeout(() => {delete rooms[roomName];}, 5000);
+                    setTimeout(() => {
+                        delete rooms[roomName];
+                    }, 5000);
                     /*******temp */
                     return;
                 }
@@ -146,12 +165,11 @@ module.exports.setupWS = (server) => {
                                 socket,
                                 1
                             );
-                        } else {
-                            // this a third client in the room!
-                            // u can set this client in a watcher array if you want to implement live watch
-                        }
+                        } //else {
+                        // this a third client in the room!
+                        // u can set this client in a watcher array if you want to implement live watch
+                        //}
 
-                        //alternative for forceSendLastMove
                         //resend the move to make sure moves are recieved on disconnect/connecting
                         if (rooms[roomName].lastMove) {
                             // console.log(rooms[roomName]);
@@ -209,7 +227,7 @@ module.exports.setupWS = (server) => {
                         rooms[roomName].lastMove = null;
                     }
                 } else if (request === "leave") {
-                    //leaveRoom(roomName);
+                    leaveRoom(roomName);
                     console.log(`${playerID} left`); //comment this
                 }
                 // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
@@ -224,35 +242,3 @@ module.exports.setupWS = (server) => {
         });
     });
 };
-
-/*const leaveRoom = (roomName, playerID) => {
-    if (!rooms[roomName][PLAYERS_KEY][playerID]) return; //this playerID doesnt exist  in the room; ignore it
-    // if this player is the only one in the room
-    if (Object.keys(rooms[roomName][PLAYERS_KEY]).length <= 1)
-        // delete the room entirely
-        delete rooms[roomName];
-    // if there are at least two in the room
-    else delete rooms[roomName][PLAYERS_KEY][playerID]; // just remove this player
-};*/
-/*const forceSendLastMove = (roomName, targetID) => {
-    // mobile browser bug fixed
-    // set a timeout numbers limit
-    // or=> just resend move on re join ( it seems sufficent and send less commands )
-    // think it
-    try {
-        if (rooms[roomName][LAST_MOVE_KEY]) {
-            console.log("last-move: ", rooms[roomName][LAST_MOVE_KEY]);
-            console.table(rooms[roomName]);
-            if (rooms[roomName][PLAYERS_KEY][targetID].socket) {
-                rooms[roomName][PLAYERS_KEY][targetID].socket.send(
-                    createSocketCommand("UPDATE", rooms[roomName][LAST_MOVE_KEY])
-                );
-            }
-            setTimeout(() => {
-                forceSendLastMove(roomName, targetID);
-            }, 1000);
-        }
-    } catch (err) {
-        console.log(err);
-    }
-};*/

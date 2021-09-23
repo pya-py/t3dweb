@@ -43,6 +43,7 @@ module.exports = async (req, res, next) => {
             const { X, O } = await getPlayerNames(game.xID, game.oID);
             gameResults.push({
                 gameID: game._id.toString(),
+                gameType: game.gameType,
                 xName: X.fullname,
                 oName: O.fullname,
                 xScore: game.xScore,
