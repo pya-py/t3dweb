@@ -98,15 +98,16 @@ module.exports.setupWS = (server) => {
                     msg
                 );
 
-                if (rooms[roomName] && !rooms[roomName].emptyCells) {
+                if (rooms[roomName] && rooms[roomName].emptyCells === 0) {
+                    rooms[roomName].emptyCells = -1; //means that ending precedure has started already
                     // determine the winner
                     // ...
                     //end game
                     const endCommand = createSocketCommand(
                         "END",
-                        "winner yourTurn"
                     ); //replace msg param with winner's turn
                     rooms[roomName].playerX.socket.send(endCommand);
+                    rooms[roomName].playerO.socket.send(endCommand);
                     GameLogic.evaluateAndEndGame(rooms[roomName]);
                     // ... now delete the room
                     // temp:***********temp
