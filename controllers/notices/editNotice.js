@@ -1,5 +1,5 @@
 const NoticeModel = require("../../models/notices");
-
+const { validationResult } = require("express-validator");
 module.exports = async (req, res, next) => {
     try {
         const noticeID = req.params.noticeID;

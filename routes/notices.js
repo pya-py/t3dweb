@@ -31,8 +31,8 @@ router.post(
             .isLength(NoticeConfigs.TitleLength)
             .withMessage("title is not valid."),
         body("text").isString().trim().isLength(NoticeConfigs.TextLength),
-        body("startDate").isDate().not().isEmpty(),
-        body("endDate").isDate().not().isEmpty(),
+        body("startDate").not().isEmpty(),//isDate()
+        body("endDate").not().isEmpty(),//isDate()
     ],
     noticesController.createNotice
 );
@@ -50,8 +50,8 @@ router.put(
             .isLength(NoticeConfigs.TitleLength)
             .withMessage("title is not valid."),
         body("text").isString().trim().isLength(NoticeConfigs.TextLength),
-        body("startDate").not().isEmpty(),
-        body("endDate").not().isEmpty(),
+        body("startDate").not().isEmpty(), //isDate()
+        body("endDate").not().isEmpty(), //isDate()
     ],
     noticesController.editNotice
 );
