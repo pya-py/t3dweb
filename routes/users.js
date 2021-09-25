@@ -4,6 +4,12 @@ const router = express.Router();
 const userController = require("../controllers/users");
 const { authenticateToken } = require("../middlewares/tokenManager");
 
+// create config file ... a single file for all configs*-************************
+const UserRequirements = {
+    FullnameLength: { min: 6 },
+    PasswordLength: { min: 6, max: 15 },
+};
+
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
 router.get("/public/:userID", userController.getPlayer);
 
@@ -41,13 +47,13 @@ router.post(
             .withMessage("Email is not valid."),
         body("fullname")
             .trim()
-            .isLength({ min: 6 })
+            .isLength(UserRequirements.FullnameLength)
             // .not()
             // .isEmpty()
             .withMessage("fullname is required."),
         body("password")
             .trim()
-            .isLength({ min: 6, max: 15 })
+            .isLength(UserRequirements.PasswordLength)
             .not()
             .isEmpty()
             .withMessage("password is required."),
@@ -87,15 +93,36 @@ router.put(
             .withMessage("Email is not valid."),
         body("fullname")
             .trim()
-            .isLength({ min: 6 })
+            .isLength(UserRequirements.FullnameLength)
             .withMessage("fullname is required."),
         body("password")
             .trim()
-            .isLength({ min: 6, max: 15 })
             .not()
             .isEmpty()
             .withMessage("password is required."),
     ],
     userController.editMyCredentials
+);
+
+router.put(
+    "/credentials/password",
+    authenticateToken,
+    [
+        body("studentID")
+            .isNumeric() //check for other conditions for a student id
+            .withMessage("StudentID is not valid."),
+        body("password")
+            .trim()
+            .not()
+            .isEmpty()
+            .withMessage("password is required."),
+        body("newPassword")
+            .trim()
+            .isLength(UserRequirements.PasswordLength)
+            .not()
+            .isEmpty()
+            .withMessage("password is required."),
+    ],
+    userController.changeMyPassword
 );
 module.exports = router;

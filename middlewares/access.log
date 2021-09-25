@@ -1,0 +1,468 @@
+Sat Sep 25 2021 12:28:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTU5NjM0LCJleHAiOjE2MzI1NjMyMzR9.aF0tmUHlVM9ZV99pfx3vqu9WQovhxT_DIgjCf58XI9M"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "Cast to ObjectId failed for value \"credentials\" (type string) at path \"_id\" for model \"Users\""
+Content Length: 113
+Response Time: 2.337 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 12:29:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTU5NjM0LCJleHAiOjE2MzI1NjMyMzR9.aF0tmUHlVM9ZV99pfx3vqu9WQovhxT_DIgjCf58XI9M"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "Cast to ObjectId failed for value \"credentials\" (type string) at path \"_id\" for model \"Users\""
+Content Length: 113
+Response Time: 5.791 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 12:30:25 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTU5NjM0LCJleHAiOjE2MzI1NjMyMzR9.aF0tmUHlVM9ZV99pfx3vqu9WQovhxT_DIgjCf58XI9M"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "Cast to ObjectId failed for value \"credentials\" (type string) at path \"_id\" for model \"Users\""
+Content Length: 113
+Response Time: 4.838 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 12:30:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTU5NjM0LCJleHAiOjE2MzI1NjMyMzR9.aF0tmUHlVM9ZV99pfx3vqu9WQovhxT_DIgjCf58XI9M"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {}
+URL: /users/credentials/test
+Status Code: 500
+Error Message: "Cannot access 'me' before initialization"
+Content Length: 54
+Response Time: 42.223 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 12:30:42 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTU5NjM0LCJleHAiOjE2MzI1NjMyMzR9.aF0tmUHlVM9ZV99pfx3vqu9WQovhxT_DIgjCf58XI9M"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {}
+URL: /users/credentials/test
+Status Code: 500
+Error Message: "Cannot access 'me' before initialization"
+Content Length: 54
+Response Time: 9.730 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 12:38:48 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTU5NjM0LCJleHAiOjE2MzI1NjMyMzR9.aF0tmUHlVM9ZV99pfx3vqu9WQovhxT_DIgjCf58XI9M"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "Cast to ObjectId failed for value \"credentials\" (type string) at path \"_id\" for model \"Users\""
+Content Length: 113
+Response Time: 2.844 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:15:21 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"نا پایا پای","email":"napya2@me.com"}
+URL: /users/credentials
+Status Code: 409
+Error Message: "This email belongs to another person"
+Content Length: 50
+Response Time: 221.907 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:17:30 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفری ام","email":"napya22@me.com"}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 190.444 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:17:53 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفری ام","email":"napya2@me.com","password":""}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 185.060 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:17:59 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفری ام","email":"napya2@me.com"}
+URL: /users/credentials
+Status Code: 409
+Error Message: "This email belongs to another person"
+Content Length: 50
+Response Time: 186.955 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:24:22 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفری ام","email":"napya2@me.com"}
+URL: /users/credentials
+Status Code: 409
+Error Message: "This email belongs to another person"
+Content Length: 50
+Response Time: 187.098 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:25:01 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفری ام","email":"napya2@me.com"}
+URL: /users/credentials
+Status Code: 409
+Error Message: "This email belongs to another person"
+Content Length: 50
+Response Time: 184.544 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:26:23 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفری ام","email":"napya2@me.com"}
+URL: /users/credentials
+Status Code: 409
+Error Message: "This email belongs to another person"
+Content Length: 50
+Response Time: 194.788 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:28:11 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفری ام","email":"napya2@me.com"}
+URL: /users/credentials
+Status Code: 409
+Error Message: "This email belongs to another person"
+Content Length: 50
+Response Time: 191.683 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:42:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.850 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:42:29 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.927 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:42:50 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTYxMDI1LCJleHAiOjE2MzI1NjQ2MjV9.O3riOwXcvMT2c0P_YrQNEYNcqGqKfSsD1qpEnJ-HmPg"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.584 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:43:49 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NjQ3ODcsImV4cCI6MTYzMjU2ODM4N30.NCC_0XXPJwlogQAa6IHBxa160SVS-2hIlArDsEfdLC0"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"studentID":94413062,"fullname":"پایا ام","email":"pya@me.com","password":""}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 184.709 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:51:21 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NjQ3ODcsImV4cCI6MTYzMjU2ODM4N30.NCC_0XXPJwlogQAa6IHBxa160SVS-2hIlArDsEfdLC0"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"studentID":94413062,"fullname":"پایا ام","email":"pya@me.com","password":""}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 189.412 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:52:02 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NjQ3ODcsImV4cCI6MTYzMjU2ODM4N30.NCC_0XXPJwlogQAa6IHBxa160SVS-2hIlArDsEfdLC0"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"studentID":94413062,"fullname":"پایا ام","email":"pya@me.com","password":""}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 192.909 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 13:55:31 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NjQ3ODcsImV4cCI6MTYzMjU2ODM4N30.NCC_0XXPJwlogQAa6IHBxa160SVS-2hIlArDsEfdLC0"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"studentID":94413062,"fullname":"پایا ام","email":"pya2@me.com"}
+URL: /users/credentials
+Status Code: 409
+Error Message: "This email belongs to another person"
+Content Length: 50
+Response Time: 189.495 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 14:06:11 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTY1NTUzLCJleHAiOjE2MzI1NjkxNTN9.SyZ3yfbnXL2zc_6QdmbNGs3UyCMyxHA-j3YWGToEI6c"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفر","email":"lucifer@fuck.com","password":""}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 187.052 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 14:06:20 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTY1NTUzLCJleHAiOjE2MzI1NjkxNTN9.SyZ3yfbnXL2zc_6QdmbNGs3UyCMyxHA-j3YWGToEI6c"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفرم","email":"lucifer@fuck.com"}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 186.272 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 14:06:23 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTY1NTUzLCJleHAiOjE2MzI1NjkxNTN9.SyZ3yfbnXL2zc_6QdmbNGs3UyCMyxHA-j3YWGToEI6c"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفرم","email":"lucifer@fuck.com"}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 190.071 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 14:06:48 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWUzODdhMjNkYjVkMjE3ZDJhYjY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyNTY1NTUzLCJleHAiOjE2MzI1NjkxNTN9.SyZ3yfbnXL2zc_6QdmbNGs3UyCMyxHA-j3YWGToEI6c"
+User Requested: {"id":"6139e387a23db5d217d2ab68","admin":false}
+Payload: {"studentID":96669666,"fullname":"لوسیفرم","email":"lucifer666@fuck.com","password":""}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 192.187 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 14:07:39 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NjYyNDUsImV4cCI6MTYzMjU2OTg0NX0.QoLFcInG6x8aeqvdUkd6oiygD-qkTNsQuR1V-lNIN_s"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"studentID":94413062,"fullname":"پایا ناپایدار","email":"pya@me.com","password":""}
+URL: /users/credentials
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 185.055 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:27:08 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"سبسبسیلسیب","text":"سیبلسیبسیب","startDate":1632571025410,"endDate":1632571027603}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 215
+Response Time: 8.289 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:27:58 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"سبسبسیلسیب","text":"سیبلسیبسیب","startDate":1632571025410,"endDate":1632571027603}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 215
+Response Time: 24.516 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:29:46 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"سبسبسیلسیب","text":"سیبلسیبسیب","startDate":1632571025410,"endDate":1632571027603}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 215
+Response Time: 20.143 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:32:07 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"dfsdfssdf","text":"fsdfdsfsdf","startDate":1632571325042,"endDate":1632571326152}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 215
+Response Time: 29.172 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:32:16 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"یبسلبیسلیبل","text":"fsdfبیسبسیdsfsdf","startDate":1632571325042,"endDate":1632571326152}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 215
+Response Time: 8.162 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:33:27 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"یبسلبیسلیبل","text":"fsdfبیسبسیdsfsdf","startDate":"2021-09-25T12:02:05.042Z","endDate":"2021-09-25T12:02:06.152Z"}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 241
+Response Time: 4.614 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:33:37 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"بیسبسیب","text":"یبیسبسیب","startDate":"2021-09-25T12:03:34.774Z","endDate":"2021-09-25T12:03:36.315Z"}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 241
+Response Time: 4.020 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:34:06 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"بیسبسیب","text":"یبیسبسیب","startDate":"2021-09-25T12:03:34.774Z","endDate":"2021-09-25T12:03:36.315Z"}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 241
+Response Time: 24.254 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:34:41 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"بسیبسیبسیب","text":"یسبسیبسیبسیب","startDate":"2021-09-25T12:04:39.537Z","endDate":"2021-09-25T12:04:40.577Z"}
+URL: /notices/manage
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 241
+Response Time: 15.703 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:35:20 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"گاییدی","text":"شدیدا منو","startDate":"2021-09-25T12:04:39.537Z","endDate":1633435480577}
+URL: /notices/manage/614f107a323289f478f2aec1
+Status Code: 500
+Error Message: "validationResult is not defined"
+Content Length: 45
+Response Time: 5.671 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 15:35:27 GMT+0330 (Iran Standard Time)
+Method: PUT
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjEzOWQ2NTYzZDU5YTViYTk4Njg0MTVmIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI1NzEwMTcsImV4cCI6MTYzMjU3NDYxN30.THZQ_xkDF7duBAaFS9kqy0qMLu7h5_bpJ9GmAt-wE4k"
+User Requested: {"id":"6139d6563d59a5ba9868415f","admin":true}
+Payload: {"title":"گاییدی","text":"شدیدا منو","startDate":"2021-09-25T12:04:39.537Z","endDate":1633521880577}
+URL: /notices/manage/614f107a323289f478f2aec1
+Status Code: 500
+Error Message: "validationResult is not defined"
+Content Length: 45
+Response Time: 3.635 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 18:12:09 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 183.968 ms
+---------------------------------------------------
+
+Sat Sep 25 2021 18:14:01 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 183.366 ms
+---------------------------------------------------
+

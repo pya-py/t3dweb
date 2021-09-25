@@ -6,7 +6,7 @@ const { body } = require("express-validator");
 const { authenticateAdmin } = require("../middlewares/authenticateAdmin");
 
 // create config file ... a single file for all configs*-************************
-const NoticeConfigs = {
+const NoticeRequirements = {
     TitleLength: { min: 3, max: 20 },
     TextLength: { min: 5, max: 100 },
 };
@@ -28,9 +28,9 @@ router.post(
         body("title")
             .isString()
             .trim()
-            .isLength(NoticeConfigs.TitleLength)
+            .isLength(NoticeRequirements.TitleLength)
             .withMessage("title is not valid."),
-        body("text").isString().trim().isLength(NoticeConfigs.TextLength),
+        body("text").isString().trim().isLength(NoticeRequirements.TextLength),
         body("startDate").not().isEmpty(),//isDate()
         body("endDate").not().isEmpty(),//isDate()
     ],
@@ -47,9 +47,9 @@ router.put(
         body("title")
             .isString()
             .trim()
-            .isLength(NoticeConfigs.TitleLength)
+            .isLength(NoticeRequirements.TitleLength)
             .withMessage("title is not valid."),
-        body("text").isString().trim().isLength(NoticeConfigs.TextLength),
+        body("text").isString().trim().isLength(NoticeRequirements.TextLength),
         body("startDate").not().isEmpty(), //isDate()
         body("endDate").not().isEmpty(), //isDate()
     ],

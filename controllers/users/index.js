@@ -6,6 +6,8 @@ const updateRecords = require("./updateRecords");
 const isAnAdmin = require("./isAnAdmin");
 const getMyCredentials = require('./private/getMyCredentials');
 const editMyCredentials = require('./private/editMyCredentials');
+const changeMyPassword = require('./private/changeMyPassword');
+
 module.exports = {
     signIn,
     signUp,
@@ -14,5 +16,6 @@ module.exports = {
     updateRecords,
     isAnAdmin,
     getMyCredentials,
-    editMyCredentials
+    editMyCredentials,
+    changeMyPassword
 };
