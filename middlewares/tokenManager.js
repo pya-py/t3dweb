@@ -5,8 +5,8 @@ const secret = 'uX7001aYpeKbh666oK';
 const generateToken = async thisUser => {
     return jwt.sign({
             user: {
-                userID: thisUser._id.toString(),
-                isAdmin: thisUser.isAdmin
+                id: thisUser._id.toString(),
+                admin: thisUser.isAdmin
             }
         },
         secret, {
@@ -35,7 +35,8 @@ const authenticateToken = (req, res, next) => {
         error.statusCode = 401;
         throw error;
     }
-    req.userId = decodedToken.userId; // ********************* edit this
+    //add user to request then use it in adminAuthenticate
+    req.CurrentUser = {id: decodedToken.user.id, admin: decodedToken.user.admin};
     next();
 };
 

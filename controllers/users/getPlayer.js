@@ -12,8 +12,10 @@ module.exports = async(req, res, next) => {
         const player = {
             userID: userFound._id.toString(),
             fullname: userFound.fullname,
-            records: userFound.records
+            records: userFound.records,
+            isAdmin: userFound.isAdmin
         }
+
         res.status(200).json({ player });
     } catch (err) {
         if (!err.statusCode) {

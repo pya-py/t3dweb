@@ -11,14 +11,15 @@ const noticeSchema = new Schema({
         type: String,
         required: true
     },
-    fromDate: {
+    startDate: {
         type: Date,
         required: true,
-        default: Date.now()
+        default: new Date()
     },
-    untilDate: {
+    endDate: {
         type: Date,
-        default: undefined
+        required: true,
+        default: new Date()
     }
 });
 

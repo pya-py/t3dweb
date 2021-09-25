@@ -8,7 +8,7 @@ module.exports = async(req, res, next) => {
     try {
         const errors = validationResult(req);
         if (!errors.isEmpty()) { // is it needed to check input ormat in sign in?
-            const error = new Error("Validation Error.");
+            const error = new Error("Payload validation failed.");
             error.statusCode = 422;
             error.data = errors.array();
             throw error;
@@ -18,15 +18,15 @@ module.exports = async(req, res, next) => {
             const error = new Error(
                 "A user with this studentID could not be found"
             );
-            error.statusCode = 401;
+            error.statusCode = 403;
             throw error;
         }
 
         const isEqual = await bcryptjs.compare(password, userFound.password);
 
-        if (!isEqual) {
+        if (!isEqual) { //is it ok to log if the username or password is wronge exactly?
             const error = new Error("Wrong password.");
-            error.statusCode = 401;
+            error.statusCode = 403;
             throw error;
         }
 

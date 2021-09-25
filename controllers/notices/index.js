@@ -1,7 +1,11 @@
-const getNotices = require('./getNotices');
-const createNotice = require('./createNotice');
+const getShortNotices = require("./getShortNotices");
+const createNotice = require("./createNotice");
+const getAdvancedNotices = require("./getAdvancedNotices");
+const editNotice = require("./editNotice");
 
 module.exports = {
-    getNotices,
-    createNotice
-}
+    getAdvancedNotices,
+    getShortNotices,
+    createNotice,
+    editNotice,
+};

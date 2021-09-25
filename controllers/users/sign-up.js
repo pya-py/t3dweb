@@ -8,6 +8,13 @@ const SALT_LENGTH = 11;
 module.exports = async (req, res, next) => {
     try {
         const { studentID, email, fullname, password } = req.body;
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) { // is it needed to check input ormat in sign in?
+            const error = new Error("Payload validation failed.");
+            error.statusCode = 422;
+            error.data = errors.array();
+            throw error;
+        }
         const userFound =
             (await UserModel.findOne({ studentID })) ||
             (await UserModel.findOne({ email }));
@@ -15,19 +22,10 @@ module.exports = async (req, res, next) => {
             const error = new Error(
                 "A user with this Student ID or Email has registered before"
             );
-            error.statusCode = 403; // already exists
+            error.statusCode = 409; // already exists
             throw error;
         }
-
-        const errors = validationResult(req);
-        // check for previous users: if exists?
-        if (!errors.isEmpty()) {
-            const error = new Error("Validation is failed.");
-            error.statusCode = 422;
-            error.data = errors.array();
-            throw error;
-        }
-
+        
         const hashedPassword = await bcryptjs.hash(password, SALT_LENGTH);
         const userCount = await UserModel.find().countDocuments();
         let user = new UserModel({
