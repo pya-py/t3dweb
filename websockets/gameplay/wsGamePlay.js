@@ -1,9 +1,8 @@
 const WebSocket = require("ws");
 const GameLogic = require("./gameLogic");
-const { createGame, saveGame } = require("../games");
+const { createGame, saveGame } = require("../../controllers/games");
 
-var wss = undefined,
-    rooms = [];
+var rooms = [];
 const createSocketCommand = (command, msg) =>
     JSON.stringify({
         command,
@@ -81,9 +80,10 @@ const sendNewMoveTo = async (roomName, client, newMove, playerIndex) => {
     }
 };
 
-module.exports.setupWS = (server) => {
-    wss = new WebSocket.Server({ server });
-    wss.on("connection", (socket) => {
+module.exports.setupGamePlayWS = (path) => {
+    let gamePlayWebSocketServer = new WebSocket.Server({ noServer: true, path });
+
+    gamePlayWebSocketServer.on("connection", (socket) => {
         socket.on("message", (data) => {
             try {
                 const { request, roomName, playerID, msg } = JSON.parse(data);
@@ -103,9 +103,7 @@ module.exports.setupWS = (server) => {
                     // determine the winner
                     // ...
                     //end game
-                    const endCommand = createSocketCommand(
-                        "END",
-                    ); //replace msg param with winner's turn
+                    const endCommand = createSocketCommand("END"); //replace msg param with winner's turn
                     rooms[roomName].playerX.socket.send(endCommand);
                     rooms[roomName].playerO.socket.send(endCommand);
                     GameLogic.evaluateAndEndGame(rooms[roomName]);
@@ -231,7 +229,7 @@ module.exports.setupWS = (server) => {
                     leaveRoom(roomName);
                     console.log(`${playerID} left`); //comment this
                 }
-                // if (wss.clients.size <= 2) ws.send((wss.clients.size - 1).toString());
+                // if (gamePlayWebSocketServer.clients.size <= 2) ws.send((gamePlayWebSocketServer.clients.size - 1).toString());
             } catch (err) {
                 console.log(err);
             }
@@ -242,4 +240,5 @@ module.exports.setupWS = (server) => {
             // console.log(`${playerID} left`);
         });
     });
+    return gamePlayWebSocketServer;
 };

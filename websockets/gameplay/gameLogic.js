@@ -1,6 +1,6 @@
 const GAME_STATUS = { WIN: 3, DRAW: 1, LOSE: 0 };
-const { updateRecords } = require("../users");
-const { saveGame } = require("../games");
+const { updateRecords } = require("../../controllers/users");
+const { saveGame } = require("../../controllers/games");
 
 const initiate = (gameType) => {
     const dimension = gameType; //temp

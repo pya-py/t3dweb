@@ -5,10 +5,10 @@ const { errorHandler } = require("./middlewares/errorHandler");
 const { connectToDB } = require("./models/setup");
 const usersRoutes = require("./routes/users");
 const gamesRoutes = require("./routes/games");
-const noticesRoutes = require('./routes/notices');
-const { setupWS } = require("./controllers/gameplay/webSocket");
+const noticesRoutes = require("./routes/notices");
+const { bindSocketsToMainServer } = require("./websockets");
 const { createServer } = require("http");
-const {morganLogger} = require('./middlewares/morganLogger');
+const { morganLogger } = require("./middlewares/morganLogger");
 
 const app = express();
 //──── Server Port
@@ -30,7 +30,7 @@ app.use("/notices", noticesRoutes);
 
 //---- WebSocket
 const server = createServer(app);
-setupWS(server);
+bindSocketsToMainServer(server);
 
 //error handler: must be put after all middlewares
 app.use(errorHandler);

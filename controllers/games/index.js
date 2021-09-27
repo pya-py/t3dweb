@@ -1,9 +1,11 @@
 const saveGame = require("./saveGame");
-const getAllResults = require("./getAllResults");
+const getAllGames = require("./getAllGames");
 const createGame = require("./createGame");
+const getPlayerGames = require('./getPlayerGames');
 
 module.exports = {
     createGame,
     saveGame,
-    getAllResults,
+    getAllGames,
+    getPlayerGames
 };
