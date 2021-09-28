@@ -8,6 +8,7 @@ const { authenticateToken } = require("../middlewares/tokenManager");
 const UserRequirements = {
     FullnameLength: { min: 6 },
     PasswordLength: { min: 6, max: 15 },
+    StudenIDLength: { min: 8, max: 8}
 };
 
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
@@ -31,15 +32,16 @@ router.post(
     [
         body("studentID")
             .isNumeric() //check for other conditions for a student id
+            .isLength(UserRequirements.StudenIDLength)
             .withMessage("StudentID is not valid."),
-        // .custom((value, { req }) => {
-        //     //**********this checks for user existence but doesnt send proper error ? wha=y?
-        //     return UserModel.findOne({ studentID: value }).then((user) => {
-        //         if (user) {
-        //             return Promise.reject("StudentID already exist");
-        //         }
-        //     });
-        // }),
+        /*.custom((value, { req }) => {
+                **********this checks for user existence but doesnt send proper error ? wha=y?
+                return UserModel.findOne({ studentID: value }).then((user) => {
+                    if (user) {
+                        return Promise.reject("StudentID already exist");
+                    }
+                });
+            }),*/
 
         body("email")
             .isEmail()
@@ -50,7 +52,20 @@ router.post(
             .isLength(UserRequirements.FullnameLength)
             // .not()
             // .isEmpty()
-            .withMessage("fullname is required."),
+            .withMessage("fullname is required.")
+            .custom((value, { req }) => {
+                // just accept persian chars
+                for (let i = 0; i < value.length; i++) {
+                    if (
+                        value.charAt(i) !== " " &&
+                        (value.charAt(i) < "آ" || value.charAt(i) > "ی")
+                    )
+                        return Promise.reject(
+                            "Only persian characters allowed"
+                        );
+                }
+                return Promise.resolve(value); // resolve nul?
+            }),
         body("password")
             .trim()
             .isLength(UserRequirements.PasswordLength)
@@ -86,6 +101,7 @@ router.put(
     [
         body("studentID")
             .isNumeric() //check for other conditions for a student id
+            .isLength(UserRequirements.StudenIDLength)
             .withMessage("StudentID is not valid."),
         body("email")
             .isEmail()
@@ -94,7 +110,20 @@ router.put(
         body("fullname")
             .trim()
             .isLength(UserRequirements.FullnameLength)
-            .withMessage("fullname is required."),
+            .withMessage("fullname is required.")
+            .custom((value, { req }) => {
+                // just accept persian chars
+                for (let i = 0; i < value.length; i++) {
+                    if (
+                        value.charAt(i) !== " " &&
+                        (value.charAt(i) < "آ" || value.charAt(i) > "ی")
+                    )
+                        return Promise.reject(
+                            "Only persian characters allowed"
+                        );
+                }
+                return Promise.resolve(value); // resolve nul?
+            }),
         body("password")
             .trim()
             .not()
@@ -110,6 +139,7 @@ router.put(
     [
         body("studentID")
             .isNumeric() //check for other conditions for a student id
+            .isLength(UserRequirements.StudenIDLength)
             .withMessage("StudentID is not valid."),
         body("password")
             .trim()

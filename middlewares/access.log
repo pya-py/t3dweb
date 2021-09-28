@@ -502,3 +502,195 @@ Content Length: 29
 Response Time: 240.942 ms
 ---------------------------------------------------
 
+Mon Sep 27 2021 22:15:38 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413063}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 7.505 ms
+---------------------------------------------------
+
+Mon Sep 27 2021 23:41:56 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":944130623}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 7.084 ms
+---------------------------------------------------
+
+Mon Sep 27 2021 23:52:53 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062,"password":""}
+URL: /users/signin
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 129
+Response Time: 6.696 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:24:56 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe@udj.com","fullname":"test testt"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 149
+Response Time: 10.143 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:25:05 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe@udj.com","fullname":"تسا testt"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 151
+Response Time: 11.101 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:25:14 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe@udj.com","fullname":"تسا تستت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 136
+Response Time: 2.450 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:25:22 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe@udj.com","fullname":"تتت تتتتستت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 142
+Response Time: 1.425 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:25:25 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe@udj.com","fullname":"تتت تتتت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 136
+Response Time: 1.188 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:26:17 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe@udj.com","fullname":"تتیییت تتتت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 142
+Response Time: 1.206 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:26:50 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe@udj.com","fullname":"تتیییت تتتت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 142
+Response Time: 1.043 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:27:15 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe123@udj.com","fullname":"ddd تتتت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 151
+Response Time: 12.835 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:27:19 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe123@udj.com","fullname":"یشبشسب تتتت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 142
+Response Time: 4.193 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:28:34 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94567898,"email":"pe123@udj.com","fullname":"dsfsdf تتتت"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 154
+Response Time: 13.773 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:30:36 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":85214785,"email":"dsfs4@uud.c","fullname":"بسیبسی ببب ببب"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 135
+Response Time: 4.159 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:31:16 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":85214785,"email":"dsfs4@uud.c","fullname":"بسیبسی بب ببب"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 135
+Response Time: 1.685 ms
+---------------------------------------------------
+
+Tue Sep 28 2021 03:31:19 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":85214785,"email":"dsfs4@uud.c","fullname":"بسیبسی ببببب"}
+URL: /users/signup
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 135
+Response Time: 1.133 ms
+---------------------------------------------------
+
