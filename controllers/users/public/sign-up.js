@@ -1,7 +1,7 @@
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
-const UserModel = require("../../models/users");
-const { generateToken } = require("../../middlewares/tokenManager");
+const UserModel = require("../../../models/users");
+const { generateToken } = require("../../../middlewares/tokenManager");
 // const { sendEmail } = require('../utils/mailer');
 const SALT_LENGTH = 11;
 

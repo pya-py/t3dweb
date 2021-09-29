@@ -1,5 +1,6 @@
+const { request } = require("express");
 const GameModel = require("../../models/games");
-
+const mongoose = require("mongoose");
 //module.exports = async (req, res, next) => {
 module.exports = async (xID, oID, gameType) => {
     try {
@@ -7,8 +8,8 @@ module.exports = async (xID, oID, gameType) => {
         // userIDs may be changed ==> must be
         // what to do for isLive?
         const newGame = new GameModel({
-            xID,
-            oID,
+            playerX: mongoose.Types.ObjectId(xID),
+            playerO: mongoose.Types.ObjectId(oID),
             gameType,
             xScore: 0,
             oScore: 0,

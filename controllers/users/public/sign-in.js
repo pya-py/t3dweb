@@ -1,7 +1,7 @@
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
-const UserModel = require("../../models/users");
-const { generateToken } = require('../../middlewares/tokenManager');
+const UserModel = require("../../../models/users");
+const { generateToken } = require('../../../middlewares/tokenManager');
 
 module.exports = async(req, res, next) => {
     const { studentID, password } = req.body;

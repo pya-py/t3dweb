@@ -15,8 +15,8 @@ module.exports = async (gameID, xID, oID, xScore, oScore, isLive) => {
         // 1. gameID verification
         // 2. xID && oID verif
         if (
-            xID === gameFound.xID &&
-            oID === gameFound.oID && //check player IDs are true- otherwise request is unauthorized
+            xID.toString() === gameFound.playerX.toString() &&
+            oID.toString() === gameFound.playerO.toString() && //check player IDs are true- otherwise request is unauthorized
             gameFound.isLive // when isLive is set to false means game ended and there is no updating accepted
         ) {
             gameFound.xScore = xScore;

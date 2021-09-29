@@ -1,12 +1,15 @@
-const signIn = require("./sign-in");
-const signUp = require("./sign-up");
-const getPlayer = require("./getPlayer");
-const getAllPlayers = require("./getAllPlayers");
-const updateRecords = require("./updateRecords");
-const isAnAdmin = require("./isAnAdmin");
+const signIn = require("./public/sign-in");
+const signUp = require("./public/sign-up");
+const getPlayer = require("./public/getPlayer");
+const getAllPlayers = require("./public/getAllPlayers");
+const updateRecords = require("./internal/updateRecords");
+const isAnAdmin = require("./private/isAnAdmin");
 const getMyCredentials = require('./private/getMyCredentials');
 const editMyCredentials = require('./private/editMyCredentials');
 const changeMyPassword = require('./private/changeMyPassword');
+const makeFriends = require('./internal/makeFriends');
+const getFriends = require('./private/getFriends');
+const isMyFriend = require('./private/isMyFriend');
 
 module.exports = {
     signIn,
@@ -17,5 +20,8 @@ module.exports = {
     isAnAdmin,
     getMyCredentials,
     editMyCredentials,
-    changeMyPassword
+    changeMyPassword,
+    makeFriends,
+    getFriends,
+    isMyFriend
 };

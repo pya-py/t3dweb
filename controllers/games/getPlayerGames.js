@@ -1,28 +1,28 @@
 const GameModel = require("../../models/games");
-const UserModel = require("../../models/users");
 
-const getPlayerNames = async (xID, oID) => {
-    let X = await UserModel.findById(xID);
-    let O = await UserModel.findById(oID);
-    if (!X) X = { fullname: "***ناشناس***" };
-    if (!O) O = { fullname: "***ناشناس***" };
-    return { X, O };
-};
 module.exports = async (req, res, next) => {
+    const userID = req.CurrentUser.id;
     try {
-        const playerGames = [];
-        const allGames = await GameModel.find();
-        for (let game of allGames) {
-            const { X, O } = await getPlayerNames(game.xID, game.oID);
-            playerGames.push({
+        // if code below didnt work => use two seperate .find 
+        // is it needed to CONVERT userID to ObjectID?????
+        const playerGames = (
+            await GameModel.find({ //edit this part
+                $or: [{ playerX: userID }, { playerO: userID }],
+            })
+                .populate("playerX")
+                .populate("playerO")
+        ).map((game) => {
+            return {
                 gameID: game._id.toString(),
-                xName: X.fullname,
-                oName: O.fullname,
+                gameType: game.gameType,
+                xName: game.playerX.fullname,
+                oName: game.playerO.fullname,
                 xScore: game.xScore,
                 oScore: game.oScore,
                 isLive: game.isLive,
-            });
-        }
+            };
+        });
+
         res.status(200).json({ playerGames });
     } catch (err) {
         // console.log(err);

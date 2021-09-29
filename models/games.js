@@ -1,38 +1,40 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 const gameSchema = new Schema({
     gameType: {
         type: Number,
-        default: 4 //4 => X-O 3D 4*4*4
+        default: 4, //4 => X-O 3D 4*4*4
     },
-    xID: {
-        type: String,
-        required: true,// needed?
+    playerX: {
+        type: Schema.Types.ObjectId,
+        ref: "Users",
+        required: true,
     },
-    oID: {
-        type: String,
-        required: true,// needed?
+    playerO: {
+        type: Schema.Types.ObjectId,
+        ref: "Users",
+        required: true,
     },
     xScore: {
         type: Number,
-        default: 0
+        default: 0,
     },
     oScore: {
         type: Number,
-        default: 0
+        default: 0,
     },
 
     date: {
         type: Date,
-        default: Date.now()
+        default: Date.now(),
     },
-    
+
     isLive: {
         type: Boolean,
-        default: true
-    }
+        default: true,
+    },
 });
 
-module.exports = mongoose.model('Games', gameSchema);
+module.exports = mongoose.model("Games", gameSchema);

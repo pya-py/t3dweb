@@ -1,7 +1,6 @@
-const UserModel = require('../../models/users');
+const UserModel = require('../../../models/users');
 // get user public info == player records
 module.exports = async(req, res, next) => {
-    //is this necessary? ( maybe yes)
     const userID = req.params.userID;
     try {
         const userFound = await UserModel.findById(userID);
@@ -10,7 +9,14 @@ module.exports = async(req, res, next) => {
             error.statusCode = 404;
             throw error;
         }
-        res.status(200).json({ answer: userFound.isAdmin });
+        const player = {
+            userID: userFound._id.toString(),
+            fullname: userFound.fullname,
+            records: userFound.records,
+            isAdmin: userFound.isAdmin
+        }
+
+        res.status(200).json({ player });
     } catch (err) {
         if (!err.statusCode) {
             err.statusCode = 500;

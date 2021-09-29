@@ -1,5 +1,7 @@
 const GAME_STATUS = { WIN: 3, DRAW: 1, LOSE: 0 };
-const UserModel = require("../../models/users");
+const UserModel = require("../../../models/users");
+
+//folder description: Modules that are called ONLY by server and cannot be called by http requests
 
 module.exports = async (userID, achievement) => {
     try {
