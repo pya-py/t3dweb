@@ -6,6 +6,11 @@ module.exports = async(req, res, next) => {
         // if code below didnt work => use two seperate .find
         // is it needed to CONVERT userID to ObjectID?????
         const myGames = (await GameModel.find().populate("players.self"))
+            .filter(
+                (game) =>
+                game.players[0].self._id.toString() === userID.toString() ||
+                game.players[1].self._id.toString() === userID.toString()
+            )
             .map((game) => {
                 //.toString() is essential for both ids
                 return {
@@ -20,16 +25,10 @@ module.exports = async(req, res, next) => {
                     }),
                     isLive: game.isLive,
                 };
-            })
-            .filter(
-                (game) =>
-                game.players[0].self._id.toString() === userID.toString() ||
-                game.players[1].self._id.toString() === userID.toString()
-            );
-
+            });
         res.status(200).json({ myGames });
     } catch (err) {
-        console.log(err);
+        // console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }
