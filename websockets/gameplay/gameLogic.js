@@ -41,7 +41,7 @@ const getCellCoordinates = (cellID, dimen) => {
     return { floor: cellFloor, row: cellRow, column: cellColumn };
 };
 
-const inspectAreaAroundTheCell = async (game, cell) => {
+const inspectAreaAroundTheCell = async(game, cell) => {
     const { floor, row, column } = cell;
     const { playerX, playerO, dimension, table } = game;
 
@@ -104,9 +104,10 @@ const inspectAreaAroundTheCell = async (game, cell) => {
     }
 };
 
-const evaluateAndEndGame = async (game) => {
+const evaluateAndEndGame = async(game) => {
     try {
         const { playerX, playerO } = game;
+
         // first update each player's records
         let xAchievement = undefined,
             oAchievement = undefined;

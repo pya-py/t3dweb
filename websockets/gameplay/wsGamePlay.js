@@ -19,7 +19,7 @@ const leaveRoom = (roomName, playerID) => {
         rooms[roomName].playerO = { id: null, socket: null, score: 0 }; //log out playerO
 
     if (!rooms[roomName].playerX.id && !rooms[roomName].playerO.id)
-        //if both players requested leaving: remove the room
+    //if both players requested leaving: remove the room
         delete rooms[roomName];
 };
 
@@ -39,7 +39,7 @@ const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
         rooms[roomName].playerO.socket.send(startCommand);
 };
 
-const sendNewMoveTo = async (roomName, client, newMove, playerIndex) => {
+const sendNewMoveTo = async(roomName, client, newMove, playerIndex) => {
     const { table, dimension, playerX, playerO } = rooms[roomName];
     const cell = ({ floor, row, column } = GameLogic.getCellCoordinates(
         newMove,
@@ -67,6 +67,7 @@ const sendNewMoveTo = async (roomName, client, newMove, playerIndex) => {
                 createSocketCommand("UPDATE", rooms[roomName].lastMove)
             );
             if (!rooms[roomName].gameID) {
+
                 const { gameID } = await createGame(
                     playerX.id,
                     playerO.id,
@@ -127,8 +128,7 @@ module.exports.setupGamePlayWS = (path) => {
                         }
 
                         //initiatilize room and players
-                        if (
-                            !rooms[roomName].playerX.id &&
+                        if (!rooms[roomName].playerX.id &&
                             playerID !== rooms[roomName].playerO.id
                         ) {
                             rooms[roomName].playerX = {
@@ -136,8 +136,7 @@ module.exports.setupGamePlayWS = (path) => {
                                 socket,
                                 score: 0,
                             };
-                        } else if (
-                            !rooms[roomName].playerO.id &&
+                        } else if (!rooms[roomName].playerO.id &&
                             playerID !== rooms[roomName].playerX.id
                         ) {
                             rooms[roomName].playerO = {

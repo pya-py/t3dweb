@@ -97,7 +97,7 @@ router.get(
 router.get("/credentials", authenticateToken, userController.getMyCredentials);
 
 //----- GET /users/credentials/friends
-router.get("/credentials/friends", authenticateToken, userController.getFriends);
+router.get("/credentials/friends", authenticateToken, userController.getMyFriends);
 
 //----- GET /users/credentials/friends
 router.get("/credentials/friends/:targetID", authenticateToken, userController.isMyFriend);

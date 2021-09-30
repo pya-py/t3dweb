@@ -8,7 +8,7 @@ const getMyCredentials = require('./private/getMyCredentials');
 const editMyCredentials = require('./private/editMyCredentials');
 const changeMyPassword = require('./private/changeMyPassword');
 const makeFriends = require('./internal/makeFriends');
-const getFriends = require('./private/getFriends');
+const getMyFriends = require('./private/getMyFriends');
 const isMyFriend = require('./private/isMyFriend');
 
 module.exports = {
@@ -22,6 +22,6 @@ module.exports = {
     editMyCredentials,
     changeMyPassword,
     makeFriends,
-    getFriends,
+    getMyFriends,
     isMyFriend
 };

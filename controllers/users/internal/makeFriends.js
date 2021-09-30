@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const UserModel = require("../../../models/users");
 
 const areFriends = (person, sbFriends) =>
-    Boolean(sbFriends.filter((friend) => person.toString() === friend.toString()).length);
+    Boolean(sbFriends.filter((friend) => person.toString() === friend.toString()).length); //.toString() is essential for both ids
 
 module.exports = async(IDs) => {
     try {

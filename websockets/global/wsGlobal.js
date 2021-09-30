@@ -3,11 +3,12 @@ const { makeFriends } = require('../../controllers/users');
 const { v4: uuidv4 } = require("uuid");
 var onlineClients = []; //keys: clientID, values: game type and socket
 // onlineClients['clientID'] = {gameType: int, room: string}
-// .state determines which action user is doing: chat, play=> gameType or ...
-// .state is NOT NULL and .room is null ==> player is online
-// .state and .room both NOT NULL => player is in game
+// .type is NOT NULL and .room is null ==> player is online
+// .type and .room both NOT NULL => player is in game
 // .oponentID this is for when client goes out of the room and when comes back to the game
-var roomsList = [];
+var roomsList = [],
+    chatrooms = []; //esp. for chtting only
+//this will prevent enterference in gameplay
 
 const createSocketCommand = (command, msg) =>
     JSON.stringify({
@@ -37,7 +38,7 @@ module.exports.setupGlobalWS = (path) => {
                                 myID = clientID;
                                 onlineClients[clientID] = {
                                     room: null,
-                                    state: null,
+                                    type: null,
                                     socket,
                                 };
                             } else {
@@ -57,7 +58,7 @@ module.exports.setupGlobalWS = (path) => {
                     case "find":
                         {
                             const gameType = Number(msg);
-                            onlineClients[clientID].state = gameType;
+                            onlineClients[clientID].type = gameType;
 
                             // first search in on going games: maybe user was playing game and went out for some reason
                             Object.keys(roomsList).forEach((rid) => {
@@ -89,7 +90,7 @@ module.exports.setupGlobalWS = (path) => {
                                 ).filter(
                                     (cid) =>
                                     !onlineClients[cid].room && //clients who has no room
-                                    onlineClients[cid].state === gameType && //has the same game type
+                                    onlineClients[cid].type === gameType && //has the same game type
                                     cid !== clientID // and its not me
                                 );
 
@@ -153,6 +154,7 @@ module.exports.setupGlobalWS = (path) => {
                         {
                             const { friendID, name, text } = msg;
                             console.log("LOG ME", msg);
+                            // use chatRooms to save all messages
                             onlineClients[friendID].socket.send(createSocketCommand("CHAT", { friendID: clientID, name, text }));
                             break;
                         }

@@ -1,6 +1,6 @@
 const GameModel = require("../../models/games");
 
-module.exports = async (gameID, xID, oID, xScore, oScore, isLive) => {
+module.exports = async(gameID, xID, oID, xScore, oScore, isLive) => {
     try {
         console.log(gameID);
         const gameFound = await GameModel.findById(gameID);
@@ -14,16 +14,16 @@ module.exports = async (gameID, xID, oID, xScore, oScore, isLive) => {
         // verification step:
         // 1. gameID verification
         // 2. xID && oID verif
+        // use foreach, but first check if foreach paraneter is byRef pr byVal
         if (
-            xID.toString() === gameFound.playerX.toString() &&
-            oID.toString() === gameFound.playerO.toString() && //check player IDs are true- otherwise request is unauthorized
+            xID.toString() === gameFound.players[0].self.toString() && //its not populated => so .self is actually the id
+            oID.toString() === gameFound.players[1].self.toString() && //check player IDs are true- otherwise request is unauthorized
             gameFound.isLive // when isLive is set to false means game ended and there is no updating accepted
         ) {
-            gameFound.xScore = xScore;
-            gameFound.oScore = oScore;
+            gameFound.players[0].score = xScore;
+            gameFound.players[1].score = oScore;
             gameFound.isLive = isLive;
-        }
-        else{
+        } else {
             const error = new Error("Unauthorized request");
             error.statusCode = 403; //means forbidden:
             // use another code?
