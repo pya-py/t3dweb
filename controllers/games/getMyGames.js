@@ -29,7 +29,7 @@ module.exports = async(req, res, next) => {
 
         res.status(200).json({ myGames });
     } catch (err) {
-        // console.log(err);
+        console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }
