@@ -1,0 +1,192 @@
+Thu Sep 30 2021 04:43:15 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NTBhZDc0YjAwNjNmN2ZiNmRkOWY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyOTYzMjg3LCJleHAiOjE2MzI5NjY4ODd9.L_-moFeuocVnM0NBOBUY6oT6Mk8S1DBBXTkcKnQGXSM"
+User Requested: {"id":"61550ad74b0063f7fb6dd9f8","admin":false}
+Payload: {}
+URL: /games/mine
+Status Code: 500
+Error Message: "Cannot read property '_id' of undefined"
+Content Length: 53
+Response Time: 73.534 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 04:43:40 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NTBhZDc0YjAwNjNmN2ZiNmRkOWY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyOTYzMjg3LCJleHAiOjE2MzI5NjY4ODd9.L_-moFeuocVnM0NBOBUY6oT6Mk8S1DBBXTkcKnQGXSM"
+User Requested: {"id":"61550ad74b0063f7fb6dd9f8","admin":false}
+Payload: {}
+URL: /games/mine
+Status Code: 500
+Error Message: "Cannot read property '_id' of undefined"
+Content Length: 53
+Response Time: 11.396 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 04:44:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NTBhZDc0YjAwNjNmN2ZiNmRkOWY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyOTYzMjg3LCJleHAiOjE2MzI5NjY4ODd9.L_-moFeuocVnM0NBOBUY6oT6Mk8S1DBBXTkcKnQGXSM"
+User Requested: {"id":"61550ad74b0063f7fb6dd9f8","admin":false}
+Payload: {}
+URL: /games/mine
+Status Code: 500
+Error Message: "Cannot read property '_id' of undefined"
+Content Length: 53
+Response Time: 15.107 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 04:48:03 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI5NjA1MDcsImV4cCI6MTYzMjk2NDEwN30.8JfVypqYFT9yhNoOvt7fxN_XEbX1zutxcFR6dzBV9oQ"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials/friends/615367a0ca818af532d985a8
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.720 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 14:37:30 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 230.741 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 14:37:42 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 186.068 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 15:46:56 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 189.266 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 17:23:59 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.208 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 17:24:22 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.538 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 17:24:23 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
+User Requested: undefined
+Payload: {}
+URL: /games/mine
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.678 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 17:24:29 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials/friends
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.467 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 17:24:31 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
+User Requested: undefined
+Payload: {}
+URL: /games/mine
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.559 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 17:24:40 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 500
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.643 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 22:08:49 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 207.632 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 22:55:20 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 180.020 ms
+---------------------------------------------------
+
+Thu Sep 30 2021 22:55:23 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 207.092 ms
+---------------------------------------------------
+

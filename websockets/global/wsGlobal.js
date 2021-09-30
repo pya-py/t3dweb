@@ -33,6 +33,7 @@ module.exports.setupGlobalWS = (path) => {
                 switch (request) {
                     case "online":
                         {
+                            console.log('online request from ' + clientID);
                             if (!onlineClients[clientID]) {
                                 // add user to online list
                                 myID = clientID;

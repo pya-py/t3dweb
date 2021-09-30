@@ -17,10 +17,12 @@ const initiate = (gameType) => {
         playerX: { id: null, socket: null, score: 0 },
         playerO: { id: null, socket: null, score: 0 },
         lastMove: null,
+        lmTime: null,
         emptyCells: dimension * dimension * dimension,
         table,
         turn: 0,
         gameID: null,
+        moveTimeout: null
     };
 };
 
@@ -44,7 +46,6 @@ const getCellCoordinates = (cellID, dimen) => {
 const inspectAreaAroundTheCell = async(game, cell) => {
     const { floor, row, column } = cell;
     const { playerX, playerO, dimension, table } = game;
-
     const playerInTheCell = table[floor][row][column];
     let rowCount = 0,
         columnCount = 0,
@@ -73,18 +74,9 @@ const inspectAreaAroundTheCell = async(game, cell) => {
         }
     }
 
-    const totalScores = collectScores(
-        [
-            rowCount,
-            columnCount,
-            floorMainDiagCount,
-            floorSideDiagCount,
-            tableMainDiagCount,
-            tableSideDiagCount,
-            tableAltitudeCount,
-        ],
-        dimension
-    );
+    const totalScores = collectScores([rowCount, columnCount, floorMainDiagCount, floorSideDiagCount, tableMainDiagCount,
+        tableSideDiagCount, tableAltitudeCount
+    ], dimension);
 
     if (playerInTheCell === 0) playerX.score += totalScores;
     else playerO.score += totalScores;
