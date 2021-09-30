@@ -1,5 +1,5 @@
 const WebSocket = require("ws");
-const GameLogic = require("./gameLogic");
+const T3DLogic = require("./t3dLogic");
 const { createGame, saveGame } = require("../../controllers/games");
 
 var rooms = [];
@@ -41,7 +41,7 @@ const updateClientConnection = (roomName, client, newSocket, clientsTurn) => {
 
 const sendNewMoveTo = async(roomName, client, newMove, playerIndex) => {
     const { table, dimension, playerX, playerO } = rooms[roomName];
-    const cell = ({ floor, row, column } = GameLogic.getCellCoordinates(
+    const cell = ({ floor, row, column } = T3DLogic.getCellCoordinates(
         newMove,
         dimension
     ));
@@ -52,7 +52,7 @@ const sendNewMoveTo = async(roomName, client, newMove, playerIndex) => {
 
             //update table and scores
             table[floor][row][column] = playerIndex;
-            GameLogic.inspectAreaAroundTheCell(rooms[roomName], cell);
+            T3DLogic.inspectAreaAroundTheCell(rooms[roomName], cell);
 
             //send scores and updated table back to clients
             // ...
@@ -107,7 +107,7 @@ module.exports.setupGamePlayWS = (path) => {
                     const endCommand = createSocketCommand("END"); //replace msg param with winner's turn
                     rooms[roomName].playerX.socket.send(endCommand);
                     rooms[roomName].playerO.socket.send(endCommand);
-                    GameLogic.evaluateAndEndGame(rooms[roomName]);
+                    T3DLogic.evaluateAndEndGame(rooms[roomName]);
                     // ... now delete the room
                     // temp:***********temp
                     setTimeout(() => {
@@ -124,7 +124,7 @@ module.exports.setupGamePlayWS = (path) => {
                         if (!rooms[roomName]) {
                             gameType = Number(msg); //*****change this make client send the type of game */
                             console.log(gameType);
-                            rooms[roomName] = GameLogic.initiate(gameType);
+                            rooms[roomName] = T3DLogic.initiate(gameType);
                         }
 
                         //initiatilize room and players

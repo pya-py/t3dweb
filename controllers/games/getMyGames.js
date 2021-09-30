@@ -26,6 +26,7 @@ module.exports = async(req, res, next) => {
                     isLive: game.isLive,
                 };
             });
+
         res.status(200).json({ myGames });
     } catch (err) {
         // console.log(err);
