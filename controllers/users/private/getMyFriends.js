@@ -13,6 +13,7 @@ module.exports = async(req, res, next) => {
         });
         res.status(200).json({ friends });
     } catch (err) {
+        console.log(err);
         if (!err.statusCode) {
             err.statusCode = 500;
         }
