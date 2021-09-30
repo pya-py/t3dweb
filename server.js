@@ -16,6 +16,7 @@ const PORT = process.env.PORT || 4000;
 
 //──── Static Folder
 app.use("/images", express.static(path.join(__dirname, "public", "images")));
+app.use("/appfucked", express.static(path.join(__dirname, "middlewares", "access.log")));
 
 //──── Middlewares
 app.use(express.json());
