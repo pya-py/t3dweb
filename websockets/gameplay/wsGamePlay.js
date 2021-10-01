@@ -24,7 +24,7 @@ const leaveRoom = (rname, playerID) => {
 const updateClientConnection = (currentRoom, client, newSocket, clientsTurn) => {
     client.socket = newSocket;
     //always make sure yourTurn is set correctly
-    client.socket.send(createSocketCommand("SET_TURN", clientsTurn));
+    client.socket.send(createSocketCommand("SET_TURN", clientsTurn)); //does it need to send every time?
     const { dimension, playerX, playerO } = currentRoom;
     const startCommand = createSocketCommand("START", {
         gameType: dimension,
@@ -37,7 +37,7 @@ const updateClientConnection = (currentRoom, client, newSocket, clientsTurn) => 
     });
 };
 
-const sendNextMoveTo = async(rname, client, nextMove, nextTurn) => {
+const sendNextMoveTo = async(rname, target, nextMove, nextTurn) => {
     const { table, dimension, playerX, playerO } = rooms[rname];
     const cell = ({ floor, row, column } = T3DLogic.getCellCoordinates(nextMove, dimension));
 
@@ -48,22 +48,22 @@ const sendNextMoveTo = async(rname, client, nextMove, nextTurn) => {
 
             //update table and scores
             table[floor][row][column] = rooms[rname].turn;
-            clearTimeout(rooms[rname].moveTimeout); // as the move made in time, prevent timeout from happening
+            clearTimeout(rooms[rname].turnTimeoutID); // as the move made in time, prevent timeout from happening
             T3DLogic.inspectAreaAroundTheCell(rooms[rname], cell);
             //what happens if try crashes some where near here??? 
             rooms[rname].turn = nextTurn; //update turn in game object
-            //send scores and updated table back to clients
+            //send scores and updated table back to targets
             // ...
             rooms[rname].lastMove = {
                 nextMove,
-                cell,
-                // table,
+                // cell,
+                // table, //send les data each time to improve game speed a little(mili secs)
                 xScore: playerX.score,
                 oScore: playerO.score,
-                turn: nextTurn //updated turn will be send to client to prevent any wronge occasions
+                turn: nextTurn //updated turn will be send to target to prevent any wronge occasions
             };
 
-            client.socket.send(
+            target.socket.send(
                 createSocketCommand("UPDATE", rooms[rname].lastMove)
             );
 
@@ -81,6 +81,20 @@ const sendNextMoveTo = async(rname, client, nextMove, nextTurn) => {
 
 };
 
+const startTimeoutForCurrentTurn = (rname) => {
+    rooms[rname].timeMoveRecieved = Date.now(); //last move time in ms
+    rooms[rname].turnTimeoutID = setTimeout(() => {
+        //after a special amount of time, that the player doesnt make any move, the turn will be passed from him/her to opponent
+        const { playerX, playerO, turn } = rooms[rname];
+        rooms[rname].turn = (turn + 1) % 2;
+        [playerX, playerO].forEach(each => {
+            each.socket.send(
+                createSocketCommand("MOVE_MISSED", rooms[rname].turn)
+            )
+        });
+
+    }, GameRules.T3D.TurnTimeOut);
+}
 module.exports.setupGamePlayWS = (path) => {
     let gamePlayWebSocketServer = new WebSocket.Server({ noServer: true, path });
 
@@ -104,6 +118,8 @@ module.exports.setupGamePlayWS = (path) => {
                     // ... now delete the room
                     // temp:***********temp
                     setTimeout(() => {
+                        clearTimeout(rooms[rname].turnTimeoutID);
+
                         delete rooms[rname];
                     }, 5000);
                     /*******temp */
@@ -161,6 +177,27 @@ module.exports.setupGamePlayWS = (path) => {
 
                         })
                     );
+                } else if (request === "mytimer") {
+                    const { timeMoveRecieved, turn, playerX, playerO, turnTimeoutID } = rooms[rname];
+
+                    if (!playerO.id) return; //wait untill both players online
+                    if (timeMoveRecieved === -1 || !turnTimeoutID) {
+                        startTimeoutForCurrentTurn(rname);
+                        playerX.socket.send(createSocketCommand("TIMER", GameRules.T3D.TurnTimeOut / 1000));
+                    } else {
+
+                        const remaining = Math.floor((GameRules.T3D.TurnTimeOut - (Date.now() - timeMoveRecieved)) / 1000);
+                        // if (turn === msg) // msg --> client.myTurn : if its clients turn then send it the remaining time
+                        //     socket.send(createSocketCommand("TIMER", remaining));
+                        // -1 --> not started or not clients turn
+                        [playerX, playerO].forEach((target, index) => { //just send it if the one who has the turn requested
+                            if (index === turn && target.id === playerID) {
+                                target.socket.send(createSocketCommand("TIMER", remaining)); //convert remaining time to seconds
+                                return;
+                            }
+                        });
+                    }
+
                 } else if (request === "move") {
                     try {
                         const { playerX, playerO, turn } = rooms[rname];
@@ -177,6 +214,16 @@ module.exports.setupGamePlayWS = (path) => {
                             }
                         });
 
+                        //update senders score and so
+                        //before this i used requesting load again
+                        //but i think its not needed, and considering large bytes that .table has, its not so wise to request load every time
+                        //i used rooms[rname] again to directly access very recent values
+                        socket.send(createSocketCommand("SCORES", {
+                            turn: rooms[rname].turn,
+                            xScore: rooms[rname].playerX.score,
+                            oScore: rooms[rname].playerO.score
+                        }));
+
                     } catch (err) {
                         console.log(err);
                     }
@@ -185,18 +232,7 @@ module.exports.setupGamePlayWS = (path) => {
                     // here: msg === recieved status
                     if (msg) {
                         rooms[rname].lastMove = null;
-                        rooms[rname].lmTime = Date.now(); //last move time in ms
-                        rooms[rname].moveTimeout = setTimeout(() => {
-                            //after a special amount of time, that the player doesnt make any move, the turn will be passed from him/her to opponent
-                            const { playerX, playerO, turn } = rooms[rname];
-                            rooms[rname].turn = (turn + 1) % 2;
-                            [playerX, playerO].forEach(each => {
-                                each.socket.send(
-                                    createSocketCommand("MOVE_MISSED", rooms[rname].turn)
-                                )
-                            });
-
-                        }, GameRules.T3D.MovesTimeOut)
+                        startTimeoutForCurrentTurn(rname);
                     }
                 } else if (request === "leave") {
                     leaveRoom(rname);

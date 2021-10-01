@@ -17,7 +17,7 @@ const generateToken = async thisUser => {
 
 const authenticateToken = (req, res, next) => {
     const authHeader = req.get('Authorization');
-    if (!authHeader) {
+    if (!authHeader) { //not signed in yet
         const error = new Error('Not authenticated.');
         error.statusCode = 401;
         throw error;
@@ -27,16 +27,16 @@ const authenticateToken = (req, res, next) => {
     try {
         decodedToken = jwt.verify(token, secret);
     } catch (err) {
-        err.statusCode = 500;
+        err.statusCode = 420; //session expired
         throw err;
     }
     if (!decodedToken) {
         const error = new Error('Not authenticated.');
-        error.statusCode = 401;
+        error.statusCode = 400; //token changed!
         throw error;
     }
     //add user to request then use it in adminAuthenticate
-    req.CurrentUser = {id: decodedToken.user.id, admin: decodedToken.user.admin};
+    req.CurrentUser = { id: decodedToken.user.id, admin: decodedToken.user.admin };
     next();
 };
 

@@ -17,12 +17,12 @@ const initiate = (gameType) => {
         playerX: { id: null, socket: null, score: 0 },
         playerO: { id: null, socket: null, score: 0 },
         lastMove: null,
-        lmTime: null,
+        timeMoveRecieved: -1, //no move made
         emptyCells: dimension * dimension * dimension,
         table,
         turn: 0,
         gameID: null,
-        moveTimeout: null
+        turnTimeoutID: null
     };
 };
 
