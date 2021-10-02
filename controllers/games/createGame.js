@@ -24,10 +24,7 @@ module.exports = async(xID, oID, Type) => {
         return { gameID: newGame._id.toString() };
     } catch (err) {
         console.log(err);
-        if (!err.statusCode) {
-            err.statusCode = 500;
-        }
-        // next(err);
+        //manage exeptions better
         return null;
     }
 };

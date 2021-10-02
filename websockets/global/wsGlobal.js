@@ -1,13 +1,13 @@
 const WebSocket = require("ws");
 const { makeFriends } = require('../../controllers/users');
 const { v4: uuidv4 } = require("uuid");
+const { createChat, saveMessage } = require('../../controllers/chats');
 var onlineClients = []; //keys: clientID, values: game type and socket
 // onlineClients['clientID'] = {gameType: int, room: string}
 // .type is NOT NULL and .room is null ==> player is online
 // .type and .room both NOT NULL => player is in game
 // .oponentID this is for when client goes out of the room and when comes back to the game
-var gameRooms = [],
-    chatrooms = []; //esp. for chtting only
+var gameRooms = [];
 //this will prevent enterference in gameplay
 
 const createSocketCommand = (command, msg) =>
@@ -44,7 +44,7 @@ module.exports.setupGlobalWS = (path) => {
                                 };
                             } else {
                                 myID = clientID; //update myID to make sure its always correct
-                                // reallly its not needed khodayi!!
+                                // really its not needed khodayi!!
                                 onlineClients[clientID].socket = socket; //always set the save the most recent client connection
                             }
 
@@ -97,8 +97,6 @@ module.exports.setupGlobalWS = (path) => {
 
                                 // search in users with no game to find one
 
-                                console.table(onlineClients);
-
                                 if (readyClients.length >= 1) {
                                     // console.table(readyClients);
                                     const opponentID =
@@ -139,7 +137,9 @@ module.exports.setupGlobalWS = (path) => {
                         {
                             const { targetID, askerName } = msg;
                             //inform the target
-                            onlineClients[targetID].socket.send(createSocketCommand("FRIENDSHIP_REQUEST", { askerID: clientID, askerName }));
+                            console.log('FRIENDSHIP');
+                            if (onlineClients[targetID])
+                                onlineClients[targetID].socket.send(createSocketCommand("FRIENDSHIP_REQUEST", { askerID: clientID, askerName }));
 
                             break;
                         }
@@ -152,15 +152,20 @@ module.exports.setupGlobalWS = (path) => {
                             if (answer) {
                                 //if acceted then save their friendship in data base
                                 makeFriends([askerID, clientID]);
+                                createChat(askerID, clientID);
                             }
                             break;
                         }
                     case "chat":
                         {
                             const { friendID, name, text } = msg;
-                            console.log("LOG ME", msg);
                             // use chatRooms to save all messages
-                            onlineClients[friendID].socket.send(createSocketCommand("CHAT", { friendID: clientID, name, text }));
+                            if (!saveMessage(clientID, friendID, text)) { //when sth goes wronge in saveMessage it returns false
+                                console.log('something went off while trying to save msg');
+
+                            }
+                            if (onlineClients[friendID]) //if his online send it immediatly --> o.w. friend sees new message in his chatroom while loading
+                                onlineClients[friendID].socket.send(createSocketCommand("CHAT", { friendID: clientID, name, text }));
                             break;
                         }
                     case "close_game":
@@ -170,11 +175,9 @@ module.exports.setupGlobalWS = (path) => {
                                 if (gameRooms[onlineClients[clientID].room]) { //delete the room in gameRooms list if it still exists
                                     delete gameRooms[onlineClients[clientID].room];
                                     console.log(onlineClients[clientID].room + " deleted.");
-                                    console.table(gameRooms);
                                 };
 
                                 onlineClients[clientID].room = onlineClients[clientID].type = null;
-                                console.log(onlineClients[clientID]);
                             }
                             break;
                         }

@@ -5,6 +5,7 @@ const { errorHandler } = require("./middlewares/errorHandler");
 const { connectToDB } = require("./models/setup");
 const usersRoutes = require("./routes/users");
 const gamesRoutes = require("./routes/games");
+const chatsRoutes = require("./routes/chats");
 const noticesRoutes = require("./routes/notices");
 const { bindSocketsToMainServer } = require("./websockets");
 const { createServer } = require("http");
@@ -27,7 +28,7 @@ app.use(morganLogger);
 app.use("/users", usersRoutes);
 app.use("/games", gamesRoutes);
 app.use("/notices", noticesRoutes);
-
+app.use("/chats", chatsRoutes);
 //---- WebSocket
 const server = createServer(app);
 bindSocketsToMainServer(server);

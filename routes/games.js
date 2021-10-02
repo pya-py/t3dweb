@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const gamesController = require('../controllers/games/index');
+const gamesController = require('../controllers/games');
 const { authenticateToken } = require("../middlewares/tokenManager");
 
 //------------- /games/ GET method

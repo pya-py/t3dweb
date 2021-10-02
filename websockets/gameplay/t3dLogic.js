@@ -17,12 +17,12 @@ const initiate = (gameType) => {
         playerX: { id: null, socket: null, score: 0 },
         playerO: { id: null, socket: null, score: 0 },
         lastMove: null,
-        timeMoveRecieved: -1, //no move made
         emptyCells: dimension * dimension * dimension,
         table,
         turn: 0,
         gameID: null,
-        turnTimeoutID: null
+        timer: { id: null, t0: -1, timeouts: [0, 0] } //turn timer | t0 --> time new setTimeout called: meaning time player turn starts |
+        // timeouts[X,O]: number of repeated timeouts
     };
 };
 

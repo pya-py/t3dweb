@@ -7,20 +7,6 @@ var rooms = [];
 const createSocketCommand = (command, msg) =>
     JSON.stringify({ command, msg });
 
-const leaveRoom = (rname, playerID) => {
-    //this methgod is for manual leave, for when players decide to leave the game
-    //first one to leave must be set loser
-    if (rooms[rname].playerX.id === playerID)
-        rooms[rname].playerX = { id: null, socket: null, score: 0 };
-    //log out playerX
-    else if (rooms[rname].playerO.id === playerID)
-        rooms[rname].playerO = { id: null, socket: null, score: 0 }; //log out playerO
-
-    if (!rooms[rname].playerX.id && !rooms[rname].playerO.id)
-    //if both players requested leaving: remove the room
-        delete rooms[rname];
-};
-
 const updateClientConnection = (currentRoom, client, newSocket, clientsTurn) => {
     client.socket = newSocket;
     //always make sure yourTurn is set correctly
@@ -38,7 +24,7 @@ const updateClientConnection = (currentRoom, client, newSocket, clientsTurn) => 
 };
 
 const sendNextMoveTo = async(rname, target, nextMove, nextTurn) => {
-    const { table, dimension, playerX, playerO } = rooms[rname];
+    const { table, dimension, playerX, playerO, turn } = rooms[rname];
     const cell = ({ floor, row, column } = T3DLogic.getCellCoordinates(nextMove, dimension));
 
     try {
@@ -47,8 +33,9 @@ const sendNextMoveTo = async(rname, target, nextMove, nextTurn) => {
             rooms[rname].emptyCells--;
 
             //update table and scores
-            table[floor][row][column] = rooms[rname].turn;
-            clearTimeout(rooms[rname].turnTimeoutID); // as the move made in time, prevent timeout from happening
+            table[floor][row][column] = turn;
+            clearTimeout(rooms[rname].timer.id); // as the move made in time, prevent timeout from happening
+            rooms[rname].timer.timeouts[turn] = 0; //reset timeouts: suppose player has missed two moves and now made his moves -> 4 timeouts must be frequent to cause losing
             T3DLogic.inspectAreaAroundTheCell(rooms[rname], cell);
             //what happens if try crashes some where near here??? 
             rooms[rname].turn = nextTurn; //update turn in game object
@@ -81,20 +68,78 @@ const sendNextMoveTo = async(rname, target, nextMove, nextTurn) => {
 
 };
 
-const startTimeoutForCurrentTurn = (rname) => {
-    rooms[rname].timeMoveRecieved = Date.now(); //last move time in ms
-    rooms[rname].turnTimeoutID = setTimeout(() => {
-        //after a special amount of time, that the player doesnt make any move, the turn will be passed from him/her to opponent
-        const { playerX, playerO, turn } = rooms[rname];
-        rooms[rname].turn = (turn + 1) % 2;
-        [playerX, playerO].forEach(each => {
-            each.socket.send(
-                createSocketCommand("MOVE_MISSED", rooms[rname].turn)
-            )
-        });
+const endThisGame = (rname) => {
+    rooms[rname].emptyCells = -1; //means that ending precedure has started already to prevent it from running multiple times
+    // ...
+    //end game
+    const { turn, playerX, playerO, timer, gameID } = rooms[rname];
+    // check if game record has been created --> if not: this means no move has been made at all --> both players are offline from the beginning
+    let lastCommand = null;
+    if (gameID) {
+        lastCommand = createSocketCommand("END", {
+            turn: turn,
+            xScore: playerX.score,
+            oScore: playerO.score
+        }); //replace msg param with winner's turn
 
+        //determine who is the winner
+        T3DLogic.evaluateAndEndGame(rooms[rname]);
+        // ... now delete the room
+        // temp:***********temp
+    } else {
+        // if no game record created --> consider the game never started --> summary: SHOTOR DIDI NADIDI
+        lastCommand = createSocketCommand("CLOSE");
+    }
+
+    [playerX, playerO].forEach(each => {
+        each.socket.send(lastCommand);
+    });
+    clearTimeout(timer.id);
+    setTimeout(() => {
+        delete rooms[rname];
+    }, 5000);
+}
+
+const startTimeoutForCurrentTurn = (rname) => {
+    rooms[rname].timer.t0 = Date.now(); //last move time in ms
+    rooms[rname].timer.id = setTimeout(() => {
+        //after a special amount of time, that the player doesnt make any move, the turn will be passed from him/her to opponent
+        const { playerX, playerO, turn, timer } = rooms[rname];
+        timer.timeouts[turn]++; //increment the number of repeated time outs fro this player
+        if (timer.timeouts[turn] < GameRules.T3D.AllowedFrequestMissedMoves) {
+            rooms[rname].turn = (turn + 1) % 2; //pass the turn to other player
+            [playerX, playerO].forEach(each => {
+                each.socket.send(
+                    createSocketCommand("MOVE_MISSED", rooms[rname].turn)
+                )
+            });
+
+        } else { //player has not been responding for last 4 turns of his: he may left the game or whatever
+            //anyway he/she deserves to lose 3-0
+            console.log('4 TURNS MISSED FOR PLAYER ' + turn);
+            [playerX, playerO].forEach((each, index) => {
+                if (index === turn) each.score = 0; //loser: the one who is not responding
+                else each.score = 3;
+            });
+            endThisGame(rname);
+        }
     }, GameRules.T3D.TurnTimeOut);
 }
+
+const leaveRoom = (rname, playerID) => {
+    //this methgod is for manual leave, for when players decide to leave the game
+    //first one to leave must be set loser
+    if (rooms[rname].playerX.id === playerID)
+        rooms[rname].playerX = { id: null, socket: null, score: 0 };
+    //log out playerX
+    else if (rooms[rname].playerO.id === playerID)
+        rooms[rname].playerO = { id: null, socket: null, score: 0 }; //log out playerO
+
+    if (!rooms[rname].playerX.id && !rooms[rname].playerO.id)
+    //if both players requested leaving: remove the room
+        delete rooms[rname];
+};
+
 module.exports.setupGamePlayWS = (path) => {
     let gamePlayWebSocketServer = new WebSocket.Server({ noServer: true, path });
 
@@ -106,23 +151,7 @@ module.exports.setupGamePlayWS = (path) => {
                 console.log("req:", request, ",  room:", rname, ",  pid:", playerID, ",  msg:", msg);
 
                 if (rooms[rname] && rooms[rname].emptyCells === 0) {
-                    rooms[rname].emptyCells = -1; //means that ending precedure has started already to prevent it from running multiple times
-                    // ...
-                    //end game
-                    const endCommand = createSocketCommand("END"); //replace msg param with winner's turn
-                    [rooms[rname].playerX, rooms[rname].playerO].forEach(each => {
-                            each.socket.send(endCommand);
-                        })
-                        //determine who is the winner
-                    T3DLogic.evaluateAndEndGame(rooms[rname]);
-                    // ... now delete the room
-                    // temp:***********temp
-                    setTimeout(() => {
-                        clearTimeout(rooms[rname].turnTimeoutID);
-
-                        delete rooms[rname];
-                    }, 5000);
-                    /*******temp */
+                    endThisGame(rname);
                     return;
                 }
                 // if game's not ended yet:
@@ -178,15 +207,15 @@ module.exports.setupGamePlayWS = (path) => {
                         })
                     );
                 } else if (request === "mytimer") {
-                    const { timeMoveRecieved, turn, playerX, playerO, turnTimeoutID } = rooms[rname];
+                    const { turn, playerX, playerO, timer } = rooms[rname];
 
                     if (!playerO.id) return; //wait untill both players online
-                    if (timeMoveRecieved === -1 || !turnTimeoutID) {
+                    if (timer.t0 === -1 || !timer.id) {
                         startTimeoutForCurrentTurn(rname);
                         playerX.socket.send(createSocketCommand("TIMER", GameRules.T3D.TurnTimeOut / 1000));
                     } else {
 
-                        const remaining = Math.floor((GameRules.T3D.TurnTimeOut - (Date.now() - timeMoveRecieved)) / 1000);
+                        const remaining = Math.floor((GameRules.T3D.TurnTimeOut - (Date.now() - timer.t0)) / 1000);
                         // if (turn === msg) // msg --> client.myTurn : if its clients turn then send it the remaining time
                         //     socket.send(createSocketCommand("TIMER", remaining));
                         // -1 --> not started or not clients turn
@@ -243,9 +272,8 @@ module.exports.setupGamePlayWS = (path) => {
             }
         });
         socket.on("close", (data) => {
-            // const { request, rname, playerID, msg } = JSON.parse(data);
-            // leaveRoom(rname);
-            // console.log(`${playerID} left`);
+            //create a new request informing other player that his opponent disconnected
+
         });
     });
     return gamePlayWebSocketServer;

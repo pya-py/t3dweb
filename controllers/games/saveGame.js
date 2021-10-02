@@ -34,9 +34,6 @@ module.exports = async(gameID, xID, oID, xScore, oScore, isLive) => {
         // res.status(200).json({ message: "game result updated." });
     } catch (err) {
         console.log(err);
-        if (!err.statusCode) {
-            err.statusCode = 500;
-        }
-        // next(err);
+        //manage exeptions better
     }
 };

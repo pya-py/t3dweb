@@ -1,300 +1,3576 @@
-Thu Sep 30 2021 04:43:15 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 01:51:13 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NTBhZDc0YjAwNjNmN2ZiNmRkOWY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyOTYzMjg3LCJleHAiOjE2MzI5NjY4ODd9.L_-moFeuocVnM0NBOBUY6oT6Mk8S1DBBXTkcKnQGXSM"
-User Requested: {"id":"61550ad74b0063f7fb6dd9f8","admin":false}
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.457 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 01:54:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.989 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 01:54:43 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.258 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 01:59:16 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.841 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 01:59:25 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.102 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 01:59:25 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.243 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:05 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.331 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:05 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.407 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:10 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.796 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.349 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.177 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.143 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.171 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.067 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:06:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.530 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:07:13 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.734 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:07:13 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.287 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:07:46 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.870 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:07:46 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.149 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:07:47 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.268 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:07:48 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.278 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:07:48 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjU4NTYsImV4cCI6MTYzMzEyOTQ1Nn0.97LpQB3i9PdDa99496UhomVD1CzRfQqSqi3-iV_7c3Y"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.488 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:08:18 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.984 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:08:18 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 2.992 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:08:33 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.693 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:08:33 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.688 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:08:33 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.103 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:08:40 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.370 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:08:40 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.234 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:10:58 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.936 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:10:58 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.018 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:11:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 25.855 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:11:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 26.012 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:13:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.253 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:13:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.885 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:14:25 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 20.370 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:14:25 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 17.585 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:15:17 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.522 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:16:58 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 16.451 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:16:58 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 33.155 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:16:58 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 34.030 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:17:04 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 16.593 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:17:04 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.535 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:18:18 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.392 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:18:18 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.728 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:18:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.041 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:18:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.521 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:18:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.832 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.962 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.345 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.502 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.247 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.359 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.567 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzU4NWJhNzJkOGFlODhjZTQxZDY3IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMTI1OTc2LCJleHAiOjE2MzMxMjk1NzZ9.zWJMVoPemIxEVr9xD7e_YyUxYFutmJgIcqzE2TCBrQA"
+User Requested: {"id":"6157585ba72d8ae88ce41d67","admin":false}
+Payload: {}
+URL: /chats/615753ee1728c89dd6c5d3d4
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.896 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 23.106 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 22.385 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.173 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:19:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.104 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:43 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.900 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:43 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.497 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:45 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.248 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:45 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.596 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.183 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.589 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:56 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.478 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:20:56 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.727 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:21:15 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.592 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:21:15 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.016 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:21:22 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.154 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:21:22 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.987 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:21:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 15.293 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:21:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 35.409 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:22:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 18.203 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:22:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.662 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:22:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 28.515 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:22:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 17.558 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:22:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.278 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:22:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.349 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:23:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 25.418 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:23:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.311 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:23:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.974 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:23:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.795 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:23:46 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.391 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:23:46 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.836 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.003 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.513 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:18 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 22.331 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:18 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 20.384 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:40 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.451 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:40 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.511 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:45 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.787 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:24:45 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.603 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:27:49 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.949 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:27:49 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.605 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:28:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.041 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:28:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjc4OTYsImV4cCI6MTYzMzEzMTQ5Nn0.oZEpNRbSyQLfcQvjcHqaUhcOg6CsSguN9DFGsOyamA8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 22.835 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:30:02 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.919 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:30:02 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.057 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:30:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.182 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:30:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.301 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:30:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 18.236 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:30:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 15.534 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:32:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.853 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:32:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.579 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:32:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.720 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:32:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.581 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:35:43 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.059 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:35:43 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.313 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:36:04 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 16.349 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:36:04 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.348 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:36:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.573 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:36:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.444 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:36:49 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.250 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:36:49 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.428 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:37:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.974 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:37:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.489 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:38:30 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.907 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:38:30 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.131 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:39:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.855 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:39:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.419 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:40:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.396 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:40:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.602 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:40:05 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.883 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:40:05 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.690 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:43:44 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.804 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:43:44 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.579 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:44:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.852 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:44:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.511 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:44:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.055 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:44:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.370 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:45:10 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 17.344 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:45:10 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 19.532 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:46:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.643 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:46:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.466 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:46:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.446 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:46:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.137 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:47:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 17.035 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:47:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 15.844 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:47:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 26.146 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:47:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 23.525 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:47:59 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 15.818 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:47:59 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.452 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.934 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.304 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.496 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.785 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.972 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.867 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:48 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 21.595 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:48:48 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.682 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.017 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.861 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.736 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.018 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.622 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.226 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 18.008 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 20.340 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:44 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 25.898 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:44 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 25.489 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:51 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.453 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:51 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.199 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:56 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.386 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:49:56 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.891 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:51:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 25.834 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:51:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 79.194 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:52:05 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 27.378 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:52:05 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 24.538 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:52:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.232 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:52:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.385 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:52:33 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.746 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:52:33 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.593 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:55:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.160 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:55:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.620 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:59:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.133 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:59:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.976 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:59:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.330 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 02:59:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.074 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:00:16 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 21.291 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:00:16 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 17.707 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:03:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.421 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:03:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.125 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:11:34 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.268 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:11:34 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.282 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:17:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.057 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:17:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.338 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:17:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 15.679 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:17:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMjkyMDAsImV4cCI6MTYzMzEzMjgwMH0.ilwc4-ntv9oHi5Wn6e9hgl3NuKqJp22lsurDFJJ7qKY"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.682 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:19:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIxNTIsImV4cCI6MTYzMzEzNTc1Mn0.I4MW0xLSvx7QfQ0v2gz7qY2X4tjCa3Mg04v80Ij76A8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.170 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:19:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIxNTIsImV4cCI6MTYzMzEzNTc1Mn0.I4MW0xLSvx7QfQ0v2gz7qY2X4tjCa3Mg04v80Ij76A8"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.491 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:21:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.147 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:21:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.990 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:21:55 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 18.638 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:21:55 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.715 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:22:03 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.148 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:22:03 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.950 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:22:36 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.086 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:22:36 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.993 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:23:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 20.952 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:23:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.597 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:08 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.572 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:08 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.914 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:17 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.248 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:17 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.762 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:29 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 18.492 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:29 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.584 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.902 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:24:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.712 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:27:48 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.996 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:27:48 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.168 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:28:22 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.430 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:28:22 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.934 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:28:51 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.942 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:28:51 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.405 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:30:11 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.239 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:30:11 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.454 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:30:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.184 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:30:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.710 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:31:13 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 19.495 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:31:13 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 21.048 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:31:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.460 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:31:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.480 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:31:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 19.540 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:31:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 16.870 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:35:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.904 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:35:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.747 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:35:57 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.853 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:35:57 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.687 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:41:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.888 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:41:14 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.831 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:50:31 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.856 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:50:31 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.604 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:53:22 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 14.953 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:53:22 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.458 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:58:50 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 15.267 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 03:58:50 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.781 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:16:47 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.123 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:16:47 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.255 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:25:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
+User Requested: undefined
 Payload: {}
 URL: /games/mine
-Status Code: 500
-Error Message: "Cannot read property '_id' of undefined"
-Content Length: 53
-Response Time: 73.534 ms
----------------------------------------------------
-
-Thu Sep 30 2021 04:43:40 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NTBhZDc0YjAwNjNmN2ZiNmRkOWY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyOTYzMjg3LCJleHAiOjE2MzI5NjY4ODd9.L_-moFeuocVnM0NBOBUY6oT6Mk8S1DBBXTkcKnQGXSM"
-User Requested: {"id":"61550ad74b0063f7fb6dd9f8","admin":false}
-Payload: {}
-URL: /games/mine
-Status Code: 500
-Error Message: "Cannot read property '_id' of undefined"
-Content Length: 53
-Response Time: 11.396 ms
----------------------------------------------------
-
-Thu Sep 30 2021 04:44:06 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NTBhZDc0YjAwNjNmN2ZiNmRkOWY4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMyOTYzMjg3LCJleHAiOjE2MzI5NjY4ODd9.L_-moFeuocVnM0NBOBUY6oT6Mk8S1DBBXTkcKnQGXSM"
-User Requested: {"id":"61550ad74b0063f7fb6dd9f8","admin":false}
-Payload: {}
-URL: /games/mine
-Status Code: 500
-Error Message: "Cannot read property '_id' of undefined"
-Content Length: 53
-Response Time: 15.107 ms
----------------------------------------------------
-
-Thu Sep 30 2021 04:48:03 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzI5NjA1MDcsImV4cCI6MTYzMjk2NDEwN30.8JfVypqYFT9yhNoOvt7fxN_XEbX1zutxcFR6dzBV9oQ"
-User Requested: undefined
-Payload: {}
-URL: /users/credentials/friends/615367a0ca818af532d985a8
-Status Code: 500
+Status Code: 420
 Error Message: "jwt expired"
 Content Length: 25
-Response Time: 0.720 ms
+Response Time: 0.762 ms
 ---------------------------------------------------
 
-Thu Sep 30 2021 14:37:30 GMT+0330 (Iran Standard Time)
-Method: POST
-Token: ""
-User Requested: undefined
-Payload: {"studentID":94413062}
-URL: /users/signin
-Status Code: 403
-Error Message: "Wrong password."
-Content Length: 29
-Response Time: 230.741 ms
----------------------------------------------------
-
-Thu Sep 30 2021 14:37:42 GMT+0330 (Iran Standard Time)
-Method: POST
-Token: ""
-User Requested: undefined
-Payload: {"studentID":94413062}
-URL: /users/signin
-Status Code: 403
-Error Message: "Wrong password."
-Content Length: 29
-Response Time: 186.068 ms
----------------------------------------------------
-
-Thu Sep 30 2021 15:46:56 GMT+0330 (Iran Standard Time)
-Method: POST
-Token: ""
-User Requested: undefined
-Payload: {"studentID":12345678}
-URL: /users/signin
-Status Code: 403
-Error Message: "Wrong password."
-Content Length: 29
-Response Time: 189.266 ms
----------------------------------------------------
-
-Thu Sep 30 2021 17:23:59 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 04:25:02 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
-User Requested: undefined
-Payload: {}
-URL: /users/credentials
-Status Code: 500
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 1.208 ms
----------------------------------------------------
-
-Thu Sep 30 2021 17:24:22 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
-User Requested: undefined
-Payload: {}
-URL: /users/credentials
-Status Code: 500
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 0.538 ms
----------------------------------------------------
-
-Thu Sep 30 2021 17:24:23 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
-User Requested: undefined
-Payload: {}
-URL: /games/mine
-Status Code: 500
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 0.678 ms
----------------------------------------------------
-
-Thu Sep 30 2021 17:24:29 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
 User Requested: undefined
 Payload: {}
 URL: /users/credentials/friends
-Status Code: 500
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 0.467 ms
----------------------------------------------------
-
-Thu Sep 30 2021 17:24:31 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
-User Requested: undefined
-Payload: {}
-URL: /games/mine
-Status Code: 500
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 0.559 ms
----------------------------------------------------
-
-Thu Sep 30 2021 17:24:40 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwMDY0MzcsImV4cCI6MTYzMzAxMDAzN30.2ia__kp229b59VCdQV3MsJublAQ_AQ8JzLpNnaLPHYA"
-User Requested: undefined
-Payload: {}
-URL: /users/credentials
-Status Code: 500
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 0.643 ms
----------------------------------------------------
-
-Thu Sep 30 2021 22:08:49 GMT+0330 (Iran Standard Time)
-Method: POST
-Token: ""
-User Requested: undefined
-Payload: {"studentID":12345678}
-URL: /users/signin
-Status Code: 403
-Error Message: "Wrong password."
-Content Length: 29
-Response Time: 207.632 ms
----------------------------------------------------
-
-Thu Sep 30 2021 22:55:20 GMT+0330 (Iran Standard Time)
-Method: POST
-Token: ""
-User Requested: undefined
-Payload: {"studentID":12345678}
-URL: /users/signin
-Status Code: 403
-Error Message: "Wrong password."
-Content Length: 29
-Response Time: 180.020 ms
----------------------------------------------------
-
-Thu Sep 30 2021 22:55:23 GMT+0330 (Iran Standard Time)
-Method: POST
-Token: ""
-User Requested: undefined
-Payload: {"studentID":12345678}
-URL: /users/signin
-Status Code: 403
-Error Message: "Wrong password."
-Content Length: 29
-Response Time: 207.092 ms
----------------------------------------------------
-
-Fri Oct 01 2021 03:56:55 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwNDQzNjAsImV4cCI6MTYzMzA0Nzk2MH0.ezZDTht00u75ZMzff6euO3S7IOyqSpPa1rnZEQZx4E4"
-User Requested: undefined
-Payload: {}
-URL: /users/credentials/friends/615367a0ca818af532d985a8
-Status Code: 500
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 1.453 ms
----------------------------------------------------
-
-Fri Oct 01 2021 04:17:24 GMT+0330 (Iran Standard Time)
-Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwNDQzNjAsImV4cCI6MTYzMzA0Nzk2MH0.ezZDTht00u75ZMzff6euO3S7IOyqSpPa1rnZEQZx4E4"
-User Requested: undefined
-Payload: {}
-URL: /users/credentials/friends/615367a0ca818af532d985a8
 Status Code: 420
 Error Message: "jwt expired"
 Content Length: 25
-Response Time: 3.457 ms
+Response Time: 0.566 ms
 ---------------------------------------------------
 
-Fri Oct 01 2021 04:17:29 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 04:25:05 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwNDQzNjAsImV4cCI6MTYzMzA0Nzk2MH0.ezZDTht00u75ZMzff6euO3S7IOyqSpPa1rnZEQZx4E4"
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzIyOTUsImV4cCI6MTYzMzEzNTg5NX0.vlYT1iatJHuVYVLDJZQ_UT_ypUQLFvB38pNpMLO_Oek"
 User Requested: undefined
 Payload: {}
 URL: /users/credentials
 Status Code: 420
 Error Message: "jwt expired"
 Content Length: 25
-Response Time: 1.324 ms
+Response Time: 1.153 ms
 ---------------------------------------------------
 
-Fri Oct 01 2021 04:33:51 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 04:42:45 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3YTBjYTgxOGFmNTMyZDk4NWE4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMDQ1OTcxLCJleHAiOjE2MzMwNDk1NzF9.E-ccunFJsGYjs6cs1uhjkI8tQtfABmGFcGqnoN69K3Q"
-User Requested: undefined
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
 Payload: {}
-URL: /users/credentials/friends/6153674dca818af532d984fd
-Status Code: 420
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 1.156 ms
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.368 ms
 ---------------------------------------------------
 
-Fri Oct 01 2021 04:34:13 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 04:42:45 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3YTBjYTgxOGFmNTMyZDk4NWE4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMDQ1OTcxLCJleHAiOjE2MzMwNDk1NzF9.E-ccunFJsGYjs6cs1uhjkI8tQtfABmGFcGqnoN69K3Q"
-User Requested: undefined
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
 Payload: {}
-URL: /users/credentials/friends/6153674dca818af532d984fd
-Status Code: 420
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 1.268 ms
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.052 ms
 ---------------------------------------------------
 
-Fri Oct 01 2021 04:34:25 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 04:44:28 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3YTBjYTgxOGFmNTMyZDk4NWE4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMDQ1OTcxLCJleHAiOjE2MzMwNDk1NzF9.E-ccunFJsGYjs6cs1uhjkI8tQtfABmGFcGqnoN69K3Q"
-User Requested: undefined
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
 Payload: {}
-URL: /users/credentials/friends/6153674dca818af532d984fd
-Status Code: 420
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 0.850 ms
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.198 ms
 ---------------------------------------------------
 
-Fri Oct 01 2021 04:34:29 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 04:44:28 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3YTBjYTgxOGFmNTMyZDk4NWE4IiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMDQ1OTcxLCJleHAiOjE2MzMwNDk1NzF9.E-ccunFJsGYjs6cs1uhjkI8tQtfABmGFcGqnoN69K3Q"
-User Requested: undefined
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
 Payload: {}
-URL: /users/credentials
-Status Code: 420
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 0.777 ms
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.831 ms
 ---------------------------------------------------
 
-Fri Oct 01 2021 04:34:40 GMT+0330 (Iran Standard Time)
-Method: POST
-Token: ""
-User Requested: undefined
-Payload: {"studentID":12345678}
-URL: /users/signin
-Status Code: 403
-Error Message: "Wrong password."
-Content Length: 29
-Response Time: 181.291 ms
----------------------------------------------------
-
-Fri Oct 01 2021 05:18:58 GMT+0330 (Iran Standard Time)
+Sat Oct 02 2021 04:44:54 GMT+0330 (Iran Standard Time)
 Method: GET
-Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1MzY3NGRjYTgxOGFmNTMyZDk4NGZkIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMwNDkyNjEsImV4cCI6MTYzMzA1Mjg2MX0.IBHvOplCQ-QTrPwNkEjbu45q5NeFyrvxywrJcruZUHY"
-User Requested: undefined
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
 Payload: {}
-URL: /users/credentials/friends/615367a0ca818af532d985a8
-Status Code: 420
-Error Message: "jwt expired"
-Content Length: 25
-Response Time: 1.286 ms
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 21.778 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:44:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 17.041 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:47:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.636 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:47:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 23.826 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:50:16 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 15.276 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:50:16 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.094 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:51:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.977 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:51:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.710 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:51:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 20.521 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:51:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 19.045 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:53:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.255 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:53:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.494 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:54:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.827 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:54:06 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.425 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:54:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.035 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:54:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.612 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:57:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.125 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:57:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.678 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:57:52 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 18.820 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:57:52 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 19.531 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:58:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.399 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:58:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 5.834 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:59:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.860 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:59:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.714 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:59:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.895 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 04:59:27 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.241 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:00:35 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.201 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:00:35 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.506 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:02:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.372 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:02:09 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.178 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:02:34 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 13.109 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:02:34 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.866 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:02:42 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.944 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:02:42 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.509 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:03:55 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.360 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:03:55 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.394 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:05:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 6.237 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:05:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.829 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:05:36 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.815 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:05:36 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 4.011 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:08:03 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.300 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:08:03 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.425 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:08:55 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.428 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:08:55 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzcxNjEsImV4cCI6MTYzMzE0MDc2MX0.EEsQRI-mNCSfuam5xxEaKPwnu1CzTwNQabbcVY5CdHo"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.581 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:09:11 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 8.539 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:09:11 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 7.279 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:09:58 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 9.521 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:09:58 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 11.005 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:12:51 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 12.119 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:12:51 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 18.027 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:13:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/615754051728c89dd6c5d3dc
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 3.223 ms
+---------------------------------------------------
+
+Sat Oct 02 2021 05:13:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1NzUzZWUxNzI4Yzg5ZGQ2YzVkM2Q0IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMxMzg3NDgsImV4cCI6MTYzMzE0MjM0OH0.VCjnTywu7VfxlBerqUuPnByewJFNbYghYpziSFl8E3Q"
+User Requested: {"id":"615753ee1728c89dd6c5d3d4","admin":true}
+Payload: {}
+URL: /chats/6157585ba72d8ae88ce41d67
+Status Code: 404
+Error Message: "No chat between these two players has been found"
+Content Length: 62
+Response Time: 10.830 ms
 ---------------------------------------------------
 
