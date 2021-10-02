@@ -7,8 +7,8 @@ const { authenticateAdmin } = require("../middlewares/authenticateAdmin");
 
 // create config file ... a single file for all configs*-************************
 const NoticeRequirements = {
-    TitleLength: { min: 3, max: 20 },
-    TextLength: { min: 5, max: 100 },
+    TitleLength: { min: 3, max: 30 },
+    TextLength: { min: 5, max: 200 },
 };
 //------------- /notices/ GET method
 router.get("/", noticesController.getShortNotices);
@@ -23,16 +23,15 @@ router.get(
 router.post(
     "/manage",
     authenticateToken,
-    authenticateAdmin,
-    [
+    authenticateAdmin, [
         body("title")
-            .isString()
-            .trim()
-            .isLength(NoticeRequirements.TitleLength)
-            .withMessage("title is not valid."),
+        .isString()
+        .trim()
+        .isLength(NoticeRequirements.TitleLength)
+        .withMessage("title is not valid."),
         body("text").isString().trim().isLength(NoticeRequirements.TextLength),
-        body("startDate").not().isEmpty(),//isDate()
-        body("endDate").not().isEmpty(),//isDate()
+        body("startDate").not().isEmpty(), //isDate()
+        body("endDate").not().isEmpty(), //isDate()
     ],
     noticesController.createNotice
 );
@@ -41,14 +40,13 @@ router.post(
 router.put(
     "/manage/:noticeID",
     authenticateToken,
-    authenticateAdmin,
-    [
+    authenticateAdmin, [
         // how to check -id => is it needed seriously? :|
         body("title")
-            .isString()
-            .trim()
-            .isLength(NoticeRequirements.TitleLength)
-            .withMessage("title is not valid."),
+        .isString()
+        .trim()
+        .isLength(NoticeRequirements.TitleLength)
+        .withMessage("title is not valid."),
         body("text").isString().trim().isLength(NoticeRequirements.TextLength),
         body("startDate").not().isEmpty(), //isDate()
         body("endDate").not().isEmpty(), //isDate()
