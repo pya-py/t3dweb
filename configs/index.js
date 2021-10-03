@@ -1,5 +1,8 @@
-const T3D = require('./game_t3d');
-
+const T3D = require('./game-t3d');
+const serverRoutes = require('./server-routes');
+const PayloadRequirements = require('./requirements');
 module.exports = {
-    GameRules: { T3D }
+    Routes: serverRoutes,
+    GameRules: { T3D },
+    PayloadRequirements
 }

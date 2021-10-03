@@ -10,6 +10,7 @@ const noticesRoutes = require("./routes/notices");
 const { bindSocketsToMainServer } = require("./websockets");
 const { createServer } = require("http");
 const { morganLogger } = require("./middlewares/morganLogger");
+const { Routes } = require("./configs");
 
 const app = express();
 //──── Server Port
@@ -25,13 +26,17 @@ app.use(setHeaders);
 app.use(morganLogger);
 
 //──── Routes
-app.use("/users", usersRoutes);
-app.use("/games", gamesRoutes);
-app.use("/notices", noticesRoutes);
-app.use("/chats", chatsRoutes);
+app.use(`/${Routes.Users}`, usersRoutes);
+app.use(`/${Routes.Games}`, gamesRoutes);
+app.use(`/${Routes.Notices}`, noticesRoutes);
+app.use(`/${Routes.Chats}`, chatsRoutes);
 //---- WebSocket
 const server = createServer(app);
-bindSocketsToMainServer(server);
+const mdtest = () => {
+    console.log("md1 running");
+};
+
+bindSocketsToMainServer(server, mdtest);
 
 //error handler: must be put after all middlewares
 app.use(errorHandler);

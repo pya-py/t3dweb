@@ -4,16 +4,13 @@ const noticesController = require("../controllers/notices");
 const { authenticateToken } = require("../middlewares/tokenManager");
 const { body } = require("express-validator");
 const { authenticateAdmin } = require("../middlewares/authenticateAdmin");
+const { Routes, PayloadRequirements } = require("../configs");
 
-// create config file ... a single file for all configs*-************************
-const NoticeRequirements = {
-    TitleLength: { min: 3, max: 30 },
-    TextLength: { min: 5, max: 200 },
-};
-//------------- /notices/ GET method
+//------------- /notices/ GET method ( for common users)
 router.get("/", noticesController.getShortNotices);
+
 router.get(
-    "/manage",
+    `/${Routes.NoticeManagement}`,
     authenticateToken,
     authenticateAdmin,
     noticesController.getAdvancedNotices
@@ -21,33 +18,33 @@ router.get(
 
 //------------- /notices/ POST method
 router.post(
-    "/manage",
+    `/${Routes.NoticeManagement}`,
     authenticateToken,
     authenticateAdmin, [
         body("title")
         .isString()
         .trim()
-        .isLength(NoticeRequirements.TitleLength)
+        .isLength(PayloadRequirements.Notices.TitleLength)
         .withMessage("title is not valid."),
-        body("text").isString().trim().isLength(NoticeRequirements.TextLength),
+        body("text").isString().trim().isLength(PayloadRequirements.Notices.TextLength),
         body("startDate").not().isEmpty(), //isDate()
         body("endDate").not().isEmpty(), //isDate()
     ],
     noticesController.createNotice
 );
 
-//-------------- /notices/:_id
+//-------------- /notices/manage/:_id
 router.put(
-    "/manage/:noticeID",
+    `/${Routes.NoticeManagement}/:noticeID`,
     authenticateToken,
     authenticateAdmin, [
         // how to check -id => is it needed seriously? :|
         body("title")
         .isString()
         .trim()
-        .isLength(NoticeRequirements.TitleLength)
+        .isLength(PayloadRequirements.Notices.TitleLength)
         .withMessage("title is not valid."),
-        body("text").isString().trim().isLength(NoticeRequirements.TextLength),
+        body("text").isString().trim().isLength(PayloadRequirements.Notices.TextLength),
         body("startDate").not().isEmpty(), //isDate()
         body("endDate").not().isEmpty(), //isDate()
     ],
