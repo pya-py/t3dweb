@@ -26,7 +26,7 @@ const updateClientConnection = (currentRoom, client, newSocket, clientsTurn) => 
 };
 
 const sendNextMoveTo = async (rname, target, nextMove, nextTurn) => {
-    //send move to opponent
+    //send move to theother player
     const { table, dimension, playerX, playerO, turn } = rooms[rname];
     const cell = ({ floor, row, column } = T3DLogic.getCellCoordinates(nextMove, dimension));
 
