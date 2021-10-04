@@ -258,7 +258,7 @@ module.exports.setupGamePlayWS = (path) => {
                         [playerX, playerO].forEach((target, index) => {
                             if (playerID !== target.id) {
                                 console.log(`sending move --> P${index+1} :${target.id} ...`);
-                                sendgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggNextMoveTo(rname, target, msg, nextTurn);
+                                sendNextMoveTo(rname, target, msg, nextTurn);
                                 return; //this is for two person in the room; if you want to implement watcher thing => remove this line and update the array
                                 // or determine a 
                             }
