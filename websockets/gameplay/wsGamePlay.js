@@ -20,13 +20,13 @@ const updateClientConnection = (currentRoom, client, newSocket, clientsTurn) => 
     });
 
     [playerX, playerO].forEach(each => {
-        if (each.id) //first check each one is online then send
+        if (each.id) {
             each.socket.send(startCommand);
+        }
     });
 };
 
-const sendNextMoveTo = async (rname, target, nextMove, nextTurn) => {
-    //send move to theother player
+const sendNextMoveTo = async(rname, target, nextMove, nextTurn) => {
     const { table, dimension, playerX, playerO, turn } = rooms[rname];
     const cell = ({ floor, row, column } = T3DLogic.getCellCoordinates(nextMove, dimension));
 
@@ -224,7 +224,7 @@ module.exports.setupGamePlayWS = (path) => {
                             table,
                             turn,
                             xScore: playerX.score,
-                            Score: playerO.score,
+                            oScore: playerO.score,
 
                         })
                     );

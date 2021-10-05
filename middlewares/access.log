@@ -1,0 +1,456 @@
+Mon Oct 04 2021 12:16:03 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 19.471 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 12:16:06 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.679 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 13:20:12 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 219.949 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 16:55:30 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 248.413 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 16:57:13 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 193.034 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 16:59:27 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":0}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.388 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 16:59:31 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":null}
+URL: /users/signin
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 209
+Response Time: 1.290 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 16:59:40 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 187.752 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:07:36 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":null,"password":""}
+URL: /users/signin
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 289
+Response Time: 1.269 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:40:33 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 186.446 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:41:00 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":null}
+URL: /users/signin
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 209
+Response Time: 0.913 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:58:25 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 4.079 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:59:13 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":234234}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 2.331 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:59:43 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":464}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 2.313 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:59:53 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":464}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.755 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 17:59:58 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":464}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 2.554 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:00:18 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":464}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 2.248 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:00:36 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":464}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.100 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:00:49 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 183.897 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:01:23 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 186.021 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:01:31 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 189.240 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:01:48 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 181.745 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:02:05 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":13421243}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.181 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:02:14 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":243342}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.307 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:02:29 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":23423}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.579 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:02:52 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":42342}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.475 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:25:48 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":null}
+URL: /users/signin
+Status Code: 422
+Error Message: "Payload validation failed."
+Content Length: 209
+Response Time: 0.938 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:26:50 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062,"email":"d@dasd.com","fullname":"سیش سشیی"}
+URL: /users/signup
+Status Code: 409
+Error Message: "A user with this Student ID or Email has registered before"
+Content Length: 72
+Response Time: 16.072 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:26:57 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062,"email":"d@dasd.com","fullname":"سیش سشیی"}
+URL: /users/signup
+Status Code: 409
+Error Message: "A user with this Student ID or Email has registered before"
+Content Length: 72
+Response Time: 7.262 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:27:19 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062,"email":"d@dasd.com","fullname":"سیش سشیی"}
+URL: /users/signup
+Status Code: 409
+Error Message: "A user with this Student ID or Email has registered before"
+Content Length: 72
+Response Time: 3.155 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:27:50 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062,"email":"sdafa@sdcsd.com","fullname":"یسش بسیب"}
+URL: /users/signup
+Status Code: 409
+Error Message: "A user with this Student ID or Email has registered before"
+Content Length: 72
+Response Time: 3.929 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:28:19 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062,"email":"sdafa@sdcsd.com","fullname":"یسش بسیب"}
+URL: /users/signup
+Status Code: 409
+Error Message: "A user with this Student ID or Email has registered before"
+Content Length: 72
+Response Time: 3.083 ms
+---------------------------------------------------
+
+Mon Oct 04 2021 18:28:41 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062,"email":"adcads@sad.com","fullname":"سیبسیب سیبسی"}
+URL: /users/signup
+Status Code: 409
+Error Message: "A user with this Student ID or Email has registered before"
+Content Length: 72
+Response Time: 3.450 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 03:01:35 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMzODY2OTMsImV4cCI6MTYzMzM5MDI5M30.trtRymXHjcmTBkJXxOYLYfc9RJYw_mgbl_qyh7fC6nA"
+User Requested: undefined
+Payload: {}
+URL: /games/mine
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.382 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 03:49:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzMzg5MjM4LCJleHAiOjE2MzMzOTI4Mzh9.UxfGmUwVUPvOkY2tA0Q-eOdQwedvjA6p8lG9extRKL4"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.290 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 04:12:44 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzMzOTAzMTAsImV4cCI6MTYzMzM5MzkxMH0.__b8ZAzMAx5wvUPZD7XHZYDnPus5wWi8OBBvgnPs34E"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.667 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 04:13:52 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 211.635 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 04:49:46 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 179.040 ms
+---------------------------------------------------
+
