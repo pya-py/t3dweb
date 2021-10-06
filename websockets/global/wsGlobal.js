@@ -57,6 +57,9 @@ module.exports.Server = (path) => {
                     //if token is decoded but is wronge somehow ==> BLOCK CLIENT?
                     // define exclusive error model
                     // define english and persian error msgs
+                    socket.send(createSocketCommand("NOT_AUTHORIZED")); // force client to sign in page in client
+                    delete onlines[clientID]; // set player state to offline
+
                     return;
                 }
                 switch (request) {
