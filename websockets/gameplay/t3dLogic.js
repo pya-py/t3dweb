@@ -21,7 +21,8 @@ const initiate = (gameType) => {
         table,
         turn: 0,
         gameID: null,
-        timer: { id: null, t0: -1, timeouts: [0, 0] } //turn timer | t0 --> time new setTimeout called: meaning time player turn starts |
+        forceCloseTime: -1, //time when game closes by force, if this is not set means games not started
+        timer: { start: -1, id: null, t0: -1, timeouts: [0, 0] } //turn timer | t0 --> time new setTimeout called: meaning time player turn starts |
         // timeouts[X,O]: number of repeated timeouts
     };
 };

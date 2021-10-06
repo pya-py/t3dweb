@@ -105,15 +105,17 @@ const endThisGame = (rname) => {
 }
 
 const startGame = (rname) => {
-    rooms[rname].timer.t0 = new Date(); //game start time
-    const { playerX, playerO, timer } = rooms[rname];
+    const { playerX, playerO, timer, dimension } = rooms[rname];
+    rooms[rname].forceCloseTime = Date.now() + dimension * dimension * dimension * (GameRules.T3D.TurnTimeOut + 5) * 1000; //game force ending time in milisecs
+    console.log(rooms[rname].forceCloseTime);
+    // + 5 is for considering all time errors 
     [playerX, playerO].forEach(each => {
         each.socket.send(createSocketCommand("START", timer.t0));
     })
 }
 const nextDeadline = (rname) => {
     // this runs just at the start of the game
-    rooms[rname].timer.t0 = new Date(); //last move time in ms
+    rooms[rname].timer.t0 = Date.now(); //last move time in ms
     if (rooms[rname].timer.id)
         clearTimeout(rooms[rname].timer.id); // as the move made in time, prevent timeout from happening
     rooms[rname].timer.id = setTimeout(() => {
@@ -168,8 +170,25 @@ const log_memory_usage = () => {
     console.log('---------------------------gameplay-scoket-mem-----------------------------\n');
 }
 
-module.exports.setupGamePlayWS = (path) => {
+module.exports.Server = (path) => {
     let gamePlayWebSocketServer = new WebSocket.Server({ noServer: true, path });
+    //custom method
+    gamePlayWebSocketServer.collectGarbage = () => {
+        console.log('gameplay garbage called in ' + Date.now());
+        // will be called by -> mainClock
+        // removes trashes: games that are ended but still remain on the server, unwanted stuff, etc
+        Object.keys(rooms).forEach(game => {
+            if (rooms[game].forceCloseTime <= Date.now()) { //means current time has passed the forceclosetime
+                // delete game
+                endThisGame(game);
+
+                delete rooms[game];
+                //... inform players
+                //... save results or cancel the game
+                console.log(`*ATTENTION: Game ${game} forcey closed.`);
+            }
+        })
+    }
 
     gamePlayWebSocketServer.on("connection", (socket) => {
         socket.on("message", (data) => {
@@ -245,16 +264,14 @@ module.exports.setupGamePlayWS = (path) => {
                         })
                     );
                 } else if (request === "mytimer") {
-                    const { turn, playerX, playerO, timer } = rooms[rname];
+                    const { turn, playerX, playerO, timer, forceCloseTime } = rooms[rname];
 
                     if (!playerO.id) return; //wait untill both players online
                     if (timer.t0 === -1 || !timer.id) {
                         nextDeadline(rname);
-                        startGame(rname);
                         playerX.socket.send(createSocketCommand("TIMER", GameRules.T3D.TurnTimeOut / 1000));
                     } else {
-
-                        const remaining = Math.floor((GameRules.T3D.TurnTimeOut - (new Date() - timer.t0)) / 1000);
+                        const remaining = Math.floor((GameRules.T3D.TurnTimeOut - (Date.now() - timer.t0)) / 1000);
                         // if (turn === msg) // msg --> client.myTurn : if its clients turn then send it the remaining time
                         //     socket.send(createSocketCommand("TIMER", remaining));
                         // -1 --> not started or not clients turn
@@ -265,6 +282,8 @@ module.exports.setupGamePlayWS = (path) => {
                             }
                         });
                     }
+                    //forceCloseTime is set according to game start time, so if not set -> game not started yet
+                    if (forceCloseTime === -1) startGame(rname); //this time is used for garbage collection, to detect a game that is on the server for a long time and hasnt been deleted
 
                 } else if (request === "move") {
                     try {

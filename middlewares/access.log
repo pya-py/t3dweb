@@ -718,3 +718,63 @@ Content Length: 29
 Response Time: 215.350 ms
 ---------------------------------------------------
 
+Wed Oct 06 2021 13:48:45 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":9413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 26.899 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 15:42:53 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNTE2OTY4LCJleHAiOjE2MzM1MjA1Njh9.ICLBDc9Y3Wv0_5zKVpjTDkZKiLPr2DqoV4UciPZlfyY"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 2.037 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 15:43:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNTE2OTY4LCJleHAiOjE2MzM1MjA1Njh9.ICLBDc9Y3Wv0_5zKVpjTDkZKiLPr2DqoV4UciPZlfyY"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.936 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 15:43:25 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM1MTY5MTQsImV4cCI6MTYzMzUyMDUxNH0.GqHSBVyaEezX0XzmuG2OG-ezesYMUPiCgKywNav1grY"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.129 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 16:20:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNTE1NTQ4LCJleHAiOjE2MzM1MTkxNDh9.4OAruIbEY3ke2seLwixuf6Ew3mD3vAkiUouciBzw9Xc"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials/friends
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.448 ms
+---------------------------------------------------
+

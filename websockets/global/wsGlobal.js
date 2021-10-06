@@ -34,8 +34,17 @@ const log_memory_usage = () => {
     console.log('total: ' + Number(online_size + t3d_size) + 'KB');
     console.log('---------------------------global-scoket-mem-----------------------------\n');
 }
-module.exports.setupGlobalWS = (path) => {
+
+
+module.exports.Server = (path) => {
     let globalWebSocketServer = new WebSocket.Server({ noServer: true, path });
+
+    //custom method
+    globalWebSocketServer.collectGarbage = () => {
+        // will be called by -> mainClock
+        // removes trashes: clients that went offline by weren't removed by m,istake, games that are ended but still remain on the server, unwanted stuff, etc
+
+    }
 
     globalWebSocketServer.on("connection", (socket) => {
         let myID = null;
@@ -78,6 +87,11 @@ module.exports.setupGlobalWS = (path) => {
                             );
                             break;
                         }
+                    case "is_online":
+                        {
+
+                            break;
+                        }
                     case "find":
                         { //*******************if clientID isnt in the onlines -> error */
                             if (!onlines[clientID]) {
@@ -104,7 +118,7 @@ module.exports.setupGlobalWS = (path) => {
                                 //previous game remains
                                 //i think this doesnt work well because of .onclose
                                 socket.send(
-                                    createSocketCommand("ENTER_ROOM", {
+                                    createSocketCommand("FIND_RESULT", {
                                         name: onlines[clientID].room,
                                         type: gameType,
                                     })
@@ -136,7 +150,7 @@ module.exports.setupGlobalWS = (path) => {
                                         t3dRooms[room] = [clientID, opponentID];
                                         t3dRooms[room].forEach((cid) => {
                                             onlines[cid].socket.send(
-                                                createSocketCommand("ENTER_ROOM", {
+                                                createSocketCommand("FIND_RESULT", {
                                                     name: room,
                                                     type: gameType,
                                                 })
@@ -148,7 +162,7 @@ module.exports.setupGlobalWS = (path) => {
                                     // send a cmd to me and opponent with roomName => after both clients set their roomName equally they auto connect
                                 } else {
                                     socket.send(
-                                        createSocketCommand("ENTER_ROOM", null)
+                                        createSocketCommand("FIND_RESULT", null)
                                     );
                                 }
                             }
@@ -156,11 +170,42 @@ module.exports.setupGlobalWS = (path) => {
                             // ... generate uuid for room name
                             break;
                         }
-                    case "is_sb_online":
-                        {
-
+                    case "friendly_game":
+                        { //request a friendlygame from a friend
+                            //send name for client too
+                            const { myName, friendID } = msg;
+                            console.log('friendly game request.');
+                            if (onlines[targetID])
+                                onlines[targetID].socket.send(createSocketCommand("FRIENDLY_GAME", { askerID: clientID, askerName }));
+                            else {
+                                socket.send(createSocketCommand("TARGET_OFFLINE"));
+                            }
+                            break;
                         }
-                    case "ask_friendship":
+                    case "respond_friendlygame":
+                        {
+                            const { answer, friendID } = msg;
+                            if (answer) {
+                                if (onlines[friendID]) {
+                                    const room = nanoid();
+                                    t3dRooms[room] = [friendID, clientID];
+                                    t3dRooms[room].forEach((cid) => {
+                                        onlines[cid].socket.send(
+                                            createSocketCommand("FRIENDLY_RESULT", {
+                                                name: room,
+                                                type: gameType,
+                                            })
+                                        );
+                                        onlines[cid].room = room;
+                                    });
+                                    log_memory_usage();
+                                }
+                            } else {
+                                //if asker is online -> sen negative to him as a Notify message
+                            }
+                            break;
+                        }
+                    case "friendship":
                         {
                             const { targetID, askerName } = msg;
                             //inform the target
