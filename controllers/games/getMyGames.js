@@ -16,6 +16,7 @@ module.exports = async(req, res, next) => {
                 return {
                     gameID: game._id.toString(),
                     Type: game.Type,
+                    date: game.date,
                     players: game.players.map((player) => {
                         return {
                             name: player.self.fullname,

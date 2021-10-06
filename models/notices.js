@@ -13,13 +13,11 @@ const noticeSchema = new Schema({
     },
     startDate: {
         type: Date,
-        required: true,
-        default: new Date()
+        required: true
     },
     endDate: {
         type: Date,
-        required: true,
-        default: new Date()
+        required: true
     }
 });
 

@@ -17,6 +17,7 @@ module.exports = async(xID, oID, Type) => {
         const newGame = new GameModel({
             players: [xID, oID].map(each => { return { self: mongoose.Types.ObjectId(each), score: 0 } }),
             Type,
+            date: new Date(),
             isLive: true,
         });
 

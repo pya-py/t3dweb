@@ -1,13 +1,14 @@
 const WebSocket = require("ws");
 const { makeFriends } = require('../../controllers/users');
-const { v1: uuidv1 } = require("uuid");
+const { nanoid } = require("nanoid");
 const { createChat, saveMessage } = require('../../controllers/chats');
 var onlines = []; //keys: clientID, values: game type and socket
 // onlines['clientID'] = {gameType: int, room: string}
 // .type is NOT NULL and .room is null ==> player is online
 // .type and .room both NOT NULL => player is in game
 // .oponentID this is for when client goes out of the room and when comes back to the game
-var t3dRooms = [];
+
+var t3dRooms = []; //for uuid generate, nanoid is used to make ids with less memory consumption
 //this will prevent enterference in gameplay
 const sizeof = require('object-sizeof');
 const { verifyTokenForWS } = require("../../middlewares/tokenManager");
@@ -129,7 +130,7 @@ module.exports.setupGlobalWS = (path) => {
                                         readyClients[
                                             findRandomIndex(readyClients.length)
                                         ];
-                                    const room = uuidv1();
+                                    const room = nanoid();
                                     // inform both clients
                                     if (onlines[opponentID]) {
                                         t3dRooms[room] = [clientID, opponentID];
@@ -186,12 +187,14 @@ module.exports.setupGlobalWS = (path) => {
                         {
                             const { friendID, name, text } = msg;
                             // use chatRooms to save all messages
-                            if (!saveMessage(clientID, friendID, text)) { //when sth goes wronge in saveMessage it returns false
-                                console.log('something went off while trying to save msg');
+                            if (text) { // ignore empty texts
+                                if (!saveMessage(clientID, friendID, text)) { //when sth goes wronge in saveMessage it returns false
+                                    console.log('something went off while trying to save msg');
 
+                                }
+                                if (onlines[friendID]) //if his online send it immediatly --> o.w. friend sees new message in his chatroom while loading
+                                    onlines[friendID].socket.send(createSocketCommand("CHAT", { friendID: clientID, name, text }));
                             }
-                            if (onlines[friendID]) //if his online send it immediatly --> o.w. friend sees new message in his chatroom while loading
-                                onlines[friendID].socket.send(createSocketCommand("CHAT", { friendID: clientID, name, text }));
                             break;
                         }
                     case "close_game":

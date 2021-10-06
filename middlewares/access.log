@@ -454,3 +454,267 @@ Content Length: 29
 Response Time: 179.040 ms
 ---------------------------------------------------
 
+Tue Oct 05 2021 22:23:39 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 220.016 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 22:24:35 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.065 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 22:24:43 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 2.690 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 23:29:05 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM0NjAwMjIsImV4cCI6MTYzMzQ2MzYyMn0.X0aOEagqz_vJBcVB2efB3NJFzOZMN4-Q_azrgKjHagc"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.952 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 23:29:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDYwMDg5LCJleHAiOjE2MzM0NjM2ODl9.-uD_x3zFqqOZAAkOL55-8DDIqqwXyDeIK-hxN1ekgic"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.674 ms
+---------------------------------------------------
+
+Tue Oct 05 2021 23:51:56 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 3.794 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 01:18:54 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM0NjUzNjEsImV4cCI6MTYzMzQ2ODk2MX0.EV55SW0yX3ArKx3VTmrQgdZeVx5ERXpMkvhWJhMBHY0"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.501 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 01:21:20 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM0NjUzNjEsImV4cCI6MTYzMzQ2ODk2MX0.EV55SW0yX3ArKx3VTmrQgdZeVx5ERXpMkvhWJhMBHY0"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.682 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 02:31:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDcwODE2LCJleHAiOjE2MzM0NzQ0MTZ9.1OUnRIxJysGjSCc5zhchdNIi2q9xYC9-wIxJxgArrlw"
+User Requested: undefined
+Payload: {}
+URL: /chats/615abf6c04fc071218c38678
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.691 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 02:31:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDcwODE2LCJleHAiOjE2MzM0NzQ0MTZ9.1OUnRIxJysGjSCc5zhchdNIi2q9xYC9-wIxJxgArrlw"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials/friends
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.608 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 02:31:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDcwODE2LCJleHAiOjE2MzM0NzQ0MTZ9.1OUnRIxJysGjSCc5zhchdNIi2q9xYC9-wIxJxgArrlw"
+User Requested: undefined
+Payload: {}
+URL: /chats/615abf6c04fc071218c38678
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.179 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 02:31:32 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDcwODE2LCJleHAiOjE2MzM0NzQ0MTZ9.1OUnRIxJysGjSCc5zhchdNIi2q9xYC9-wIxJxgArrlw"
+User Requested: undefined
+Payload: {}
+URL: /chats/615abf6c04fc071218c38678
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.954 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 02:40:15 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDcwODE2LCJleHAiOjE2MzM0NzQ0MTZ9.1OUnRIxJysGjSCc5zhchdNIi2q9xYC9-wIxJxgArrlw"
+User Requested: undefined
+Payload: {}
+URL: /users/credentials/friends
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.933 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 04:49:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDgzMTI3LCJleHAiOjE2MzM0ODY3Mjd9._ZT3HaJKa-N3zXJmBys7AfW-8bohMhmZjNd07OWWifI"
+User Requested: {"id":"615abfbf04fc071218c3868d","admin":false}
+Payload: {}
+URL: /notices/manage
+Status Code: 406
+Error Message: "This user doesn't have admin previlages"
+Content Length: 53
+Response Time: 11.779 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 04:49:11 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDgzMTI3LCJleHAiOjE2MzM0ODY3Mjd9._ZT3HaJKa-N3zXJmBys7AfW-8bohMhmZjNd07OWWifI"
+User Requested: {"id":"615abfbf04fc071218c3868d","admin":false}
+Payload: {}
+URL: /notices/manage
+Status Code: 406
+Error Message: "This user doesn't have admin previlages"
+Content Length: 53
+Response Time: 8.066 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 04:52:44 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDgzMTI3LCJleHAiOjE2MzM0ODY3Mjd9._ZT3HaJKa-N3zXJmBys7AfW-8bohMhmZjNd07OWWifI"
+User Requested: {"id":"615abfbf04fc071218c3868d","admin":false}
+Payload: {}
+URL: /notices/manage
+Status Code: 406
+Error Message: "This user doesn't have admin previlages"
+Content Length: 53
+Response Time: 8.083 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 04:52:46 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDgzMTI3LCJleHAiOjE2MzM0ODY3Mjd9._ZT3HaJKa-N3zXJmBys7AfW-8bohMhmZjNd07OWWifI"
+User Requested: {"id":"615abfbf04fc071218c3868d","admin":false}
+Payload: {}
+URL: /notices/manage
+Status Code: 406
+Error Message: "This user doesn't have admin previlages"
+Content Length: 53
+Response Time: 3.400 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 04:53:03 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 184.617 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 05:13:24 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmYmYwNGZjMDcxMjE4YzM4NjhkIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjMzNDg0NTk1LCJleHAiOjE2MzM0ODgxOTV9.iRr8J8UNYdovSCiJ1JuhpqqhIPrILDRsncqY5FYFICI"
+User Requested: {"id":"615abfbf04fc071218c3868d","admin":false}
+Payload: {}
+URL: /notices/manage
+Status Code: 406
+Error Message: "This user doesn't have admin previlages"
+Content Length: 53
+Response Time: 8.553 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 07:21:40 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM0ODg1MTMsImV4cCI6MTYzMzQ5MjExM30.tWp3V0mOGnmXte9yNG75mZmcHew7KNQytNNM7Em5504"
+User Requested: undefined
+Payload: {}
+URL: /games/mine
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.287 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 07:21:44 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1YWJmNmMwNGZjMDcxMjE4YzM4Njc4IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM0ODg1MTMsImV4cCI6MTYzMzQ5MjExM30.tWp3V0mOGnmXte9yNG75mZmcHew7KNQytNNM7Em5504"
+User Requested: undefined
+Payload: {}
+URL: /games/mine
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 2.688 ms
+---------------------------------------------------
+
+Wed Oct 06 2021 07:21:52 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: ""
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 215.350 ms
+---------------------------------------------------
+
