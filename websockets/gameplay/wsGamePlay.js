@@ -202,6 +202,8 @@ module.exports.Server = (path) => {
                     //if token is decoded but is wronge somehow ==> BLOCK CLIENT?
                     // define exclusive error model
                     // define english and persian error msgs
+
+                    //                    socket.send(createSocketCommand("WRONG_TOKEN"))
                     return;
                 }
 

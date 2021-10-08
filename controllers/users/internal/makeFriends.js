@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const UserModel = require("../../../models/users");
-
+const { createChat } = require('../../chats');
 const areFriends = (person, sbFriends) =>
     Boolean(sbFriends.filter((friend) => person.toString() === friend.toString()).length); //.toString() is essential for both ids
 
@@ -24,15 +24,24 @@ module.exports = async(IDs) => {
             persons.push(eachUser);
         }
 
+        if (areFriends(IDs[0], persons[1].friends) || areFriends(IDs[1], persons[0].friends)) {
+            const error = new Error("These two were friends before");
+            error.statusCode = 404;
+            throw error;
+        }
+        //if every thing ok till here and these two are'nt friends
+        //create new chat
+        const chatID = await createChat(IDs);
+        if (!chatID) {
+            const error = new Error("Unknown error happened friending them");
+            error.statusCode = 404; // specify a proper code
+            throw error;
+        }
+        const chatLink = mongoose.Types.ObjectId(chatID);
         for (let index = 0; index < IDs.length; index++) {
             const friendID = IDs[Number(!index)];
             const friendsObjectID = mongoose.Types.ObjectId(friendID);
-            if (areFriends(friendID, persons[index].friends)) {
-                const error = new Error("These two were friends before");
-                error.statusCode = 404;
-                throw error;
-            }
-            persons[index].friends.push(friendsObjectID);
+            persons[index].friends.push({ self: friendsObjectID, chat: chatLink });
             persons[index].save();
         }
     } catch (err) {

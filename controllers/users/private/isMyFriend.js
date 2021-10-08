@@ -5,7 +5,7 @@ module.exports = async(req, res, next) => {
         const targetID = req.params.targetID;
         const userID = req.CurrentUser.id;
         const me = await UserModel.findById(userID);
-        const isFriend = me.friends.length && Boolean(me.friends.filter((friend) => targetID.toString() === friend.toString()).length); //.toString() is essential for both ids
+        const isFriend = me.friends.length && Boolean(me.friends.filter((friend) => targetID.toString() === friend.self.toString()).length); //.toString() is essential for both ids
         res.status(200).json({ isFriend });
     } catch (err) {
         if (!err.statusCode) {

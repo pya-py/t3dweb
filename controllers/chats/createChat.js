@@ -1,7 +1,7 @@
 const ChatModel = require('../../models/chats');
 const getChatID = require('./getChatID');
 
-module.exports = async(friend1, friend2) => {
+module.exports = async([friend1, friend2]) => {
     try {
 
         if (!friend1 || !friend2) {
@@ -17,12 +17,12 @@ module.exports = async(friend1, friend2) => {
             chatID,
             messages: []
         });
-
+        console.log(newChat);
         await newChat.save();
-        return true;
+        return newChat._id;
     } catch (err) {
         console.log(err);
         //manage exeptions better
-        return false;
+        return null;
     }
 };

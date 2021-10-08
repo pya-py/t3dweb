@@ -30,14 +30,8 @@ module.exports = {
             const pathname = url.parse(request.url).pathname;
             if (pathname === globalWebSocketDirectRoute) {
                 wsGlobalServer.handleUpgrade(request, socket, head, (websocket) => {
-                    // console.log('emitting on connection');
-                    // const wsMiddlewares = Array.prototype.slice.call(arguments, 1);
-                    // for (const method of wsMiddlewares) {
-                    //     if (typeof(method) === 'function') {
-                    //         console.log(`ws-middleware ${method.name} called`);
-                    //         method();
-                    //     }
-                    // }
+
+                    //handle token verification here?
                     wsGlobalServer.emit("connection", websocket, request);
                 });
             } else if (pathname === gamePlayWebSocketDirectRoute) {

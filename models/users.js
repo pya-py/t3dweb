@@ -26,8 +26,14 @@ const userSchema = new Schema({
         default: false
     },
     friends: [{
-        type: Schema.Types.ObjectId,
-        ref: "Users",
+        self: {
+            type: Schema.Types.ObjectId,
+            ref: "Users",
+        },
+        chat: {
+            type: Schema.Types.ObjectId,
+            ref: "Chats",
+        }
     }],
     records: {
         points: {

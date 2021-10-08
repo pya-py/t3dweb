@@ -8,6 +8,7 @@ module.exports = {
     SignUp: "signup",
     SignIn: "signin",
     Users: "users",
+    Private: "private",
     Credentials: "credentials",
     PasswordChange: "password",
     Friends: 'friends',
@@ -16,6 +17,8 @@ module.exports = {
     Games: "games",
     Mine: "mine",
     Chats: "chats",
+    SingleChat: 'single',
+    Interactions: "interact",
     Notices: "notices",
     NoticeManagement: "manage"
 };

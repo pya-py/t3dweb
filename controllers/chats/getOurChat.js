@@ -3,7 +3,7 @@ const getChatID = require('./getChatID');
 module.exports = async(req, res, next) => {
     const userID = req.CurrentUser.id;
     const friendID = req.params.friendID;
-
+    //redundant ????????
     try {
         const [chatID, contributerIndex] = getChatID(userID, friendID);
         const chat = await ChatModel.findOne({ chatID });

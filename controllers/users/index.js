@@ -4,6 +4,7 @@ const getPlayer = require("./public/getPlayer");
 const getAllPlayers = require("./public/getAllPlayers");
 const updateRecords = require("./internal/updateRecords");
 const isAnAdmin = require("./private/isAnAdmin");
+const getMe = require("./private/getMe");
 const getMyCredentials = require('./private/getMyCredentials');
 const editMyCredentials = require('./private/editMyCredentials');
 const changeMyPassword = require('./private/changeMyPassword');
@@ -18,6 +19,7 @@ module.exports = {
     getAllPlayers,
     updateRecords,
     isAnAdmin,
+    getMe,
     getMyCredentials,
     editMyCredentials,
     changeMyPassword,

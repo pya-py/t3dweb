@@ -32,7 +32,6 @@ app.use(`/${Routes.Notices}`, noticesRoutes);
 app.use(`/${Routes.Chats}`, chatsRoutes);
 //---- WebSocket
 const server = createServer(app);
-
 bindSocketsToMainServer(server);
 
 //error handler: must be put after all middlewares

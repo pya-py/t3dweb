@@ -5,7 +5,11 @@ const connectionString = "mongodb+srv://t3d:iust666cee@cluster0.iaxun.mongodb.ne
 const localConnectionString = "mongodb://localhost:27017/t3d";
 
 exports.connectToDB = () => {
-    return mongoose.connect(connectionString);
+
+    return mongoose.connect(connectionString, function () {
+        /* Drop the DB */
+        mongoose.connection.db.dropDatabase();
+    });
 };
 
 // exports.connectToDB = () => {

@@ -17,10 +17,10 @@ const chatRoomSchema = new Schema({
             type: String,
             required: true
         },
-        owner: { //the one who sent the message
+        owner: { //the one who sent the message, 0: smallerID, 1: biggerID
             type: Number, //contributer index
             //when client delivers the messages --> .splits the chatID and finds his/her contributer index
-            required: true
+            required: true,
         }
     }]
 });

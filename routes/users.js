@@ -82,25 +82,23 @@ router.post(
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
 
 //----- GET is admin?
-router.get(
-    `/${Routes.Administrators}/:userID`,
-    authenticateToken,
-    userController.isAnAdmin
-);
+router.get(`/${Routes.Administrators}/:userID`, authenticateToken, userController.isAnAdmin);
 
+//----- GET /users/me
+router.get(`/${Routes.Private}`, authenticateToken, userController.getMe);
 //----- GET /users/credentials/
-router.get(`/${Routes.Credentials}`, authenticateToken, userController.getMyCredentials);
+router.get(`/${Routes.Private}/${Routes.Credentials}`, authenticateToken, userController.getMyCredentials);
 
 //----- GET /users/credentials/friends
-router.get(`/${Routes.Credentials}/${Routes.Friends}`, authenticateToken, userController.getMyFriends);
+router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}`, authenticateToken, userController.getMyFriends);
 
 //----- GET /users/credentials/friends
-router.get(`/${Routes.Credentials}/${Routes.Friends}/:targetID`, authenticateToken, userController.isMyFriend);
+router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}/:targetID`, authenticateToken, userController.isMyFriend);
 
 //──── PUT Http Methods ─────────────────────────────────────────────────────────────────
 // PUT /users/credentials
 router.put(
-    `/${Routes.Credentials}`,
+    `/${Routes.Private}/${Routes.Credentials}`,
     authenticateToken, [
         body("studentID")
         .isNumeric() //check for other conditions for a student id
@@ -137,7 +135,7 @@ router.put(
 );
 
 router.put(
-    `/${Routes.Credentials}/${Routes.PasswordChange}`,
+    `/${Routes.Private}/${Routes.Credentials}/${Routes.PasswordChange}`,
     authenticateToken, [
         body("studentID")
         .isNumeric() //check for other conditions for a student id
