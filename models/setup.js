@@ -6,10 +6,7 @@ const localConnectionString = "mongodb://localhost:27017/t3d";
 
 exports.connectToDB = () => {
 
-    return mongoose.connect(connectionString, function () {
-        /* Drop the DB */
-        mongoose.connection.db.dropDatabase();
-    });
+    return mongoose.connect(connectionString);
 };
 
 // exports.connectToDB = () => {
