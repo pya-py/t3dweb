@@ -35,15 +35,17 @@ const log_memory_usage = () => {
     console.log('---------------------------global-scoket-mem-----------------------------\n');
 }
 
-const hasEngagedGame = (clientID) => {
+const findEngagedGame = (clientID) => {
     Object.keys(t3dRooms).forEach((rid) => {
-        if (
-            t3dRooms[rid][0] === clientID ||
-            t3dRooms[rid][1] === clientID
-        ) {
+        if (t3dRooms[rid][0] === clientID || t3dRooms[rid][1] === clientID) {
             onlines[clientID].room = rid;
+            return;
         }
     });
+}
+
+module.exports.closeThisRoom = expiredRoom => { //when wsGameplay ends a game or collects garbage it syncs its update with this method
+    if (t3dRooms[expiredRoom]) delete t3dRooms[expiredRoom];
 }
 
 module.exports.Server = (path) => {
@@ -107,7 +109,7 @@ module.exports.Server = (path) => {
                                 onlines[clientID].type = gameType;
 
                                 // first search in on going games: maybe user was playing game and went out for some reason
-                                hasEngagedGame(clientID); //edit this method
+                                findEngagedGame(clientID); //edit this method
                                 //find opponent
                                 if (onlines[clientID].room) {
                                     //if player was already in a game
@@ -162,17 +164,23 @@ module.exports.Server = (path) => {
                                         );
                                     }
                                 }
-                                // ... find a random id to connect
-                                // ... generate uuid for room name
+
                                 break;
                             }
                         case "friendly_game":
                             { //request a friendlygame from a friend
-                                //send name for client too
-
-                                // hasEngagedGame();
                                 const { askerName, targetID } = msg;
-                                if (!onlines[clientID].room && !onlines[clientID].type && targetID !== clientID) { //if player isnt in a game currenly or isnt searching
+                                findEngagedGame(clientID);
+                                if (!onlines[clientID].room || !onlines[clientID].type) { //if player isnt in a game currenly or isnt searching
+                                    socket.send("YOUR_BUSY");
+                                    //i think this doesnt work well because of .onclose
+                                    socket.send(
+                                        createSocketCommand("FIND_RESULT", {
+                                            name: onlines[clientID].room
+                                                // type: gameType,
+                                        })
+                                    );
+                                } else if (targetID !== clientID) {
                                     if (onlines[targetID]) {
                                         if (!onlines[targetID].room) {
                                             onlines[targetID].socket.send(createSocketCommand("FRIENDLY_GAME", { askerID: clientID, askerName }));
@@ -189,9 +197,12 @@ module.exports.Server = (path) => {
                         case "respond_friendlygame":
                             {
                                 const { answer, inviterID } = msg;
+                                findEngagedGame(clientID);
                                 console.log(inviterID);
                                 if (answer) {
-                                    if (onlines[inviterID] && !onlines[inviterID].room && !onlines[clientID].room) {
+                                    // if (!onlines[inviterID])
+                                    //     socket.send(createSocketCommand("TARGET_OFFLINE"));
+                                    if (!onlines[inviterID].room && !onlines[clientID].room) {
                                         const room = nanoid();
                                         t3dRooms[room] = [inviterID, clientID];
                                         console.log('friendly game respond to ');
@@ -220,7 +231,8 @@ module.exports.Server = (path) => {
                                 console.log('FRIENDSHIP');
                                 if (onlines[targetID])
                                     onlines[targetID].socket.send(createSocketCommand("FRIENDSHIP_REQUEST", { askerID: clientID, askerName }));
-
+                                else
+                                    socket
                                 break;
                             }
                         case "respond_friendship":

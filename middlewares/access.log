@@ -166,3 +166,135 @@ Content Length: 29
 Response Time: 207.780 ms
 ---------------------------------------------------
 
+Sat Oct 09 2021 23:38:52 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1Zjg3OTMxMDQ1OTgyZGE0ZGZhOWI2IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM4MDY1MjcsImV4cCI6MTYzMzgxMDEyN30.evfF6LWZTprBokH7dkj_xYGqqn9rYFxROIqfehPT4zg"
+User Requested: undefined
+Payload: {}
+URL: /users/private
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 2.497 ms
+---------------------------------------------------
+
+Sat Oct 09 2021 23:38:52 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1Zjg3OTMxMDQ1OTgyZGE0ZGZhOWI2IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM4MDY1MjcsImV4cCI6MTYzMzgxMDEyN30.evfF6LWZTprBokH7dkj_xYGqqn9rYFxROIqfehPT4zg"
+User Requested: undefined
+Payload: {}
+URL: /users/private/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.511 ms
+---------------------------------------------------
+
+Sat Oct 09 2021 23:39:00 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /users/private/credentials
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.441 ms
+---------------------------------------------------
+
+Sat Oct 09 2021 23:40:47 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /users/private/credentials
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.566 ms
+---------------------------------------------------
+
+Sat Oct 09 2021 23:41:20 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /users/private/credentials
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.650 ms
+---------------------------------------------------
+
+Sat Oct 09 2021 23:47:23 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "null"
+User Requested: undefined
+Payload: {"studentID":94413062}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 183.145 ms
+---------------------------------------------------
+
+Sun Oct 10 2021 00:46:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1Zjg3OTMxMDQ1OTgyZGE0ZGZhOWI2IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM4MTA0MjksImV4cCI6MTYzMzgxNDAyOX0.zACTQQXQtlLe8tsBuWBXLTgAqQ8xbWMZGRkORWK5ifA"
+User Requested: undefined
+Payload: {}
+URL: /users/private
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 1.350 ms
+---------------------------------------------------
+
+Sun Oct 10 2021 00:46:38 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1Zjg3OTMxMDQ1OTgyZGE0ZGZhOWI2IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM4MTA0MjksImV4cCI6MTYzMzgxNDAyOX0.zACTQQXQtlLe8tsBuWBXLTgAqQ8xbWMZGRkORWK5ifA"
+User Requested: undefined
+Payload: {}
+URL: /users/private/credentials
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.667 ms
+---------------------------------------------------
+
+Sun Oct 10 2021 01:10:52 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1Zjg3OTMxMDQ1OTgyZGE0ZGZhOWI2IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM4MTE4MDksImV4cCI6MTYzMzgxNTQwOX0.7ozQtdjQBrGfh0gSaeRs7Kgxnk3_TeQJfDpwpFVtyeY"
+User Requested: undefined
+Payload: {}
+URL: /users/private
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.816 ms
+---------------------------------------------------
+
+Sun Oct 10 2021 16:15:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1Zjg3OTMxMDQ1OTgyZGE0ZGZhOWI2IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM4NjU5NTcsImV4cCI6MTYzMzg2OTU1N30.G9Em2bdRxY84REbI6pPi6U01A-ufL7Pcbf-4cvviO_A"
+User Requested: undefined
+Payload: {}
+URL: /users/private
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.823 ms
+---------------------------------------------------
+
+Sun Oct 10 2021 16:15:01 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE1Zjg3OTMxMDQ1OTgyZGE0ZGZhOWI2IiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MzM4NjU5NTcsImV4cCI6MTYzMzg2OTU1N30.G9Em2bdRxY84REbI6pPi6U01A-ufL7Pcbf-4cvviO_A"
+User Requested: undefined
+Payload: {}
+URL: /chats/interact
+Status Code: 420
+Error Message: "jwt expired"
+Content Length: 25
+Response Time: 0.917 ms
+---------------------------------------------------
+

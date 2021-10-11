@@ -11,10 +11,10 @@ let wsGlobalServer = GlobalWebSocket.Server(globalWebSocketDirectRoute),
 
 let mainClock = setInterval(() => {
     try {
-        [wsGlobalServer, wsGamePlayServer].forEach(wss => {
-            wss.collectGarbage();
-        });
-
+        // [wsGlobalServer, wsGamePlayServer].forEach(wss => {
+        //     wss.collectGarbage();
+        // });
+        wsGamePlayServer.collectGarbage(); //just call collect garbage in wsGameplay and sync via closeThisRoom in wsGlobal?
         console.log('garbages collected');
     } catch (err) {
         console.log(err);
