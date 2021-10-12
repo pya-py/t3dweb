@@ -171,7 +171,8 @@ module.exports.Server = (path) => {
                             { //request a friendlygame from a friend
                                 const { askerName, targetID } = msg;
                                 findEngagedGame(clientID);
-                                if (!onlines[clientID].room || !onlines[clientID].type) { //if player isnt in a game currenly or isnt searching
+                                // onlines[clientID].type check this or not?
+                                if (onlines[clientID].room) { //if player isnt in a game currenly or isnt searching
                                     socket.send("YOUR_BUSY");
                                     //i think this doesnt work well because of .onclose
                                     socket.send(
@@ -199,6 +200,7 @@ module.exports.Server = (path) => {
                                 const { answer, inviterID } = msg;
                                 findEngagedGame(clientID);
                                 console.log(inviterID);
+                                console.log('friendly game RESPOND');
                                 if (answer) {
                                     // if (!onlines[inviterID])
                                     //     socket.send(createSocketCommand("TARGET_OFFLINE"));
