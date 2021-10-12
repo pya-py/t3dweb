@@ -199,9 +199,9 @@ module.exports.Server = (path) => {
             try {
                 //rname --> roomname
                 const { request, rname, token, msg } = JSON.parse(data);
-                console.log("req:", request, ",  room:", rname, ",  pid:", playerID, ",  msg:", msg);
-
                 const playerID = verifyTokenForWS(token); // if anything about token was wrong -> request doesnt process
+
+                console.log("req:", request, ",  room:", rname, ",  pid:", playerID, ",  msg:", msg);
 
                 if (rooms[rname] && rooms[rname].emptyCells === 0) {
                     endThisGame(rname);
