@@ -169,11 +169,11 @@ module.exports.Server = (path) => {
                             }
                         case "friendly_game":
                             { //request a friendlygame from a friend
-                                const { askerName, targetID } = msg;
+                                const { askerName, targetID, gameType } = msg;
                                 findEngagedGame(clientID);
                                 // onlines[clientID].type check this or not?
                                 if (onlines[clientID].room) { //if player isnt in a game currenly or isnt searching
-                                    socket.send("YOUR_BUSY");
+                                    socket.send(createSocketCommand("YOUR_BUSY"));
                                     //i think this doesnt work well because of .onclose
                                     socket.send(
                                         createSocketCommand("FIND_RESULT", {
@@ -184,11 +184,11 @@ module.exports.Server = (path) => {
                                 } else if (targetID !== clientID) {
                                     if (onlines[targetID]) {
                                         if (!onlines[targetID].room) {
-                                            onlines[targetID].socket.send(createSocketCommand("FRIENDLY_GAME", { askerID: clientID, askerName }));
+                                            onlines[targetID].socket.send(createSocketCommand("FRIENDLY_GAME", { askerID: clientID, askerName, gameType }));
                                             console.log('friendly game request sent');
 
                                         } else
-                                            socket.send("TARGET_BUSY");
+                                            socket.send(createSocketCommand("TARGET_BUSY"));
                                     } else {
                                         socket.send(createSocketCommand("TARGET_OFFLINE"));
                                     }
@@ -197,14 +197,16 @@ module.exports.Server = (path) => {
                             }
                         case "respond_friendlygame":
                             {
-                                const { answer, inviterID } = msg;
+                                const { answer, inviterID, gameType } = msg;
                                 findEngagedGame(clientID);
                                 console.log(inviterID);
-                                console.log('friendly game RESPOND');
+                                console.log('friendly game RESPONSE');
                                 if (answer) {
                                     // if (!onlines[inviterID])
                                     //     socket.send(createSocketCommand("TARGET_OFFLINE"));
-                                    if (!onlines[inviterID].room && !onlines[clientID].room) {
+                                    if (!onlines[inviterID])
+                                        socket.send(createSocketCommand("TARGET_OFFLINE"))
+                                    else if (!onlines[inviterID].room && !onlines[clientID].room) {
                                         const room = nanoid();
                                         t3dRooms[room] = [inviterID, clientID];
                                         console.log('friendly game respond to ');
@@ -212,11 +214,11 @@ module.exports.Server = (path) => {
                                             onlines[cid].socket.send(
                                                 createSocketCommand("INVITATION_ACCEPTED", {
                                                     name: room,
-                                                    type: 4,
+                                                    type: gameType,
                                                 })
                                             );
                                             onlines[cid].room = room;
-                                            onlines[cid].type = 4;
+                                            onlines[cid].type = gameType;
                                             // add some boolean to show the game is friendly and doesnt affect records
                                         });
                                         log_memory_usage();
