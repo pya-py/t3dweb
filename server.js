@@ -17,7 +17,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 //──── Static Folder
-app.use("/avats", express.static(path.join(__dirname, "public", "avats")));
+app.use(`/${Routes.Avatars}`, express.static(path.join(__dirname, "public", Routes.Avatars)));
 
 //──── Middlewares
 app.use(express.json());
