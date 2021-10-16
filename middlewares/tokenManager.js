@@ -10,7 +10,7 @@ const generateToken = async thisUser => {
             }
         },
         secret, {
-            expiresIn: "1h" // i think its not right :|
+            expiresIn: "7d" // i think its not right :|
         }
     );
 }

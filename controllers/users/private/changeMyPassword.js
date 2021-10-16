@@ -3,12 +3,12 @@ const UserModel = require("../../../models/users");
 const bcryptjs = require("bcryptjs");
 const SALT_LENGTH = 11;
 
-module.exports = async (req, res, next) => {
+module.exports = async(req, res, next) => {
     try {
         const userID = req.CurrentUser.id; //read uid from token to make sure every thing is trusted
-        const { studentID, password, newPassword } = req.body;
+        const { password, newPassword } = req.body;
         const me = await UserModel.findById(userID);
-        if (!userID || !me || studentID !== me.studentID) {
+        if (!userID || !me) {
             const error = new Error(
                 "User with this specific credentials can not be found!"
             );
@@ -35,7 +35,7 @@ module.exports = async (req, res, next) => {
 
         //change password
         const hashedNewPassword = await bcryptjs.hash(newPassword, SALT_LENGTH);
-        
+
         me.password = hashedNewPassword;
 
         await me.save();

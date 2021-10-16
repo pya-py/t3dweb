@@ -1,6 +1,8 @@
 //server routes
 module.exports = {
-    HttpRoot: "https://t3dweb.herokuapp.com",
+    HttpRoot: "http://localhost:4000",
+    Avatars: "avats",
+    //HttpRoot: "https://t3dweb.herokuapp.com",
     WebSocketRoot: "wss://t3dweb.herokuapp.com",
     webSocketRoute: "ws",
     wsGamePlayRoute: "gameplay",
@@ -10,14 +12,15 @@ module.exports = {
     Users: "users",
     Private: "private",
     Credentials: "credentials",
+    MyAvatar: "avatar",
     PasswordChange: "password",
-    Friends: 'friends',
+    Friends: "friends",
     Public: "public",
     Administrators: "administrators",
     Games: "games",
     Mine: "mine",
     Chats: "chats",
-    SingleChat: 'single',
+    SingleChat: "single",
     Interactions: "interact",
     Notices: "notices",
     NoticeManagement: "manage"

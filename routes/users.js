@@ -4,6 +4,7 @@ const { Routes, PayloadRequirements } = require("../configs");
 const router = express.Router();
 const userController = require("../controllers/users");
 const { authenticateToken } = require("../middlewares/tokenManager");
+const upload = require('../tools/uploader');
 
 //------------------------------ Public requests: (NO token required) -----------------------
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
@@ -83,20 +84,23 @@ router.post(
 
 //----- GET is admin?
 router.get(`/${Routes.Administrators}/:userID`, authenticateToken, userController.isAnAdmin);
-
-//----- GET /users/me
+//----- GET /users/private/me
 router.get(`/${Routes.Private}`, authenticateToken, userController.getMe);
-//----- GET /users/credentials/
+
+//----- GET /users/private/avatar
+router.post(`/${Routes.Private}/${Routes.MyAvatar}`, authenticateToken, upload.single('avatar'), userController.updateAvatar);
+
+//----- GET /users/private/credentials/
 router.get(`/${Routes.Private}/${Routes.Credentials}`, authenticateToken, userController.getMyCredentials);
 
-//----- GET /users/credentials/friends
+//----- GET /users/private/credentials/friends
 router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}`, authenticateToken, userController.getMyFriends);
 
-//----- GET /users/credentials/friends
+//----- GET /users/private/credentials/friends
 router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}/:targetID`, authenticateToken, userController.isMyFriend);
 
 //──── PUT Http Methods ─────────────────────────────────────────────────────────────────
-// PUT /users/credentials
+// PUT /users/private/credentials
 router.put(
     `/${Routes.Private}/${Routes.Credentials}`,
     authenticateToken, [
@@ -137,10 +141,6 @@ router.put(
 router.put(
     `/${Routes.Private}/${Routes.Credentials}/${Routes.PasswordChange}`,
     authenticateToken, [
-        body("studentID")
-        .isNumeric() //check for other conditions for a student id
-        .isLength(PayloadRequirements.Users.StudenIDLength)
-        .withMessage("StudentID is not valid."),
         body("password")
         .trim()
         .not()

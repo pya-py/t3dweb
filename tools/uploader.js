@@ -3,10 +3,10 @@ const { v1: uuidv1 } = require('uuid');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, "./public/images/");
+        cb(null, "./public/avats/");
     },
     filename: (req, file, cb) => {
-        cb(null, `${uuidv1()}_${file.originalname}`);
+        cb(null, req.CurrentUser.id.toString() + '.jpg');
     }
 });
 
@@ -18,6 +18,6 @@ const fileFilter = (req, file, cb) => {
     }
 };
 
-const upload = multer({ dest: "images/", storage, fileFilter: fileFilter });
+const upload = multer({ dest: "avats/", storage, fileFilter: fileFilter });
 
 module.exports = upload;

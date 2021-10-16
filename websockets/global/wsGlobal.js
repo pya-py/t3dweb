@@ -1,7 +1,7 @@
 const WebSocket = require("ws");
 const { makeFriends } = require('../../controllers/users');
 const { nanoid } = require("nanoid");
-const { createChat, saveMessage } = require('../../controllers/chats');
+const { saveMessage } = require('../../controllers/chats');
 var onlines = []; //keys: clientID, values: game type and socket
 // onlines['clientID'] = {gameType: int, room: string}
 // .type is NOT NULL and .room is null ==> player is online

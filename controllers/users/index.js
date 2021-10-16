@@ -11,6 +11,7 @@ const changeMyPassword = require('./private/changeMyPassword');
 const makeFriends = require('./internal/makeFriends');
 const getMyFriends = require('./private/getMyFriends');
 const isMyFriend = require('./private/isMyFriend');
+const updateAvatar = require('./private/updateAvatar');
 
 module.exports = {
     signIn,
@@ -25,5 +26,6 @@ module.exports = {
     changeMyPassword,
     makeFriends,
     getMyFriends,
-    isMyFriend
+    isMyFriend,
+    updateAvatar
 };
