@@ -9,4 +9,6 @@ router.get(`/${Routes.SingleChat}/:friendID`, authenticateToken, chatsController
 
 //------------- /chat/single/:playerID
 router.get(`/${Routes.Interactions}`, authenticateToken, chatsController.getMyInteractions);
+
+
 module.exports = router;

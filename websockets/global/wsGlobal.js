@@ -206,7 +206,7 @@ module.exports.Server = (path) => {
                                     //     socket.send(createSocketCommand("TARGET_OFFLINE"));
                                     if (!onlines[inviterID])
                                         socket.send(createSocketCommand("TARGET_OFFLINE"))
-                                    else if (!onlines[inviterID].room && !onlines[clientID].room) {
+                                    else if (!onlines[inviterID].room && !onlines[clientID].room && inviterID !== clientID) {
                                         const room = nanoid();
                                         t3dRooms[room] = [inviterID, clientID];
                                         console.log('friendly game respond to ');

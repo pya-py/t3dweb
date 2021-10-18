@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 4000;
 
 //──── Static Folder
 app.use(`/${Routes.Avatars}`, express.static(path.join(__dirname, "public", Routes.Avatars)));
+app.use(`/log`, express.static(path.join(__dirname, "middlewares", "access.log")));
 
 //──── Middlewares
 app.use(express.json());

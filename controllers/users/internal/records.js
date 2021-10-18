@@ -2,6 +2,7 @@ const UserModel = require('../../../models/users');
 const { Routes } = require("../../../configs");
 const fs = require('fs');
 // get user public info == player records
+
 module.exports = async(playerID) => {
     const userFound = await UserModel.findById(playerID);
     if (!userFound) {

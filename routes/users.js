@@ -8,9 +8,10 @@ const upload = require('../tools/uploader');
 
 //------------------------------ Public requests: (NO token required) -----------------------
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
-router.get(`/${Routes.Public}/:userID`, userController.getPlayer);
-
-router.get(`/${Routes.Public}`, userController.getAllPlayers);
+router.get(`/${Routes.Records}/:userID`, userController.getPlayer);
+router.get(`/${Routes.Records}`, userController.getAllPlayers);
+//----- GET /users/avatar
+router.get(`/${Routes.MyAvatar}/:userID`, userController.getAvatar);
 
 //──── POST Http Methods ─────────────────────────────────────────────────────────────────
 //POST /users/signup
@@ -81,23 +82,18 @@ router.post(
 
 //------------------------------ Private requests: (token required) -----------------------
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
-
-//----- GET is admin?
-router.get(`/${Routes.Administrators}/:userID`, authenticateToken, userController.isAnAdmin);
 //----- GET /users/private/me
 router.get(`/${Routes.Private}`, authenticateToken, userController.getMe);
-
-//----- GET /users/private/avatar
-router.post(`/${Routes.Private}/${Routes.MyAvatar}`, authenticateToken, upload.single('avatar'), userController.updateAvatar);
-
 //----- GET /users/private/credentials/
 router.get(`/${Routes.Private}/${Routes.Credentials}`, authenticateToken, userController.getMyCredentials);
-
 //----- GET /users/private/credentials/friends
 router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}`, authenticateToken, userController.getMyFriends);
-
 //----- GET /users/private/credentials/friends
 router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}/:targetID`, authenticateToken, userController.isMyFriend);
+
+//──── POST Http Methods ─────────────────────────────────────────────────────────────────
+//----- POST /users/private/avatar
+router.post(`/${Routes.Private}/${Routes.MyAvatar}`, authenticateToken, upload.single('avatar'), userController.updateAvatar);
 
 //──── PUT Http Methods ─────────────────────────────────────────────────────────────────
 // PUT /users/private/credentials

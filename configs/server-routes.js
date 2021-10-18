@@ -15,7 +15,7 @@ module.exports = {
     MyAvatar: "avatar",
     PasswordChange: "password",
     Friends: "friends",
-    Public: "public",
+    Records: "records",
     Administrators: "administrators",
     Games: "games",
     Mine: "mine",
