@@ -1,8 +1,8 @@
 //server routes
 module.exports = {
-    //HttpRoot: "http://localhost:4000",
+    HttpRoot: "https://localhost:4000",
     Avatars: "avats",
-    HttpRoot: "https://t3dweb.herokuapp.com",
+    //HttpRoot: "https://t3dweb.herokuapp.com",
     WebSocketRoot: "wss://t3dweb.herokuapp.com",
     webSocketRoute: "ws",
     wsGamePlayRoute: "gameplay",

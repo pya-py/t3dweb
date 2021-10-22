@@ -8,7 +8,8 @@ const gamesRoutes = require("./routes/games");
 const chatsRoutes = require("./routes/chats");
 const noticesRoutes = require("./routes/notices");
 const { bindSocketsToMainServer } = require("./websockets");
-const { createServer } = require("http");
+const { createServer } = require("https");
+const fs = require('fs');
 const { morganLogger } = require("./middlewares/morganLogger");
 const { Routes } = require("./configs");
 
@@ -18,7 +19,6 @@ const PORT = process.env.PORT || 4000;
 
 //──── Static Folder
 app.use(`/${Routes.Avatars}`, express.static(path.join(__dirname, "public", Routes.Avatars)));
-app.use(`/log`, express.static(path.join(__dirname, "middlewares", "access.log")));
 
 //──── Middlewares
 app.use(express.json());
@@ -31,8 +31,12 @@ app.use(`/${Routes.Users}`, usersRoutes);
 app.use(`/${Routes.Games}`, gamesRoutes);
 app.use(`/${Routes.Notices}`, noticesRoutes);
 app.use(`/${Routes.Chats}`, chatsRoutes);
-//---- WebSocket
-const server = createServer(app);
+//---- WebSocket && https
+const options = {
+    key: fs.readFileSync('./configs/key.pem'),
+    cert: fs.readFileSync('./configs/cert.pem')
+};
+const server = createServer(options, app);
 bindSocketsToMainServer(server);
 
 //error handler: must be put after all middlewares

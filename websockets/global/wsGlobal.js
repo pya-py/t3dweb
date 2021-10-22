@@ -45,7 +45,13 @@ const findEngagedGame = (clientID) => {
 }
 
 module.exports.closeThisRoom = expiredRoom => { //when wsGameplay ends a game or collects garbage it syncs its update with this method
-    if (t3dRooms[expiredRoom]) delete t3dRooms[expiredRoom];
+    if (t3dRooms[expiredRoom]) {
+        t3dRooms[expiredRoom].forEach(player => {
+            onlines[player].room = null;
+            onlines[player].type = null;
+        })
+        delete t3dRooms[expiredRoom];
+    }
 }
 
 module.exports.Server = (path) => {
