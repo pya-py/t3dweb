@@ -2,7 +2,7 @@ const GAME_STATUS = { WIN: 3, DRAW: 1, LOSE: 0 };
 const { updateRecords } = require("../../controllers/users");
 const { saveGame } = require("../../controllers/games");
 
-const initiate = (gameType) => {
+const initiate = (gameType, scoreless) => {
     const dimension = gameType; //temp
     // create an empy dimen*dimen*dimen table
     //algorythm: ex for dimension = 4:
@@ -14,6 +14,7 @@ const initiate = (gameType) => {
     //return game data
     return {
         dimension,
+        scoreless,
         playerX: { id: null, socket: null, score: 0 },
         playerO: { id: null, socket: null, score: 0 },
         lastMove: null,

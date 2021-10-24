@@ -40,6 +40,11 @@ const sendNextMoveTo = async(rname, target, nextMove, nextTurn) => {
             table[floor][row][column] = turn;
             rooms[rname].timer.timeouts[turn] = 0; //reset timeouts: suppose player has missed two moves and now made his moves -> 4 timeouts must be frequent to cause losing
             T3DLogic.inspectAreaAroundTheCell(rooms[rname], cell);
+            if (rooms[rname].scoreless && (playerX.score !== playerO.score)) { //if game is scoreless => playr has scored then there is no need to continue
+                // declare the wiiner and close the game
+                endThisGame(rname);
+                return;
+            }
             //what happens if try crashes some where near here??? 
             rooms[rname].turn = nextTurn; //update turn in game object
             //send scores and updated table back to targets
@@ -122,30 +127,33 @@ const nextDeadline = (rname) => {
         clearTimeout(rooms[rname].timer.id); // as the move made in time, prevent timeout from happening
     rooms[rname].timer.id = setTimeout(() => {
         //after a special amount of time, that the player doesnt make any move, the turn will be passed from him/her to opponent
-        const { playerX, playerO, turn, timer } = rooms[rname];
-        timer.timeouts[turn]++; //increment the number of repeated time outs fro this player
-        if (timer.timeouts[turn] < GameRules.T3D.AllowedFrequestMissedMoves) {
-            rooms[rname].turn = (turn + 1) % 2; //pass the turn to other player
+        try {
+            const { playerX, playerO, turn, timer } = rooms[rname];
+            timer.timeouts[turn]++; //increment the number of repeated time outs fro this player
+            if (timer.timeouts[turn] < GameRules.T3D.AllowedFrequestMissedMoves) {
+                rooms[rname].turn = (turn + 1) % 2; //pass the turn to other player
 
-            [playerX, playerO].forEach(each => {
-                each.socket.send(
-                    createSocketCommand("MOVE_MISSED", rooms[rname].turn)
-                )
-            });
+                [playerX, playerO].forEach(each => {
+                    each.socket.send(
+                        createSocketCommand("MOVE_MISSED", rooms[rname].turn)
+                    )
+                });
 
-            // after informing users of turn passing, next deadline starts
-            nextDeadline(rname);
-        } else { //player has not been responding for last 4 turns of his: he may left the game or whatever
-            //anyway he/she deserves to lose 3-0
-            // t0 -> its now the end time
-            console.log('4 TURNS MISSED FOR PLAYER ' + turn);
-            [playerX, playerO].forEach((each, index) => {
-                if (index === turn) each.score = 0; //loser: the one who is not responding
-                else each.score = 3;
-            });
-            endThisGame(rname);
+                // after informing users of turn passing, next deadline starts
+                nextDeadline(rname);
+            } else { //player has not been responding for last 4 turns of his: he may left the game or whatever
+                //anyway he/she deserves to lose 3-0
+                // t0 -> its now the end time
+                console.log('4 TURNS MISSED FOR PLAYER ' + turn);
+                [playerX, playerO].forEach((each, index) => {
+                    if (index === turn) each.score = 0; //loser: the one who is not responding
+                    else each.score = 3;
+                });
+                endThisGame(rname);
+            }
+        } catch (err) {
+            console.log(err);
         }
-
     }, GameRules.T3D.TurnTimeOut);
 }
 
@@ -213,8 +221,8 @@ module.exports.Server = (path) => {
                         // console.log(rname);
                         // if there is no room with this name, then create one
                         if (!rooms[rname]) {
-                            gameType = Number(msg); //*****change this make client send the type of game */
-                            rooms[rname] = T3DLogic.initiate(gameType);
+                            const { gameType, scoreless } = msg; //*****change this make client send the type of game */
+                            rooms[rname] = T3DLogic.initiate(Number(gameType), Boolean(scoreless));
                         }
 
                         //initiatilize room and players
