@@ -84,9 +84,8 @@ const endThisGame = (rname) => {
     //end game
     const { turn, playerX, playerO, timer, gameID } = rooms[rname];
     // check if game record has been created --> if not: this means no move has been made at all --> both players are offline from the beginning
-    let lastCommand = null;
     if (gameID) {
-        lastCommand = createSocketCommand("END", {
+        const lastCommand = createSocketCommand("END", {
             turn: turn,
             xScore: playerX.score,
             oScore: playerO.score
@@ -96,19 +95,22 @@ const endThisGame = (rname) => {
         T3DLogic.evaluateAndEndGame(rooms[rname]);
         // ... now delete the room
         // temp:***********temp
+
+        [playerX, playerO].forEach(each => {
+            each.socket.send(lastCommand);
+        });
+        setTimeout(() => {
+            delete rooms[rname];
+            closeThisRoom(rname); //inform wsglobal to sync
+        }, 5000);
     } else {
         // if no game record created --> consider the game never started --> summary: SHOTOR DIDI NADIDI
-        lastCommand = createSocketCommand("CLOSE");
+        const lastCommand = createSocketCommand("CLOSE");
+        closeThisRoom(rname, true); //inform wsglobal to sync
+        delete rooms[rname];
     }
 
-    [playerX, playerO].forEach(each => {
-        each.socket.send(lastCommand);
-    });
     clearTimeout(timer.id);
-    setTimeout(() => {
-        delete rooms[rname];
-        closeThisRoom(rname); //inform wsglobal to sync
-    }, 5000);
 }
 
 const startGame = (rname) => {
@@ -233,7 +235,7 @@ module.exports.Server = (path) => {
                             //temp
                             log_memory_usage();
                         }
-
+                        console.table(rooms);
                         const { playerX, playerO, lastMove } = rooms[rname];
                         // update connections
                         [playerX, playerO].forEach((each, index) => {
@@ -259,7 +261,6 @@ module.exports.Server = (path) => {
                 } else if (request === "load") {
                     console.log(`${playerID} requested loading`);
                     const { table, playerX, playerO, turn } = rooms[rname];
-
                     socket.send(
                         createSocketCommand("LOAD", {
                             table,
@@ -325,6 +326,16 @@ module.exports.Server = (path) => {
                     // here: msg === recieved status
                     if (msg) {
                         rooms[rname].lastMove = null;
+                    }
+                } else if (request === "surrender") {
+                    if (msg) { // msg === R_U_Sure?
+                        [rooms[rname].playerX, rooms[rname].playerO].forEach((p) => {
+                            if (playerID === p.id)
+                                p.score = 0;
+                            else
+                                p.score = p.score <= 3 ? 3 : p.score;
+                        });
+                        endThisGame(rname);
                     }
                 } else if (request === "leave") {
                     leaveRoom(rname);

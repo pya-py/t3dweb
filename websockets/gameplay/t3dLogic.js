@@ -28,14 +28,6 @@ const initiate = (gameType, scoreless) => {
     };
 };
 
-const collectScores = (counts, dimension) => {
-    let totalScore = 0;
-    counts.forEach((count) => {
-        if (count === dimension) totalScore++;
-    });
-    return totalScore;
-};
-
 const getCellCoordinates = (cellID, dimen) => {
     const cellFloor = Math.floor(cellID / (dimen * dimen));
     const onFloorId = cellID % (dimen * dimen);
@@ -52,10 +44,15 @@ const inspectAreaAroundTheCell = async(game, cell) => {
     let rowCount = 0,
         columnCount = 0,
         floorMainDiagCount = 0,
-        floorSideDiagCount = 0;
-    let tableMainDiagCount = 0,
+        floorSideDiagCount = 0,
+        tableMainDiagCount = 0,
         tableSideDiagCount = 0,
-        tableAltitudeCount = 0;
+        tableAltitudeCount = 0,
+        tableRowFloorMainDiagCount = 0,
+        tableRowFloorSideDiagCount = 0,
+        tableColumnFloorMainDiagCount = 0,
+        tableColumnFloorSideDiagCount = 0;
+
     for (let i = 0; i < dimension; i++) {
         if (table[floor][row][i] === playerInTheCell) rowCount++; // inspect in a row
         if (table[floor][i][column] === playerInTheCell) columnCount++; // inspect in a column
@@ -68,23 +65,31 @@ const inspectAreaAroundTheCell = async(game, cell) => {
         if (row + column + 1 === dimension) {
             if (table[floor][i][dimension - i - 1] === playerInTheCell)
                 floorSideDiagCount++; // inpect in a 2D side Diagonal line through the cell's floor
-            if (
-                row === floor &&
-                table[i][i][dimension - i - 1] === playerInTheCell
-            )
+            if (row === floor && table[i][i][dimension - i - 1] === playerInTheCell)
                 tableSideDiagCount++; // inspect in a 3D side diagonal line through the whole table
         }
+        if (floor === column && table[i][row][i] === playerInTheCell)
+            tableRowFloorMainDiagCount++;
+        if (floor + column + 1 === dimension && table[i][row][dimension - i - 1] === playerInTheCell)
+            tableRowFloorSideDiagCount++;
+        if (floor === row && table[i][i][column] === playerInTheCell)
+            tableColumnFloorMainDiagCount++;
+        if (floor + row + 1 === dimension && table[i][dimension - i - 1][column] === playerInTheCell)
+            tableColumnFloorSideDiagCount++;
     }
 
-    const totalScores = collectScores([rowCount, columnCount, floorMainDiagCount, floorSideDiagCount, tableMainDiagCount,
-        tableSideDiagCount, tableAltitudeCount
-    ], dimension);
+    let totalScore = 0;
+    [rowCount, columnCount, floorMainDiagCount, floorSideDiagCount, tableMainDiagCount, tableSideDiagCount, tableAltitudeCount,
+        tableRowFloorMainDiagCount, tableRowFloorSideDiagCount, tableColumnFloorMainDiagCount, tableColumnFloorSideDiagCount
+    ].forEach((count) => {
+        if (count === dimension) totalScore++;
+    });
 
-    if (playerInTheCell === 0) playerX.score += totalScores;
-    else playerO.score += totalScores;
+    if (playerInTheCell === 0) playerX.score += totalScore;
+    else playerO.score += totalScore;
 
     try {
-        if (totalScores > 0)
+        if (totalScore > 0)
             await saveGame(
                 game.gameID,
                 game.playerX.id,

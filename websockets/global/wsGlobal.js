@@ -39,16 +39,17 @@ const findEngagedGame = (clientID) => {
     Object.keys(t3dRooms).forEach((rid) => {
         if (t3dRooms[rid].players[0] === clientID || t3dRooms[rid].players[1] === clientID) {
             onlines[clientID].room = rid;
-            onlines[clientID].type = t3dRooms[rid].type;
+            onlines[clientID].type = t3dRooms[rid].dimension;
             onlines[clientID].scoreless = t3dRooms[rid].scoreless;
-            return;
+
         }
     });
 }
 
-module.exports.closeThisRoom = expiredRoom => { //when wsGameplay ends a game or collects garbage it syncs its update with this method
+module.exports.closeThisRoom = (expiredRoom, canceled = false) => { //when wsGameplay ends a game or collects garbage it syncs its update with this method
     if (t3dRooms[expiredRoom]) {
         t3dRooms[expiredRoom].players.forEach(player => {
+            if (canceled) onlines[player].socket.send(createSocketCommand("GAME_CANCELLED"));
             onlines[player].room = null;
             onlines[player].type = null;
             onlines[player].scoreless = null;
@@ -95,10 +96,16 @@ module.exports.Server = (path) => {
                                     onlines[clientID].socket = socket; //always set the save the most recent client connection
                                 }
 
+                                findEngagedGame(clientID);
                                 socket.send(
                                     createSocketCommand("ONLINE", {
                                         players: Object.keys(onlines).length,
                                         games: Object.keys(t3dRooms).length,
+                                        room: {
+                                            name: onlines[clientID].room,
+                                            type: onlines[clientID].type,
+                                            scoreless: onlines[clientID].scoreless
+                                        }
                                     })
                                 );
                                 break;

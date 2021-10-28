@@ -8,7 +8,7 @@ const gamesRoutes = require("./routes/games");
 const chatsRoutes = require("./routes/chats");
 const noticesRoutes = require("./routes/notices");
 const { bindSocketsToMainServer } = require("./websockets");
-const { createServer } = require("http");
+const { createServer } = require("https");
 const fs = require('fs');
 const { morganLogger } = require("./middlewares/morganLogger");
 const { Routes } = require("./configs");
@@ -36,7 +36,7 @@ const options = {
     key: fs.readFileSync('./configs/key.pem'),
     cert: fs.readFileSync('./configs/cert.pem')
 };
-const server = createServer(app);
+const server = createServer(options, app);
 bindSocketsToMainServer(server);
 
 //error handler: must be put after all middlewares
