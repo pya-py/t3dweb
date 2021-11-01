@@ -160,7 +160,6 @@ module.exports.Server = (path) => {
     //custom method
     gamePlayWebSocketServer.collectGarbage = () => {
         console.log('gameplay garbage called in ' + Date.now());
-        // will be called by -> mainClock
         // removes trashes: games that are ended but still remain on the server, unwanted stuff, etc
         Object.keys(rooms).forEach(game => {
             if (rooms[game].forceCloseTime <= Date.now()) { //means current time has passed the forceclosetime
