@@ -30,7 +30,7 @@ const updateClientConnection = (currentRoom, client, newSocket, myTurn) => {
 const sendNextMoveTo = async(rname, madeBy, nextMove, nextTurn) => {
     const { table, dimension, playerX, playerO, turn } = rooms[rname];
     const cell = ({ floor, row, column } = T3DLogic.getCellCoordinates(nextMove, dimension));
-    console.log(`move made by player:${madeBy} now is sending to opponent`);
+    console.log(`GAMEPLAY:\tmove made by player:${madeBy} now is sending to opponent`);
     try {
         //if cell is empty
         if (!table[floor][row][column]) {
@@ -159,7 +159,7 @@ module.exports.Server = (path) => {
     let gamePlayWebSocketServer = new WebSocket.Server({ noServer: true, path });
     //custom method
     gamePlayWebSocketServer.collectGarbage = () => {
-        console.log('gameplay garbage called in ' + (new Date()).toString());
+        console.log('GAMEPLAY:\tgarbage called in ' + (new Date()).toString());
         // removes trashes: games that are ended but still remain on the server, unwanted stuff, etc
         Object.keys(rooms).forEach(game => {
             if (rooms[game].forceCloseTime <= Date.now()) { //means current time has passed the forceclosetime
@@ -170,7 +170,7 @@ module.exports.Server = (path) => {
                 closeThisRoom(rname); //inform wsglobal to sync
                 //... inform players
                 //... save results or cancel the game
-                console.log(`*ATTENTION: Room ${game} forcey closed.`);
+                console.log(`GAMEPLAY:\t*ATTENTION: Room ${game} forcey closed.`);
             }
         })
     }
@@ -182,7 +182,7 @@ module.exports.Server = (path) => {
                 const { request, rname, token, msg } = JSON.parse(data);
                 const playerID = verifyTokenForWS(token); // if anything about token was wrong -> request doesnt process
 
-                console.log("req:", request, ",  room:", rname, ",  pid:", playerID, ",  msg:", msg);
+                console.log("GAMEPLAY:\treq:", request, "\troom:", rname, "\tplayer:", playerID, "\tparams:", msg);
 
                 if (rooms[rname] && rooms[rname].emptyCells === 0) {
                     endThisGame(rname);
@@ -268,7 +268,7 @@ module.exports.Server = (path) => {
                             } else { //player has not been responding for last 4 turns of his: he may left the game or whatever
                                 //anyway he/she deserves to lose 3(+) - 0
                                 // t0 -> its now the end time
-                                console.log(`${GameRules.T3D.AllowedFrequestMissedMoves} turns missed by player${turn}`);
+                                console.log(`GAMEPLAY:\t${GameRules.T3D.AllowedFrequestMissedMoves} turns missed by player${turn}`);
                                 [playerX, playerO].forEach((each, index) => {
                                     if (index === turn) each.score = 0; //loser: the one who is not responding
                                     else each.score = each.score <= 3 ? 3 : each.score;
@@ -315,7 +315,7 @@ module.exports.Server = (path) => {
                     }
                 } else if (request === "leave") {
                     leaveRoom(rname);
-                    console.log(`${playerID} left`); //comment this
+                    console.log(`GAMEPLAY:\t${playerID} left`); //comment this
                 }
             } catch (err) {
                 console.log(err);

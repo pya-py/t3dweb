@@ -99,7 +99,7 @@ module.exports.Server = (path) => {
                     switch (request) {
                         case "online":
                             {
-                                console.log('GLOBAL: online request by ' + clientID);
+                                console.log('GLOBAL:\tonline request by ' + clientID);
                                 if (!onlines[clientID]) {
                                     // add user to online list
 
@@ -161,7 +161,7 @@ module.exports.Server = (path) => {
                                 } else {
                                     //if player is trying to play a new game
                                     const expected_game = {...onlines[clientID].room };
-                                    console.log(`GLOBAL: cid::${clientID} is looking for a game which: `, expected_game);
+                                    console.log(`GLOBAL:\tcid::${clientID} is looking for a game which: `, expected_game);
                                     let readyClients = Object.keys(
                                         onlines
                                     ).filter(
@@ -176,7 +176,7 @@ module.exports.Server = (path) => {
 
                                     //temp: list every clients game specs to see whats the issue
                                     if (readyClients.length < 1) {
-                                        console.log("GLOBAL: no random game found, inspecting every online client:");
+                                        console.log("GLOBAL:\tno random game found, inspecting every online client:");
                                         Object.entries(onlines).forEach(([cid, cdata]) => {
                                             console.log(`cid::${clientID}\troom_status:`, cdata.room);
                                         });
@@ -237,7 +237,7 @@ module.exports.Server = (path) => {
                                     if (onlines[targetID]) {
                                         if (!onlines[targetID].room || !onlines[targetID].room.name) {
                                             onlines[targetID].socket.send(createSocketCommand("FRIENDLY_GAME", { askerID: clientID, askerName, gameType, scoreless }));
-                                            console.log(`GLOBAL: cid::${clientID} sent a friendly game request to cid::${targetID}`);
+                                            console.log(`GLOBAL:\tcid::${clientID} sent a friendly game request to cid::${targetID}`);
 
                                         } else
                                             socket.send(createSocketCommand("TARGET_BUSY"));
@@ -251,7 +251,7 @@ module.exports.Server = (path) => {
                             {
                                 const { answer, inviterID, gameType, scoreless } = msg;
                                 findEngagedGame(clientID);
-                                console.log(`GLOBAL: cid::${clientID} responded to a friendly game request made by cid::${inviterID}`);
+                                console.log(`GLOBAL:\tcid::${clientID} responded to a friendly game request made by cid::${inviterID}`);
                                 if (answer) {
                                     // if (!onlines[inviterID])
                                     //     socket.send(createSocketCommand("TARGET_OFFLINE"));
@@ -260,7 +260,7 @@ module.exports.Server = (path) => {
                                     else if (inviterID !== clientID && isClientFree(inviterID) && isClientFree(clientID)) {
                                         const room = { name: nanoid(), scoreless, type: gameType };
                                         t3dRooms[room.name] = { players: [inviterID, clientID], dimension: room.type, scoreless: room.scoreless };
-                                        console.log(`GLOBAL: friendly game initiated successfully in room::${room.name}`);
+                                        console.log(`GLOBAL:\tfriendly game initiated successfully in room::${room.name}`);
                                         t3dRooms[room.name].players.forEach((cid) => {
                                             onlines[cid].socket.send(
                                                 createSocketCommand("INVITATION_ACCEPTED", room)
@@ -304,7 +304,7 @@ module.exports.Server = (path) => {
                                 // use chatRooms to save all messages
                                 if (text) { // ignore empty texts
                                     if (!saveMessage(clientID, friendID, text)) { //when sth goes wronge in saveMessage it returns false
-                                        console.log('GLOBAL: something went off while trying to save msg');
+                                        console.log('GLOBAL:\tsomething went off while trying to save msg');
 
                                     }
                                     if (onlines[friendID]) //if his online send it immediatly --> o.w. friend sees new message in his chatroom while loading
@@ -320,7 +320,7 @@ module.exports.Server = (path) => {
                                     if (room && room.name) { //check if client belongs to a game room
                                         if (t3dRooms[room.name]) { //delete the room in t3dRooms list if it still exists
                                             delete t3dRooms[room.name];
-                                            console.log("GLOBAL: deletedroom: ", room);
+                                            console.log("GLOBAL:\tdeletedroom: ", room);
                                         };
 
                                         onlines[clientID].room = null;
@@ -364,7 +364,7 @@ module.exports.Server = (path) => {
             //check this
             //i want this: when user gets out, and turns back to game and game is still continuing, send back previous room id
             delete onlines[myID];
-            console.log("GLOBAL: " + myID + " disconnected");
+            console.log("GLOBAL:\t" + myID + " disconnected");
             myID = null;
             //if game ended, remove t3dRooms[rid]            
             //... complete this
