@@ -58,17 +58,17 @@ const findEngagedGame = (clientID) => {
 
 const isClientFree = (cid) => !onlines[cid].room || !onlines[cid].room.name;
 
-module.exports.closeThisRoom = (expiredRoom, canceled = false) => { //when wsGameplay ends a game or collects garbage it syncs its update with this method
+module.exports.closeThisRoom = (expiredRoomName, canceled = false) => { //when wsGameplay ends a game or collects garbage it syncs its update with this method
     try {
-        if (t3dRooms[expiredRoom]) {
-            t3dRooms[expiredRoom].players.forEach(player => {
+        if (t3dRooms[expiredRoomName]) {
+            t3dRooms[expiredRoomName].players.forEach(player => {
                 if (onlines[player]) { //if player exists in online list:
                     if (canceled) onlines[player].socket.send(createSocketCommand("GAME_CANCELLED"));
                     onlines[player].room = null;
                     onlines[player].opponent = null;
                 }
             })
-            delete t3dRooms[expiredRoom];
+            delete t3dRooms[expiredRoomName];
         }
     } catch (err) {
         console.log(err);
@@ -89,13 +89,17 @@ module.exports.Server = (path) => {
         socket.on("message", (data) => {
             try {
                 const { request, msg, token } = JSON.parse(data);
+
                 const clientID = verifyTokenForWS(token); // if anything about token was wrong -> request doesnt process
+                console.log("GLOBAL:\treq: ", request, "\tcid: ", clientID, "\tparameter: ", msg, "\troom: ",
+                    (onlines[clientID] ?
+                        onlines[clientID].room : "none"));
                 myID = clientID;
                 if (clientID) {
                     switch (request) {
                         case "online":
                             {
-                                console.log('online request from ' + clientID);
+                                console.log('GLOBAL: online request by ' + clientID);
                                 if (!onlines[clientID]) {
                                     // add user to online list
 
@@ -107,7 +111,7 @@ module.exports.Server = (path) => {
                                         },
                                         socket,
                                     };
-                                    log_memory_usage();
+                                    //log_memory_usage();
                                 } else {
                                     myID = clientID; //update myID to make sure its always correct
                                     // really its not needed khodayi!!
@@ -156,28 +160,37 @@ module.exports.Server = (path) => {
                                     }));
                                 } else {
                                     //if player is trying to play a new game
-                                    const { room: game } = onlines[clientID];
-
+                                    const expected_game = {...onlines[clientID].room };
+                                    console.log(`GLOBAL: cid::${clientID} is looking for a game which: `, expected_game);
                                     let readyClients = Object.keys(
                                         onlines
                                     ).filter(
                                         (cid) =>
                                         onlines[cid].room && !onlines[cid].room.name &&
-                                        onlines[cid].room.scoreless === game.scoreless &&
-                                        onlines[cid].room.type === game.type && //has the same game type
+                                        onlines[cid].room.scoreless === expected_game.scoreless &&
+                                        onlines[cid].room.type === expected_game.type && //has the same game type
                                         cid !== clientID // and its not me
                                     );
+
                                     // search in users with no game to find one
+
+                                    //temp: list every clients game specs to see whats the issue
+                                    if (readyClients.length < 1) {
+                                        console.log("GLOBAL: no random game found, inspecting every online client:");
+                                        Object.entries(onlines).forEach(([cid, cdata]) => {
+                                            console.log(`cid::${clientID}\troom_status:`, cdata.room);
+                                        });
+                                    }
 
                                     if (readyClients.length >= 1) {
                                         // console.table(readyClients);
                                         const opponentID = readyClients[findRandomIndex(readyClients.length)];
-                                        const room = { name: nanoid(), scoreless: game.scoreless, type: game.type };
+                                        const room = { name: nanoid(), scoreless: expected_game.scoreless, type: expected_game.type };
                                         // inform both clients
                                         if (onlines[opponentID]) {
                                             t3dRooms[room.name] = { players: [clientID, opponentID], dimension: room.type, scoreless: room.scoreless };
                                             t3dRooms[room.name].players.forEach((cid) => {
-                                                onlines[cid].room = room;
+                                                onlines[cid].room = {...room };
                                                 onlines[cid].socket.send(
                                                     createSocketCommand("FIND_RESULT", {
                                                         found: room,
@@ -188,7 +201,8 @@ module.exports.Server = (path) => {
                                                     })
                                                 );
                                             });
-                                            log_memory_usage();
+
+                                            //log_memory_usage();
                                         }
                                         // send a cmd to me and opponent with roomName => after both clients set their roomName equally they auto connect
                                     } else {
@@ -212,7 +226,6 @@ module.exports.Server = (path) => {
                                 const { askerName, targetID, gameType, scoreless } = msg;
                                 findEngagedGame(clientID);
                                 const { room } = onlines[clientID];
-                                console.log(room);
                                 // onlines[clientID].type check this or not?
                                 if (room && room.name) { //if player is in a game currenly or is searching
                                     socket.send(createSocketCommand("YOUR_BUSY"));
@@ -224,7 +237,7 @@ module.exports.Server = (path) => {
                                     if (onlines[targetID]) {
                                         if (!onlines[targetID].room || !onlines[targetID].room.name) {
                                             onlines[targetID].socket.send(createSocketCommand("FRIENDLY_GAME", { askerID: clientID, askerName, gameType, scoreless }));
-                                            console.log('friendly game request sent');
+                                            console.log(`GLOBAL: cid::${clientID} sent a friendly game request to cid::${targetID}`);
 
                                         } else
                                             socket.send(createSocketCommand("TARGET_BUSY"));
@@ -238,8 +251,7 @@ module.exports.Server = (path) => {
                             {
                                 const { answer, inviterID, gameType, scoreless } = msg;
                                 findEngagedGame(clientID);
-                                console.log(inviterID);
-                                console.log('friendly game RESPONSE');
+                                console.log(`GLOBAL: cid::${clientID} responded to a friendly game request made by cid::${inviterID}`);
                                 if (answer) {
                                     // if (!onlines[inviterID])
                                     //     socket.send(createSocketCommand("TARGET_OFFLINE"));
@@ -247,16 +259,16 @@ module.exports.Server = (path) => {
                                         socket.send(createSocketCommand("TARGET_OFFLINE"))
                                     else if (inviterID !== clientID && isClientFree(inviterID) && isClientFree(clientID)) {
                                         const room = { name: nanoid(), scoreless, type: gameType };
-                                        t3dRooms[room] = { players: [inviterID, clientID], dimension: room.type, scoreless: room.scoreless };
-                                        console.log('friendly game respond to ');
-                                        t3dRooms[room].players.forEach((cid) => {
+                                        t3dRooms[room.name] = { players: [inviterID, clientID], dimension: room.type, scoreless: room.scoreless };
+                                        console.log(`GLOBAL: friendly game initiated successfully in room::${room.name}`);
+                                        t3dRooms[room.name].players.forEach((cid) => {
                                             onlines[cid].socket.send(
                                                 createSocketCommand("INVITATION_ACCEPTED", room)
                                             );
-                                            onlines[cid].room = room;
+                                            onlines[cid].room = {...room };
                                             // add some boolean to show the game is friendly and doesnt affect records
                                         });
-                                        log_memory_usage();
+                                        //log_memory_usage();
                                     }
                                 } else {
                                     //if asker is online -> sen negative to him as a Notify message
@@ -267,7 +279,6 @@ module.exports.Server = (path) => {
                             {
                                 const { targetID, askerName } = msg;
                                 //inform the target
-                                console.log('FRIENDSHIP');
                                 if (onlines[targetID])
                                     onlines[targetID].socket.send(createSocketCommand("FRIENDSHIP_REQUEST", { askerID: clientID, askerName }));
                                 else
@@ -293,7 +304,7 @@ module.exports.Server = (path) => {
                                 // use chatRooms to save all messages
                                 if (text) { // ignore empty texts
                                     if (!saveMessage(clientID, friendID, text)) { //when sth goes wronge in saveMessage it returns false
-                                        console.log('something went off while trying to save msg');
+                                        console.log('GLOBAL: something went off while trying to save msg');
 
                                     }
                                     if (onlines[friendID]) //if his online send it immediatly --> o.w. friend sees new message in his chatroom while loading
@@ -309,7 +320,7 @@ module.exports.Server = (path) => {
                                     if (room && room.name) { //check if client belongs to a game room
                                         if (t3dRooms[room.name]) { //delete the room in t3dRooms list if it still exists
                                             delete t3dRooms[room.name];
-                                            console.log("deletedroom: ", room);
+                                            console.log("GLOBAL: deletedroom: ", room);
                                         };
 
                                         onlines[clientID].room = null;
@@ -353,7 +364,7 @@ module.exports.Server = (path) => {
             //check this
             //i want this: when user gets out, and turns back to game and game is still continuing, send back previous room id
             delete onlines[myID];
-            console.log(myID + " disconnected");
+            console.log("GLOBAL: " + myID + " disconnected");
             myID = null;
             //if game ended, remove t3dRooms[rid]            
             //... complete this

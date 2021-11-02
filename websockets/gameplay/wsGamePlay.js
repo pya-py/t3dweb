@@ -30,7 +30,7 @@ const updateClientConnection = (currentRoom, client, newSocket, myTurn) => {
 const sendNextMoveTo = async(rname, madeBy, nextMove, nextTurn) => {
     const { table, dimension, playerX, playerO, turn } = rooms[rname];
     const cell = ({ floor, row, column } = T3DLogic.getCellCoordinates(nextMove, dimension));
-    console.log("SENDMOVE CALLED");
+    console.log(`move made by player:${madeBy} now is sending to opponent`);
     try {
         //if cell is empty
         if (!table[floor][row][column]) {
@@ -159,7 +159,7 @@ module.exports.Server = (path) => {
     let gamePlayWebSocketServer = new WebSocket.Server({ noServer: true, path });
     //custom method
     gamePlayWebSocketServer.collectGarbage = () => {
-        console.log('gameplay garbage called in ' + Date.now());
+        console.log('gameplay garbage called in ' + (new Date()).toString());
         // removes trashes: games that are ended but still remain on the server, unwanted stuff, etc
         Object.keys(rooms).forEach(game => {
             if (rooms[game].forceCloseTime <= Date.now()) { //means current time has passed the forceclosetime
@@ -170,7 +170,7 @@ module.exports.Server = (path) => {
                 closeThisRoom(rname); //inform wsglobal to sync
                 //... inform players
                 //... save results or cancel the game
-                console.log(`*ATTENTION: Game ${game} forcey closed.`);
+                console.log(`*ATTENTION: Room ${game} forcey closed.`);
             }
         })
     }
@@ -204,7 +204,7 @@ module.exports.Server = (path) => {
                         } else if (!rooms[rname].playerO.id && playerID !== rooms[rname].playerX.id) {
                             rooms[rname].playerO = { id: playerID, socket, score: 0 };
                             //temp
-                            log_memory_usage();
+                            //log_memory_usage();
                         }
                         const { playerX, playerO, lastMove } = rooms[rname];
                         // update connections
@@ -268,7 +268,7 @@ module.exports.Server = (path) => {
                             } else { //player has not been responding for last 4 turns of his: he may left the game or whatever
                                 //anyway he/she deserves to lose 3(+) - 0
                                 // t0 -> its now the end time
-                                console.log(`${GameRules.T3D.AllowedFrequestMissedMoves} TURNS MISSED FOR PLAYER ${turn}`);
+                                console.log(`${GameRules.T3D.AllowedFrequestMissedMoves} turns missed by player${turn}`);
                                 [playerX, playerO].forEach((each, index) => {
                                     if (index === turn) each.score = 0; //loser: the one who is not responding
                                     else each.score = each.score <= 3 ? 3 : each.score;
@@ -280,7 +280,6 @@ module.exports.Server = (path) => {
                         console.log(err);
                     }
                 } else if (request === "load") {
-                    console.log(`${playerID} requested loading`);
                     const { table, playerX, playerO, turn, timer, forceCloseTime } = rooms[rname];
 
                     if (!playerO.id) return; //wait untill both players online
