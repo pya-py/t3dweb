@@ -66,11 +66,11 @@ const sendNextMoveTo = async(rname, madeBy, nextMove, nextTurn) => {
             })
 
             if (!rooms[rname].gameID) {
-                const { gameID } = await createGame(playerX.id, playerO.id, dimension);
+                const { gameID } = await createGame(playerX.id, playerO.id, dimension, true);
                 rooms[rname].gameID = gameID;
             }
         } else //cell's not empty
-            throw new Error('wronge_move: selected table cell is not empty')
+            throw new Error('wronge_move: selected table cell is not empty');
     } catch (err) {
         //complete this
         //suppose some one sening a move but in the middle of try some error happens
@@ -150,7 +150,7 @@ const leaveRoom = (rname, playerID) => { //not used yet.. cause the data here in
 //temp method
 const log_memory_usage = () => {
     console.log('---------------------------gameplay-scoket-mem-----------------------------\n');
-    const online_size = Number(sizeof(Object.keys(rooms)) + sizeof(Object.values(rooms))) / 1000;
+    const online_size = Number(sizeof(Object.keys(rooms)) + sizeof(Object.values(rooms))) / 1024;
     console.log('new game up and running --> allocated memory:' + online_size + 'KB');
     console.log('---------------------------gameplay-scoket-mem-----------------------------\n');
 }

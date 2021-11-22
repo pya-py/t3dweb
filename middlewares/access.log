@@ -1,0 +1,60 @@
+Mon Nov 22 2021 08:26:48 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE3MmZkYmEwM2U2NDE1NTRkOTcwIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2Mzc1NTQ1ODYsImV4cCI6MTYzODE1OTM4Nn0.ZnpchABmKZnO9QsoOMVJYiqvdRk2ccfNRYCeUMldeqw"
+User Requested: undefined
+Payload: {"studentID":11111111}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 211.702 ms
+---------------------------------------------------
+
+Mon Nov 22 2021 11:19:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NTU0NTcxLCJleHAiOjE2MzgxNTkzNzF9.YPLFwyIdeT_e67G4Vdij2JOX-cHnYPWDiM7d9oEXHOY"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619b27728a0bca1c5adf1dce
+Status Code: 500
+Error Message: "Cannot populate path `draws.round.match` because it is not in your schema. Set the `strictPopulate` option to false to override."
+Content Length: 142
+Response Time: 7.187 ms
+---------------------------------------------------
+
+Mon Nov 22 2021 11:19:59 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NTU0NTcxLCJleHAiOjE2MzgxNTkzNzF9.YPLFwyIdeT_e67G4Vdij2JOX-cHnYPWDiM7d9oEXHOY"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619b27728a0bca1c5adf1dce
+Status Code: 500
+Error Message: "Cannot populate path `draws.round.match` because it is not in your schema. Set the `strictPopulate` option to false to override."
+Content Length: 142
+Response Time: 12.391 ms
+---------------------------------------------------
+
+Mon Nov 22 2021 11:20:52 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NTU0NTcxLCJleHAiOjE2MzgxNTkzNzF9.YPLFwyIdeT_e67G4Vdij2JOX-cHnYPWDiM7d9oEXHOY"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619b27728a0bca1c5adf1dce
+Status Code: 500
+Error Message: "Cannot populate path `draws.round.match` because it is not in your schema. Set the `strictPopulate` option to false to override."
+Content Length: 142
+Response Time: 24.234 ms
+---------------------------------------------------
+
+Mon Nov 22 2021 11:20:56 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NTU0NTcxLCJleHAiOjE2MzgxNTkzNzF9.YPLFwyIdeT_e67G4Vdij2JOX-cHnYPWDiM7d9oEXHOY"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619b27728a0bca1c5adf1dce
+Status Code: 500
+Error Message: "Cannot populate path `draws.round.match` because it is not in your schema. Set the `strictPopulate` option to false to override."
+Content Length: 142
+Response Time: 7.111 ms
+---------------------------------------------------
+

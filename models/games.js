@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const gameSchema = new Schema({
-    Type: {
+    _type: {
         type: Number,
         default: 4 //4 => X-O 3D 4*4*4
     },

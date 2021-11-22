@@ -2,11 +2,13 @@ const GameModel = require("../../models/games");
 
 module.exports = async(req, res, next) => {
     try {
-        const allGames = (await GameModel.find().populate("players.self")).map(
-            (game) => {
+        const now = new Date();
+        const allGames = (await GameModel.find().populate("players.self"))
+            .filter((game) => game.date < now)
+            .map((game) => {
                 return {
                     gameID: game._id.toString(),
-                    Type: game.Type,
+                    Type: game._type,
                     date: game.date,
                     players: game.players.map((player) => {
                         return {
@@ -16,8 +18,7 @@ module.exports = async(req, res, next) => {
                     }),
                     isLive: game.isLive,
                 };
-            }
-        );
+            });
 
         res.status(200).json({ allGames });
     } catch (err) {

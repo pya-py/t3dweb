@@ -27,8 +27,8 @@ function findRandomIndex(max) {
 //temp method
 const log_memory_usage = () => {
     console.log('---------------------------global-scoket-mem-----------------------------\n');
-    const online_size = Number(sizeof(Object.keys(onlines)) + sizeof(Object.values(onlines))) / 1000,
-        t3d_size = Number(sizeof(Object.keys(t3dRooms)) + sizeof(Object.values(t3dRooms))) / 1000;
+    const online_size = Number(sizeof(Object.keys(onlines)) + sizeof(Object.values(onlines))) / 1024,
+        t3d_size = Number(sizeof(Object.keys(t3dRooms)) + sizeof(Object.values(t3dRooms))) / 1024;
     console.log('new user came online --> allocated memory:' + online_size + 'KB');
     console.log('new game:t3d added to games room --> allocated memory:' + t3d_size + 'KB');
     console.log('total: ' + Number(online_size + t3d_size) + 'KB');

@@ -1,12 +1,12 @@
 const GameModel = require("../../models/games");
 const mongoose = require("mongoose");
 //module.exports = async (req, res, next) => {
-module.exports = async(xID, oID, Type) => {
+module.exports = async(playerX, playerO, Type, isLive = true) => {
     try {
         // check data another time to make sure
         // userIDs may be changed ==> must be
         // what to do for isLive?
-        if (!xID || !oID) {
+        if (!playerX || !playerO) {
             //check if ids exist in database?
             const error = new Error("Each player must be online!");
             error.statusCode = 404; //edit
@@ -14,14 +14,13 @@ module.exports = async(xID, oID, Type) => {
         }
 
         const newGame = new GameModel({
-            players: [xID, oID].map(each => { return { self: mongoose.Types.ObjectId(each), score: 0 } }),
-            Type,
+            players: [playerX, playerO].map(each => { return { self: mongoose.Types.ObjectId(each), score: 0 } }),
+            _type: Type,
             date: new Date(),
-            isLive: true,
+            isLive,
         });
-
         await newGame.save();
-        return { gameID: newGame._id.toString() };
+        return { gameID: newGame._id };
     } catch (err) {
         console.log(err);
         //manage exeptions better
