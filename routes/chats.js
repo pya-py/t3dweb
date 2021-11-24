@@ -2,13 +2,13 @@ const express = require('express');
 const { Routes } = require('../configs');
 const router = express.Router();
 const chatsController = require('../controllers/chats');
-const { authenticateToken } = require("../middlewares/tokenManager");
+const authenticate = require("../middlewares/authenticate");
 
 //------------- /chat/single/:playerID
-router.get(`/${Routes.SingleChat}/:friendID`, authenticateToken, chatsController.getOurChat);
+router.get(`/${Routes.SingleChat}/:friendID`, authenticate.token, chatsController.getOurChat);
 
 //------------- /chat/single/:playerID
-router.get(`/${Routes.Interactions}`, authenticateToken, chatsController.getMyInteractions);
+router.get(`/${Routes.Interactions}`, authenticate.token, chatsController.getMyInteractions);
 
 
 module.exports = router;

@@ -1,11 +1,11 @@
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
 const UserModel = require("../../../models/users");
-const { generateToken } = require("../../../middlewares/tokenManager");
+const { generateToken } = require("../../../middlewares/authenticate");
 // const { sendEmail } = require('../utils/mailer');
 const SALT_LENGTH = 11;
 
-module.exports = async (req, res, next) => {
+module.exports = async(req, res, next) => {
     try {
         const { studentID, email, fullname, password } = req.body;
         const errors = validationResult(req);
@@ -25,7 +25,7 @@ module.exports = async (req, res, next) => {
             error.statusCode = 409; // already exists
             throw error;
         }
-        
+
         const hashedPassword = await bcryptjs.hash(password, SALT_LENGTH);
         const userCount = await UserModel.find().countDocuments();
         let user = new UserModel({

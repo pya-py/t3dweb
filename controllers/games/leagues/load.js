@@ -11,7 +11,6 @@ module.exports = async(req, res, next) => {
             throw error;
         }
 
-        console.log(leagueFound);
         const league = {
             title: leagueFound.title,
             started: leagueFound.started,
@@ -21,13 +20,15 @@ module.exports = async(req, res, next) => {
                     fullname: contester.player.fullname,
                     records: contester.player.records,
                     team: contester.team,
-                    point: contester.points,
+                    progress: contester.progress,
                     userID: contester.player._id.toString()
                 }
             }),
             capacity: leagueFound.capacity,
             prize: leagueFound.prize,
-            Mode: leagueFound._mode
+            Mode: leagueFound._mode,
+            Type: leagueFound._type
+
         }
         res.status(200).json({ league });
     } catch (err) {

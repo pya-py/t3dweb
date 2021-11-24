@@ -3,7 +3,7 @@ const { body } = require("express-validator");
 const { Routes, PayloadRequirements } = require("../configs");
 const router = express.Router();
 const userController = require("../controllers/users");
-const { authenticateToken } = require("../middlewares/tokenManager");
+const authenticate = require("../middlewares/authenticate");
 const upload = require('../tools/uploader');
 
 //------------------------------ Public requests: (NO token required) -----------------------
@@ -83,23 +83,23 @@ router.post(
 //------------------------------ Private requests: (token required) -----------------------
 //──── GET Http Methods ─────────────────────────────────────────────────────────────────
 //----- GET /users/private/me
-router.get(`/${Routes.Private}`, authenticateToken, userController.getMe);
+router.get(`/${Routes.Private}`, authenticate.token, userController.getMe);
 //----- GET /users/private/credentials/
-router.get(`/${Routes.Private}/${Routes.Credentials}`, authenticateToken, userController.getMyCredentials);
+router.get(`/${Routes.Private}/${Routes.Credentials}`, authenticate.token, userController.getMyCredentials);
 //----- GET /users/private/credentials/friends
-router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}`, authenticateToken, userController.getMyFriends);
+router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}`, authenticate.token, userController.getMyFriends);
 //----- GET /users/private/credentials/friends
-router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}/:targetID`, authenticateToken, userController.isMyFriend);
+router.get(`/${Routes.Private}/${Routes.Credentials}/${Routes.Friends}/:targetID`, authenticate.token, userController.isMyFriend);
 
 //──── POST Http Methods ─────────────────────────────────────────────────────────────────
 //----- POST /users/private/avatar
-router.post(`/${Routes.Private}/${Routes.MyAvatar}`, authenticateToken, upload.single('avatar'), userController.updateAvatar);
+router.post(`/${Routes.Private}/${Routes.MyAvatar}`, authenticate.token, /*authenticate.password,*/ upload.single('avatar'), userController.updateAvatar);
 
 //──── PUT Http Methods ─────────────────────────────────────────────────────────────────
 // PUT /users/private/credentials
 router.put(
     `/${Routes.Private}/${Routes.Credentials}`,
-    authenticateToken, [
+    authenticate.token, [
         body("studentID")
         .isNumeric() //check for other conditions for a student id
         .isLength(PayloadRequirements.Users.StudenIDLength)
@@ -136,7 +136,7 @@ router.put(
 
 router.put(
     `/${Routes.Private}/${Routes.Credentials}/${Routes.PasswordChange}`,
-    authenticateToken, [
+    authenticate.token, [
         body("password")
         .trim()
         .not()

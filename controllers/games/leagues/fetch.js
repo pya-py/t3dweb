@@ -14,13 +14,14 @@ module.exports = async(req, res, next) => {
                         fullname: contester.player.fullname,
                         records: contester.player.records,
                         team: contester.team,
-                        point: contester.points,
+                        progress: contester.progress,
                         userID: contester.player._id.toString()
                     }
                 }),
                 capacity: league.capacity,
                 prize: league.prize,
-                Mode: league._mode
+                Mode: league._mode,
+                Type: league._type
             }
         });
         res.status(200).json({ leagues });

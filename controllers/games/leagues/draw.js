@@ -35,8 +35,9 @@ module.exports = (_mode, _type, contesters) => {
         try {
             const leagueDraws = chunkify(_.shuffle(contesters)); // a list containing items that contain each games player IDs
 
+            //while scheduling: put games with 5min offsets
             for (const draw of leagueDraws)
-                draws.push([draw[0].player.toString(), draw[1].player.toString()]);
+                draws.push({ schedule: new Date(), players: [draw[0].player.toString(), draw[1].player.toString()] }); //EDIT SCHEDULE VALUE
 
         } catch (err) {
             console.log("league draw process failed 'cause: ", err);

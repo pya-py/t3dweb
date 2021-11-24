@@ -1,6 +1,6 @@
 const WebSocket = require("ws");
 const { makeFriends } = require('../../controllers/users');
-const { nanoid } = require("nanoid");
+
 const { saveMessage } = require('../../controllers/chats');
 var onlines = []; //keys: clientID, values: game type and socket
 // onlines['clientID'] = {gameType: int, room: string}
@@ -8,10 +8,10 @@ var onlines = []; //keys: clientID, values: game type and socket
 // .type and .room both NOT NULL => player is in game
 // .oponentID this is for when client goes out of the room and when comes back to the game
 
-var t3dRooms = []; //for uuid generate, nanoid is used to make ids with less memory consumption
+var t3dRooms = []; //for uuid generate, roomid is used to make ids with less memory consumption
 //this will prevent enterference in gameplay
 const sizeof = require('object-sizeof');
-const { verifyTokenForWS } = require("../../middlewares/tokenManager");
+const authenticate = require("../../middlewares/authenticate");
 
 const createSocketCommand = (command, msg) =>
     JSON.stringify({
@@ -58,6 +58,9 @@ const findEngagedGame = (clientID) => {
 
 const isClientFree = (cid) => !onlines[cid].room || !onlines[cid].room.name;
 
+const roomid = (uid1, uid2) => //create a room uuid for each game
+    uid1 < uid2 ? `${uid1}_${uid2}` : `${uid2}_${uid1}`;
+
 module.exports.closeThisRoom = (expiredRoomName, canceled = false) => { //when wsGameplay ends a game or collects garbage it syncs its update with this method
     try {
         if (t3dRooms[expiredRoomName]) {
@@ -90,7 +93,7 @@ module.exports.Server = (path) => {
             try {
                 const { request, msg, token } = JSON.parse(data);
 
-                const clientID = verifyTokenForWS(token); // if anything about token was wrong -> request doesnt process
+                const clientID = authenticate.tokenForWS(token); // if anything about token was wrong -> request doesnt process
                 console.log("GLOBAL:\treq: ", request, "\tcid: ", clientID, "\tparameter: ", msg, "\troom: ",
                     (onlines[clientID] ?
                         onlines[clientID].room : "none"));
@@ -184,11 +187,11 @@ module.exports.Server = (path) => {
 
                                     if (readyClients.length >= 1) {
                                         // console.table(readyClients);
-                                        const opponentID = readyClients[findRandomIndex(readyClients.length)];
-                                        const room = { name: nanoid(), scoreless: expected_game.scoreless, type: expected_game.type };
+                                        const rivalID = readyClients[findRandomIndex(readyClients.length)];
+                                        const room = { name: roomid(rivalID, clientID), scoreless: expected_game.scoreless, type: expected_game.type };
                                         // inform both clients
-                                        if (onlines[opponentID]) {
-                                            t3dRooms[room.name] = { players: [clientID, opponentID], dimension: room.type, scoreless: room.scoreless };
+                                        if (onlines[rivalID]) {
+                                            t3dRooms[room.name] = { players: [clientID, rivalID], dimension: room.type, scoreless: room.scoreless };
                                             t3dRooms[room.name].players.forEach((cid) => {
                                                 onlines[cid].room = {...room };
                                                 onlines[cid].socket.send(
@@ -258,7 +261,7 @@ module.exports.Server = (path) => {
                                     if (!onlines[inviterID])
                                         socket.send(createSocketCommand("TARGET_OFFLINE"))
                                     else if (inviterID !== clientID && isClientFree(inviterID) && isClientFree(clientID)) {
-                                        const room = { name: nanoid(), scoreless, type: gameType };
+                                        const room = { name: roomid(inviterID, clientID), scoreless, type: gameType };
                                         t3dRooms[room.name] = { players: [inviterID, clientID], dimension: room.type, scoreless: room.scoreless };
                                         console.log(`GLOBAL:\tfriendly game initiated successfully in room::${room.name}`);
                                         t3dRooms[room.name].players.forEach((cid) => {

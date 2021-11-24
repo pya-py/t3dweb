@@ -6,21 +6,13 @@ const SALT_LENGTH = 11;
 module.exports = async(req, res, next) => {
     try {
         const userID = req.CurrentUser.id; //read uid from token to make sure every thing is trusted
-        const { password, newPassword } = req.body;
+        const { newPassword } = req.body;
         const me = await UserModel.findById(userID);
         if (!userID || !me) {
             const error = new Error(
                 "User with this specific credentials can not be found!"
             );
             error.statusCode = 404; // already exists
-            throw error;
-        }
-
-        const isEqual = await bcryptjs.compare(password, me.password);
-        if (!isEqual) {
-            //is it ok to log if the username or password is wronge exactly?
-            const error = new Error("Wrong password.");
-            error.statusCode = 403;
             throw error;
         }
 

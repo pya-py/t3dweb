@@ -33,7 +33,25 @@ const leaguesSchema = new Schema({
             ref: "Teams",
             default: null
         },
-        points: { type: Number, default: 0 } //points in the league
+        // .progress must be on "team" field or what?
+        progress: { //state in the league
+            points: {
+                type: Number,
+                default: 0
+            },
+            wins: {
+                type: Number,
+                default: 0
+            },
+            draws: {
+                type: Number,
+                default: 0
+            },
+            loses: {
+                type: Number,
+                default: 0
+            }
+        },
     }],
     created: {
         type: Date,
@@ -42,12 +60,18 @@ const leaguesSchema = new Schema({
     matches: [ // each round draws
         [
             // each round's draws
-            [{
-                // IDs of the players that have been matched
-                type: String,
-                required: true,
-                unique: true
-            }]
+            {
+                schedule: {
+                    type: Date,
+                    required: true
+                },
+                players: [{
+                    // IDs of the players that have been matched
+                    type: String,
+                    required: true,
+                    unique: true
+                }]
+            }
         ]
     ],
     started: {

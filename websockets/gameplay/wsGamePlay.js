@@ -2,7 +2,7 @@ const WebSocket = require("ws");
 const T3DLogic = require("./t3dLogic");
 const { createGame } = require("../../controllers/games");
 const { GameRules } = require('../../configs');
-const { verifyTokenForWS } = require("../../middlewares/tokenManager");
+const authenticate = require("../../middlewares/authenticate");
 const sizeof = require('object-sizeof');
 const { closeThisRoom } = require("../global/wsGlobal");
 
@@ -180,7 +180,7 @@ module.exports.Server = (path) => {
             try {
                 //rname --> roomname
                 const { request, rname, token, msg } = JSON.parse(data);
-                const playerID = verifyTokenForWS(token); // if anything about token was wrong -> request doesnt process
+                const playerID = authenticate.tokenForWS(token); // if anything about token was wrong -> request doesnt process
 
                 console.log("GAMEPLAY:\treq:", request, "\troom:", rname, "\tplayer:", playerID, "\tparams:", msg);
 

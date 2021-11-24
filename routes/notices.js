@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const noticesController = require("../controllers/notices");
-const { authenticateToken } = require("../middlewares/tokenManager");
+const authenticate = require("../middlewares/authenticate");
 const { body } = require("express-validator");
-const { authenticateAdmin } = require("../middlewares/authenticateAdmin");
 const { Routes, PayloadRequirements } = require("../configs");
 
 //------------- /notices/ GET method ( for common users)
@@ -11,16 +10,16 @@ router.get("/", noticesController.getShortNotices);
 
 router.get(
     `/${Routes.NoticeManagement}`,
-    authenticateToken,
-    authenticateAdmin,
+    authenticate.token,
+    authenticate.admin,
     noticesController.getAdvancedNotices
 );
 
 //------------- /notices/ POST method
 router.post(
     `/${Routes.NoticeManagement}`,
-    authenticateToken,
-    authenticateAdmin, [
+    authenticate.token,
+    authenticate.admin, [
         body("title")
         .isString()
         .trim()
@@ -36,8 +35,8 @@ router.post(
 //-------------- /notices/manage/:_id
 router.put(
     `/${Routes.NoticeManagement}/:noticeID`,
-    authenticateToken,
-    authenticateAdmin, [
+    authenticate.token,
+    authenticate.admin, [
         // how to check -id => is it needed seriously? :|
         body("title")
         .isString()

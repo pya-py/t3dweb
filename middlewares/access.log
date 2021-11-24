@@ -58,3 +58,195 @@ Content Length: 142
 Response Time: 7.111 ms
 ---------------------------------------------------
 
+Tue Nov 23 2021 15:29:21 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "null"
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "A user with this studentID could not be found"
+Content Length: 59
+Response Time: 10.208 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:31:34 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NjY4ODg1LCJleHAiOjE2MzgyNzM2ODV9.lCW6fivxkJfTKvkhGCBTb8kAFcGSIFzUsYH8zOw381Q"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619cd7c7bc0716e3038e9ed4
+Status Code: 500
+Error Message: "Cannot access 'league' before initialization"
+Content Length: 58
+Response Time: 14.182 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:32:34 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NjY4ODg1LCJleHAiOjE2MzgyNzM2ODV9.lCW6fivxkJfTKvkhGCBTb8kAFcGSIFzUsYH8zOw381Q"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619cd7c7bc0716e3038e9ed4
+Status Code: 500
+Error Message: "Cannot access 'league' before initialization"
+Content Length: 58
+Response Time: 15.926 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:34:49 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NjY4ODg1LCJleHAiOjE2MzgyNzM2ODV9.lCW6fivxkJfTKvkhGCBTb8kAFcGSIFzUsYH8zOw381Q"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619cd7c7bc0716e3038e9ed4
+Status Code: 500
+Error Message: "Cannot access 'league' before initialization"
+Content Length: 58
+Response Time: 17.462 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:34:55 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NjY4ODg1LCJleHAiOjE2MzgyNzM2ODV9.lCW6fivxkJfTKvkhGCBTb8kAFcGSIFzUsYH8zOw381Q"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619cd7c7bc0716e3038e9ed4
+Status Code: 500
+Error Message: "Cannot access 'league' before initialization"
+Content Length: 58
+Response Time: 11.659 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:35:17 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NjY4ODg1LCJleHAiOjE2MzgyNzM2ODV9.lCW6fivxkJfTKvkhGCBTb8kAFcGSIFzUsYH8zOw381Q"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619cd7c7bc0716e3038e9ed4
+Status Code: 500
+Error Message: "Cannot access 'league' before initialization"
+Content Length: 58
+Response Time: 33.096 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:35:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NjY4ODg1LCJleHAiOjE2MzgyNzM2ODV9.lCW6fivxkJfTKvkhGCBTb8kAFcGSIFzUsYH8zOw381Q"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619cd7c7bc0716e3038e9ed4
+Status Code: 500
+Error Message: "Cannot access 'league' before initialization"
+Content Length: 58
+Response Time: 10.242 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:35:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE5OGJkYmEwM2U2NDE1NTRkOWIwIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjM3NjY4ODg1LCJleHAiOjE2MzgyNzM2ODV9.lCW6fivxkJfTKvkhGCBTb8kAFcGSIFzUsYH8zOw381Q"
+User Requested: {"id":"619b198bdba03e641554d9b0","admin":false}
+Payload: {}
+URL: /games/leagues/list/619cd7c7bc0716e3038e9ed4
+Status Code: 500
+Error Message: "Cannot access 'league' before initialization"
+Content Length: 58
+Response Time: 15.122 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:48:04 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.668 ms
+---------------------------------------------------
+
+Tue Nov 23 2021 15:57:59 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.738 ms
+---------------------------------------------------
+
+Wed Nov 24 2021 02:41:06 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE3MmZkYmEwM2U2NDE1NTRkOTcwIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2Mzc3MDkwNTMsImV4cCI6MTYzODMxMzg1M30.bm4Qz478ggLOgw-UsILjc7owdLOArm3magsOFj8u5lc"
+User Requested: {"id":"619b172fdba03e641554d970","admin":true}
+Payload: {"title":"تست","Mode":1,"capacity":20,"prize":50}
+URL: /games/leagues/new
+Status Code: 500
+Error Message: "bcryptjs is not defined"
+Content Length: 37
+Response Time: 3.895 ms
+---------------------------------------------------
+
+Wed Nov 24 2021 02:43:18 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE3MmZkYmEwM2U2NDE1NTRkOTcwIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2Mzc3MDkwNTMsImV4cCI6MTYzODMxMzg1M30.bm4Qz478ggLOgw-UsILjc7owdLOArm3magsOFj8u5lc"
+User Requested: {"id":"619b172fdba03e641554d970","admin":true}
+Payload: {"title":"تست","Mode":1,"capacity":20,"prize":50}
+URL: /games/leagues/new
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 198.886 ms
+---------------------------------------------------
+
+Wed Nov 24 2021 02:44:31 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE3MmZkYmEwM2U2NDE1NTRkOTcwIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2Mzc3MDkwNTMsImV4cCI6MTYzODMxMzg1M30.bm4Qz478ggLOgw-UsILjc7owdLOArm3magsOFj8u5lc"
+User Requested: {"id":"619b172fdba03e641554d970","admin":true}
+Payload: {"title":"تست","Mode":1,"capacity":20,"prize":50}
+URL: /games/leagues/new
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 194.639 ms
+---------------------------------------------------
+
+Wed Nov 24 2021 02:44:37 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE3MmZkYmEwM2U2NDE1NTRkOTcwIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2Mzc3MDkwNTMsImV4cCI6MTYzODMxMzg1M30.bm4Qz478ggLOgw-UsILjc7owdLOArm3magsOFj8u5lc"
+User Requested: {"id":"619b172fdba03e641554d970","admin":true}
+Payload: {"title":"تست","Mode":1,"capacity":20,"prize":50}
+URL: /games/leagues/new
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 185.300 ms
+---------------------------------------------------
+
+Wed Nov 24 2021 02:45:09 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE3MmZkYmEwM2U2NDE1NTRkOTcwIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2Mzc3MDkwNTMsImV4cCI6MTYzODMxMzg1M30.bm4Qz478ggLOgw-UsILjc7owdLOArm3magsOFj8u5lc"
+User Requested: {"id":"619b172fdba03e641554d970","admin":true}
+Payload: {}
+URL: /users/private/avatar
+Status Code: 500
+Error Message: "Illegal arguments: undefined, string"
+Content Length: 50
+Response Time: 6.194 ms
+---------------------------------------------------
+
+Wed Nov 24 2021 02:46:59 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjE5YjE3MmZkYmEwM2U2NDE1NTRkOTcwIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2Mzc3MDkwNTMsImV4cCI6MTYzODMxMzg1M30.bm4Qz478ggLOgw-UsILjc7owdLOArm3magsOFj8u5lc"
+User Requested: {"id":"619b172fdba03e641554d970","admin":true}
+Payload: {}
+URL: /users/private/avatar
+Status Code: 500
+Error Message: "Illegal arguments: undefined, string"
+Content Length: 50
+Response Time: 3.418 ms
+---------------------------------------------------
+
