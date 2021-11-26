@@ -7,7 +7,7 @@ const initiate = (gameType, scoreless) => {
     // create an empy dimen*dimen*dimen table
     //algorythm: ex for dimension = 4:
     //table = [ [null*4]*4 ] * 4
-    let indexes = [];
+    const indexes = [];
     for (let i = 0; i < dimension; i++) indexes.push(i);
     const table = indexes.map(() => indexes.map(() => indexes.map(() => null)));
 
@@ -85,7 +85,7 @@ const inspectAreaAroundTheCell = async(game, cell) => {
         if (count === dimension) totalScore++;
     });
 
-    if (playerInTheCell === 0) playerX.score += totalScore;
+    if (playerInTheCell === 1) playerX.score += totalScore;
     else playerO.score += totalScore;
 
     try {

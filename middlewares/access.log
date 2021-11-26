@@ -250,3 +250,195 @@ Content Length: 50
 Response Time: 3.418 ms
 ---------------------------------------------------
 
+Fri Nov 26 2021 09:29:52 GMT+0330 (Iran Standard Time)
+Method: POST
+Token: "null"
+User Requested: undefined
+Payload: {"studentID":12345678}
+URL: /users/signin
+Status Code: 403
+Error Message: "Wrong password."
+Content Length: 29
+Response Time: 232.008 ms
+---------------------------------------------------
+
+Fri Nov 26 2021 22:42:28 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 6.241 ms
+---------------------------------------------------
+
+Fri Nov 26 2021 22:55:36 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 1.553 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:28:07 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.875 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:32:15 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.718 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:32:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 1.726 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:37:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.418 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:39:13 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.506 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:41:12 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.561 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:41:57 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 1.573 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:43:41 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 1.104 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:44:03 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 1.089 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:44:19 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.836 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:44:21 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.332 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:44:37 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.802 ms
+---------------------------------------------------
+
+Sat Nov 27 2021 00:46:25 GMT+0330 (Iran Standard Time)
+Method: GET
+Token: "null"
+User Requested: undefined
+Payload: {}
+URL: /games/leagues
+Status Code: 420
+Error Message: "jwt must be provided"
+Content Length: 34
+Response Time: 0.893 ms
+---------------------------------------------------
+

@@ -1,6 +1,5 @@
 const _ = require('lodash');
 const { ResponseStatus } = require('../../../configs');
-const createGame = require('../createGame');
 
 const chunkify = (list) => {
     const chunky = [];

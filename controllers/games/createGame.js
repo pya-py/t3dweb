@@ -20,7 +20,7 @@ module.exports = async(playerX, playerO, Type, isLive = true) => {
             isLive,
         });
         await newGame.save();
-        return { gameID: newGame._id };
+        return { gameID: newGame._id.toString() };
     } catch (err) {
         console.log(err);
         //manage exeptions better

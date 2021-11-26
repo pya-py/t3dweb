@@ -2,9 +2,13 @@ const LeagueModel = require("../../../models/leagues");
 
 module.exports = async(req, res, next) => {
     try {
-        const { Mode, title, capacity, prize } = req.body;
+        const { Mode, title, capacity, prize, scoreless, dimension } = req.body;
         const league = new LeagueModel({
             _mode: Mode,
+            _type: {
+                scoreless,
+                dimension
+            },
             title,
             contesters: [],
             capacity,

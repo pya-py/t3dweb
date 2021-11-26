@@ -13,10 +13,11 @@ const createSocketCommand = (cmd, msg) =>
 const updateClientConnection = (currentRoom, client, newSocket, myTurn) => {
     client.socket = newSocket;
     //always make sure myTurn is set correctly
-    const { dimension, playerX, playerO } = currentRoom;
-    const startCommand = (myTurn) => createSocketCommand("GAME", {
+    const { dimension, playerX, playerO, gameID } = currentRoom;
+    const startCommand = (myTurn) => createSocketCommand("REMEMBER", {
         myTurn,
         dimension,
+        gameID,
         IDs: [playerX.id, playerO.id],
     });
 
@@ -37,7 +38,7 @@ const sendNextMoveTo = async(rname, madeBy, nextMove, nextTurn) => {
             rooms[rname].emptyCells--;
 
             //update table and scores
-            table[floor][row][column] = turn;
+            table[floor][row][column] = turn + 1;
             rooms[rname].timer.timeouts[turn] = 0; //reset timeouts: suppose player has missed two moves and now made his moves -> 4 timeouts must be frequent to cause losing
             T3DLogic.inspectAreaAroundTheCell(rooms[rname], cell);
             if (rooms[rname].scoreless && (playerX.score !== playerO.score)) { //if game is scoreless => playr has scored then there is no need to continue
@@ -68,6 +69,10 @@ const sendNextMoveTo = async(rname, madeBy, nextMove, nextTurn) => {
             if (!rooms[rname].gameID) {
                 const { gameID } = await createGame(playerX.id, playerO.id, dimension, true);
                 rooms[rname].gameID = gameID;
+
+                [playerX, playerO].forEach(eachPlayer => {
+                    eachPlayer.socket.send(createSocketCommand("REGISTER_GAME", { gameID }));
+                })
             }
         } else //cell's not empty
             throw new Error('wronge_move: selected table cell is not empty');
@@ -108,10 +113,8 @@ const endThisGame = (rname) => {
         [playerX, playerO].forEach(each => {
             each.socket.send(lastCommand);
         });
-        setTimeout(() => {
-            delete rooms[rname];
-            closeThisRoom(rname); //inform wsglobal to sync
-        }, 5000);
+        closeThisRoom(rname); //inform wsglobal to sync
+        delete rooms[rname];
     } else {
         // if no game record created --> consider the game never started --> summary: SHOTOR DIDI NADIDI
         const lastCommand = createSocketCommand("CLOSE");
